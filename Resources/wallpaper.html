@@ -1,0 +1,45 @@
+<!--(C) 2021 OliveWeb-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wallpaper Chooser</title>
+    </head>
+    <body style="background-color: lightblue;">
+        <h1 id="main">Choose A Wallpaper</h1>
+        <img src="https://olivewebsoftware.github.io/idkbro/3.png" onclick="setOne()">
+        <img src="https://olivewebsoftware.github.io/idkbro/2.png" onclick="setTwo()">
+        <img src="https://olivewebsoftware.github.io/idkbro/1.png" onclick="setThree()">
+        <p id="a">0</p>
+        <p id="b">0</p>
+        <p id="c">0</p>
+        <script>
+            function setOne() {
+                document.getElementById('a').innerHTML
+                = '1'
+            }
+            function setTwo() {
+                document.getElementById('b').innerHTML
+                = '1'
+            }
+            function setThree() {
+                document.getElementById('c').innerHTML
+                = '1'
+            }
+        </script>
+        <style>
+            #main {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: xx-large;
+            }
+            #a {
+                color:lightblue;
+            }
+            #b {
+                color:lightblue;
+            }
+            #c {
+                color:lightblue;
+            }
+        </style>
+    </body>
+</html>

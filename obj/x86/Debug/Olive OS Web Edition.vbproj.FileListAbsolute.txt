@@ -1,0 +1,28 @@
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Olive OS Web Edition.exe
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Olive OS Web Edition.pdb
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Olive OS Web Edition.xml
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form1.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Resources.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.vbproj.GenerateResource.Cache
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.exe
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.xml
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.pdb
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Interop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Interop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.vbproj.ResolveComReference.cache
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form2.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form3.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form4.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form5.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form6.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form7.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form8.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form9.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form10.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form11.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form12.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form13.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form14.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form15.resources
