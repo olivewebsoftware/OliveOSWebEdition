@@ -6,12 +6,17 @@
     </head>
     <body style="background-color: lightblue;">
         <h1 id="main">Choose A Wallpaper</h1>
+      <img src="https://olivewebsoftware.github.io/idkbro/5.png" onclick="setFive()">
         <img src="https://olivewebsoftware.github.io/idkbro/3.png" onclick="setOne()">
         <img src="https://olivewebsoftware.github.io/idkbro/2.png" onclick="setTwo()">
+         <br>
         <img src="https://olivewebsoftware.github.io/idkbro/1.png" onclick="setThree()">
+          <img src="https://olivewebsoftware.github.io/idkbro/thumb.png" onclick="setSix()">
         <p id="a">0</p>
         <p id="b">0</p>
         <p id="c">0</p>
+          <p id="d">0</p>
+          <p id="e"></p>
         <script>
             function setOne() {
                 document.getElementById('a').innerHTML
@@ -24,6 +29,14 @@
             function setThree() {
                 document.getElementById('c').innerHTML
                 = '1'
+            }
+            function setFive() {
+              document.getElementById('d').innerHTML
+              = '1'
+            }
+            function setSix() {
+              document.getElementById('e').innerHTML
+              = '1'
             }
         </script>
         <style>
@@ -39,6 +52,12 @@
             }
             #c {
                 color:lightblue;
+            }
+            #d {
+              color: lightblue;
+            }
+            #e {
+              color: lightblue;
             }
         </style>
     </body>
