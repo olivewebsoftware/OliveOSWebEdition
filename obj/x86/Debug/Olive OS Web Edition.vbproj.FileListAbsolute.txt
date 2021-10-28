@@ -26,3 +26,20 @@ C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\
 C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form13.resources
 C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form14.resources
 C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form15.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form16.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form17.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form18.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form19.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form20.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form21.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form22.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form23.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form24.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Olive OS Web Edition.exe.manifest
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Debug\Olive OS Web Edition.application
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.exe.manifest
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive OS Web Edition.application
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form25.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form26.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form27.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Debug\Olive_OS_Web_Edition.Form28.resources
