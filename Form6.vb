@@ -3,6 +3,9 @@
     Private Sub Form6_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.Select()
         Timer1.Start()
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick

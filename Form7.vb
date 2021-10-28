@@ -6,8 +6,17 @@
     End Sub
 
     Private Sub Form7_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
+        Dim pack = My.Computer.Registry.GetValue(
+      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PackEnabled", Nothing)
+        Panel1.BackColor = Color.FromArgb(190, 0, 0, 0)
         Dim setup = My.Computer.Registry.GetValue(
         "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Wallpaper", Nothing)
+        If pack = "yes" Then
+            Me.BackgroundImage = Image.FromFile(setup)
+        End If
         If setup = "def" Then
             Me.BackgroundImage = My.Resources.def
         End If
@@ -16,6 +25,12 @@
         End If
         If setup = "cliff" Then
             Me.BackgroundImage = My.Resources.cliff
+        End If
+        If setup = "def2" Then
+            Me.BackgroundImage = My.Resources.webdefault
+        End If
+        If setup = "game" Then
+            Me.BackgroundImage = My.Resources.gameon
         End If
         Dim ur = My.Computer.Registry.GetValue(
      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Username", Nothing)
@@ -82,5 +97,25 @@
             n = 0
             Timer1.Stop()
         End If
+    End Sub
+
+    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+        Panel1.Hide()
+    End Sub
+
+    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+        End
+        End
+        End
+    End Sub
+
+    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+        Panel1.Hide()
+        Me.Hide()
+        Me.Show()
+    End Sub
+
+    Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
+        Panel1.Show()
     End Sub
 End Class

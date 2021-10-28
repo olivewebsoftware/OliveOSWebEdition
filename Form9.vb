@@ -18,9 +18,50 @@ Public Class Form9
     End Sub
 
     Private Sub Form9_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
         Timer1.Start()
         comDate()
         Label7.Text = Format(Now, "dddd") & ", " & d & " " & DateTime.Now.ToString("dd") & ", " & DateTime.Now.ToString("yyyy")
+        Dim ur = My.Computer.Registry.GetValue(
+   "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Username", Nothing)
+        Label4.Text = ur
+        Dim pic = My.Computer.Registry.GetValue(
+    "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PFP", Nothing)
+        If pic = "1" Then
+            pb.Image = My.Resources._1
+        End If
+        If pic = "2" Then
+            pb.Image = My.Resources._2
+        End If
+        If pic = "3" Then
+            pb.Image = My.Resources._3
+        End If
+        If pic = "4" Then
+            pb.Image = My.Resources._4
+        End If
+        Dim power2 As PowerStatus = SystemInformation.PowerStatus
+        Dim percent2 As Single = power2.BatteryLifePercent
+        Label10.Text = percent2 * 100 & "%"
+        Label11.Text = percent2 * 100
+        ProgressBar1.Value = Label11.Text
+        Dim ui = My.Computer.Registry.GetValue(
+      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ui", Nothing)
+        If ui = "light" Then
+            'all labels EXCEPT label2
+            Label1.ForeColor = Color.Black
+            Label3.ForeColor = Color.Black
+            Label4.ForeColor = Color.Black
+            Label5.ForeColor = Color.Black
+            Label6.ForeColor = Color.Black
+            Label7.ForeColor = Color.Black
+            Label8.ForeColor = Color.Black
+            Label9.ForeColor = Color.Black
+            Label10.ForeColor = Color.Black
+            Label11.ForeColor = Color.Black
+            Me.BackColor = Color.White
+        End If
     End Sub
     Private Declare Function mciSendString Lib "winmm.dll" Alias "mciSendStringA" (ByVal lpstrCommand As String, ByVal lpstrReturnString As String, ByVal uReturnLength As Integer, ByVal hwndCallback As Integer) As Integer
 
@@ -94,5 +135,12 @@ Public Class Form9
 
     Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        Me.Close()
+        Form8.Close()
+        Form7.Close()
+        Form7.Show()
     End Sub
 End Class

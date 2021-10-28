@@ -27,10 +27,10 @@ Partial Class Form12
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RefreshToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewSourceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -72,17 +72,14 @@ Partial Class Form12
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
         Me.WebBrowser1.ScrollBarsEnabled = False
-        Me.WebBrowser1.Size = New System.Drawing.Size(976, 563)
+        Me.WebBrowser1.Size = New System.Drawing.Size(976, 662)
         Me.WebBrowser1.TabIndex = 3
-        '
-        'Timer1
-        '
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem, Me.ViewSourceToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(160, 74)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(160, 52)
         '
         'RefreshToolStripMenuItem
         '
@@ -96,11 +93,14 @@ Partial Class Form12
         Me.ViewSourceToolStripMenuItem.Size = New System.Drawing.Size(159, 24)
         Me.ViewSourceToolStripMenuItem.Text = "View Source"
         '
+        'Timer1
+        '
+        '
         'Form12
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(980, 616)
+        Me.ClientSize = New System.Drawing.Size(980, 713)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

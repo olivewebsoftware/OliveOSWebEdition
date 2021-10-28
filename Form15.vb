@@ -3,6 +3,9 @@
     Private Sub Form15_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim mp As Point = MousePosition
         Me.Location = mp
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
     End Sub
 
     Private Sub Form15_LostFocus(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.LostFocus

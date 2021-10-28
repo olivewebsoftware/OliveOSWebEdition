@@ -8,12 +8,18 @@
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
         "CurrentSetupState", "done")
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
-        "Wallpaper", "def")
-        Me.Close()
-        Form7.Show()
+      "PackEnabled", "no")
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+        "Wallpaper", "def2")
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+             "Browser", "https://www.bing.com")
+        Form27.Show()
     End Sub
 
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
         Dim setup = My.Computer.Registry.GetValue(
         "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "CurrentSetupState", Nothing)
         If setup = "" Then

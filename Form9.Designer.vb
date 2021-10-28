@@ -38,6 +38,10 @@ Partial Class Form9
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,7 +50,7 @@ Partial Class Form9
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(274, 685)
+        Me.Label1.Location = New System.Drawing.Point(791, 694)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(242, 78)
         Me.Label1.TabIndex = 1
@@ -57,7 +61,7 @@ Partial Class Form9
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(498, 781)
+        Me.Label2.Location = New System.Drawing.Point(1015, 790)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(174, 78)
         Me.Label2.TabIndex = 2
@@ -66,7 +70,7 @@ Partial Class Form9
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(287, 781)
+        Me.Button1.Location = New System.Drawing.Point(804, 790)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(94, 93)
         Me.Button1.TabIndex = 3
@@ -76,7 +80,7 @@ Partial Class Form9
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(397, 781)
+        Me.Button2.Location = New System.Drawing.Point(914, 790)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(95, 93)
         Me.Button2.TabIndex = 4
@@ -88,7 +92,7 @@ Partial Class Form9
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(1368, 685)
+        Me.Label3.Location = New System.Drawing.Point(1633, 694)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(154, 78)
         Me.Label3.TabIndex = 5
@@ -96,7 +100,7 @@ Partial Class Form9
         '
         'pb
         '
-        Me.pb.Location = New System.Drawing.Point(1261, 782)
+        Me.pb.Location = New System.Drawing.Point(1526, 791)
         Me.pb.Name = "pb"
         Me.pb.Size = New System.Drawing.Size(100, 92)
         Me.pb.TabIndex = 12
@@ -106,7 +110,8 @@ Partial Class Form9
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1374, 781)
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(1639, 790)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(139, 42)
         Me.Label4.TabIndex = 13
@@ -115,7 +120,7 @@ Partial Class Form9
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(1381, 839)
+        Me.Button3.Location = New System.Drawing.Point(1646, 848)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(132, 48)
         Me.Button3.TabIndex = 14
@@ -127,7 +132,7 @@ Partial Class Form9
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(840, 685)
+        Me.Label5.Location = New System.Drawing.Point(1219, 694)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(202, 78)
         Me.Label5.TabIndex = 15
@@ -136,7 +141,7 @@ Partial Class Form9
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(853, 791)
+        Me.Button4.Location = New System.Drawing.Point(1232, 800)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(173, 48)
         Me.Button4.TabIndex = 16
@@ -146,7 +151,7 @@ Partial Class Form9
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(853, 845)
+        Me.Button5.Location = New System.Drawing.Point(1232, 854)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(173, 48)
         Me.Button5.TabIndex = 17
@@ -189,12 +194,55 @@ Partial Class Form9
         Me.Label8.TabIndex = 20
         Me.Label8.Text = "X"
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(61, 694)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(221, 78)
+        Me.Label9.TabIndex = 21
+        Me.Label9.Text = "Battery"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(261, 790)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(334, 135)
+        Me.ProgressBar1.TabIndex = 22
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(61, 805)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(183, 78)
+        Me.Label10.TabIndex = 23
+        Me.Label10.Text = "000%"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(12, 940)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(59, 17)
+        Me.Label11.TabIndex = 24
+        Me.Label11.Text = "Label11"
+        Me.Label11.Visible = False
+        '
         'Form9
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1906, 966)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -214,6 +262,7 @@ Partial Class Form9
         Me.Name = "Form9"
         Me.Opacity = 0.82R
         Me.Text = "Control"
+        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -235,4 +284,8 @@ Partial Class Form9
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

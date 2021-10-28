@@ -3,6 +3,8 @@
     Private a As String
     Private b As String
     Private c As String
+    Private d As String
+    Private r As String
     Private Sub WebBrowser1_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         Timer1.Start()
     End Sub
@@ -38,9 +40,13 @@
         a = WebBrowser1.Document.GetElementById("a").InnerText
         b = WebBrowser1.Document.GetElementById("b").InnerText
         c = WebBrowser1.Document.GetElementById("c").InnerText
+        d = WebBrowser1.Document.GetElementById("d").InnerText
+        r = WebBrowser1.Document.GetElementById("e").InnerText
         If a = "1" Then
             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
            "Wallpaper", "def")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "PackEnabled", "no")
             Form8.BackgroundImage = My.Resources.def
             Form4.Show()
             Form4.Label1.Text = "Set."
@@ -53,6 +59,8 @@
             Form4.Show()
             Form4.Label1.Text = "Set."
             Me.Close()
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "PackEnabled", "no")
         End If
         If c = "1" Then
             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
@@ -61,6 +69,28 @@
             Form4.Show()
             Form4.Label1.Text = "Set."
             Me.Close()
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "PackEnabled", "no")
+        End If
+        If d = "1" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+           "Wallpaper", "def2")
+            Form8.BackgroundImage = My.Resources.webdefault
+            Form4.Show()
+            Form4.Label1.Text = "Set."
+            Me.Close()
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "PackEnabled", "no")
+        End If
+        If r = "1" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+           "Wallpaper", "game")
+            Form8.BackgroundImage = My.Resources.gameon
+            Form4.Show()
+            Form4.Label1.Text = "Set."
+            Me.Close()
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "PackEnabled", "no")
         End If
     End Sub
 

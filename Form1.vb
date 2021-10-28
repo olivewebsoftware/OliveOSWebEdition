@@ -5,6 +5,9 @@ Public Class Form1
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         PlayButton()
         Timer1.Start()
+        Dim cursor As Icon
+        cursor = (My.Resources.defc2)
+        Me.Cursor = New Cursor(cursor.Handle)
     End Sub
     Private Sub PlayButton()
         pathc = Path.Combine(Application.StartupPath, "web.mp4")

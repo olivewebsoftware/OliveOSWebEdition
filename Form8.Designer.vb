@@ -24,6 +24,7 @@ Partial Class Form8
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -35,17 +36,61 @@ Partial Class Form8
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.notif = New System.Windows.Forms.Label()
+        Me.n1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.n2 = New System.Windows.Forms.Panel()
+        Me.n3 = New System.Windows.Forms.Panel()
+        Me.n4 = New System.Windows.Forms.Panel()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.n1.SuspendLayout()
+        Me.n2.SuspendLayout()
+        Me.n3.SuspendLayout()
+        Me.n4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button9)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button5)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -62,9 +107,18 @@ Partial Class Form8
         Me.Panel1.Size = New System.Drawing.Size(1688, 82)
         Me.Panel1.TabIndex = 0
         '
+        'Button9
+        '
+        Me.Button9.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.filee
+        Me.Button9.Location = New System.Drawing.Point(218, 10)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 63)
+        Me.Button9.TabIndex = 10
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(785, 10)
+        Me.Button6.Location = New System.Drawing.Point(866, 10)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 63)
         Me.Button6.TabIndex = 9
@@ -74,7 +128,7 @@ Partial Class Form8
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(704, 10)
+        Me.Button5.Location = New System.Drawing.Point(785, 10)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 63)
         Me.Button5.TabIndex = 8
@@ -84,7 +138,7 @@ Partial Class Form8
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(623, 10)
+        Me.Button4.Location = New System.Drawing.Point(704, 10)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 63)
         Me.Button4.TabIndex = 7
@@ -94,7 +148,7 @@ Partial Class Form8
         '
         'd
         '
-        Me.d.Location = New System.Drawing.Point(542, 10)
+        Me.d.Location = New System.Drawing.Point(623, 10)
         Me.d.Name = "d"
         Me.d.Size = New System.Drawing.Size(75, 63)
         Me.d.TabIndex = 6
@@ -104,7 +158,7 @@ Partial Class Form8
         '
         'c
         '
-        Me.c.Location = New System.Drawing.Point(461, 10)
+        Me.c.Location = New System.Drawing.Point(542, 10)
         Me.c.Name = "c"
         Me.c.Size = New System.Drawing.Size(75, 63)
         Me.c.TabIndex = 5
@@ -114,7 +168,7 @@ Partial Class Form8
         '
         'b
         '
-        Me.b.Location = New System.Drawing.Point(380, 10)
+        Me.b.Location = New System.Drawing.Point(461, 10)
         Me.b.Name = "b"
         Me.b.Size = New System.Drawing.Size(75, 63)
         Me.b.TabIndex = 4
@@ -124,7 +178,7 @@ Partial Class Form8
         '
         'a
         '
-        Me.a.Location = New System.Drawing.Point(299, 10)
+        Me.a.Location = New System.Drawing.Point(380, 10)
         Me.a.Name = "a"
         Me.a.Size = New System.Drawing.Size(75, 63)
         Me.a.TabIndex = 3
@@ -134,20 +188,22 @@ Partial Class Form8
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(218, 10)
+        Me.Button3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.appstore
+        Me.Button3.Location = New System.Drawing.Point(299, 10)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 63)
         Me.Button3.TabIndex = 2
-        Me.Button3.Text = "store"
+        Me.Button3.Text = " "
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
+        Me.Button2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.webb
         Me.Button2.Location = New System.Drawing.Point(137, 10)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 63)
         Me.Button2.TabIndex = 1
-        Me.Button2.Text = "web"
+        Me.Button2.Text = " "
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
@@ -162,11 +218,31 @@ Partial Class Form8
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Gray
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Location = New System.Drawing.Point(1520, 17)
+        Me.Panel2.Location = New System.Drawing.Point(1399, 10)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(147, 53)
+        Me.Panel2.Size = New System.Drawing.Size(268, 60)
         Me.Panel2.TabIndex = 0
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.wifiico
+        Me.PictureBox2.Location = New System.Drawing.Point(79, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(56, 60)
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.batt
+        Me.PictureBox1.Location = New System.Drawing.Point(17, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(56, 60)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'Label1
         '
@@ -174,7 +250,7 @@ Partial Class Form8
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(17, 12)
+        Me.Label1.Location = New System.Drawing.Point(148, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(117, 31)
         Me.Label1.TabIndex = 1
@@ -191,12 +267,370 @@ Partial Class Form8
         'Timer2
         '
         '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Button7)
+        Me.Panel3.Controls.Add(Me.ProgressBar1)
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Controls.Add(Me.Label10)
+        Me.Panel3.Location = New System.Drawing.Point(1351, 728)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(270, 240)
+        Me.Panel3.TabIndex = 1
+        Me.Panel3.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(17, 21)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(68, 20)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Battery:"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(214, 21)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(41, 32)
+        Me.Button7.TabIndex = 27
+        Me.Button7.Text = "X"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(0, 214)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(270, 26)
+        Me.ProgressBar1.TabIndex = 26
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(17, 141)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(187, 20)
+        Me.Label2.TabIndex = 25
+        Me.Label2.Text = "No current suggestions."
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(8, 50)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(183, 78)
+        Me.Label10.TabIndex = 24
+        Me.Label10.Text = "000%"
+        '
+        'Timer3
+        '
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.LinkLabel1)
+        Me.Panel4.Controls.Add(Me.Label5)
+        Me.Panel4.Controls.Add(Me.Button8)
+        Me.Panel4.Controls.Add(Me.Label4)
+        Me.Panel4.Location = New System.Drawing.Point(1627, 844)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(210, 125)
+        Me.Panel4.TabIndex = 2
+        Me.Panel4.Visible = False
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel1.Location = New System.Drawing.Point(18, 89)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(150, 24)
+        Me.LinkLabel1.TabIndex = 32
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Network Settings"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(17, 51)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(152, 25)
+        Me.Label5.TabIndex = 31
+        Me.Label5.Text = "Not Connected"
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(148, 16)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(41, 32)
+        Me.Button8.TabIndex = 30
+        Me.Button8.Text = "X"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(18, 16)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(75, 20)
+        Me.Label4.TabIndex = 29
+        Me.Label4.Text = "Network:"
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel5.Controls.Add(Me.notif)
+        Me.Panel5.Location = New System.Drawing.Point(12, 12)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(460, 64)
+        Me.Panel5.TabIndex = 3
+        '
+        'notif
+        '
+        Me.notif.AutoSize = True
+        Me.notif.BackColor = System.Drawing.Color.Transparent
+        Me.notif.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.notif.ForeColor = System.Drawing.Color.White
+        Me.notif.Location = New System.Drawing.Point(13, 13)
+        Me.notif.Name = "notif"
+        Me.notif.Size = New System.Drawing.Size(230, 39)
+        Me.notif.TabIndex = 2
+        Me.notif.Text = "Notifications (0)"
+        '
+        'n1
+        '
+        Me.n1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n1.Controls.Add(Me.LinkLabel2)
+        Me.n1.Controls.Add(Me.Label7)
+        Me.n1.Controls.Add(Me.Label6)
+        Me.n1.Location = New System.Drawing.Point(12, 82)
+        Me.n1.Name = "n1"
+        Me.n1.Size = New System.Drawing.Size(369, 116)
+        Me.n1.TabIndex = 4
+        Me.n1.Visible = False
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(34, 57)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(59, 20)
+        Me.Label7.TabIndex = 1
+        Me.Label7.Text = "Label7"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(33, 20)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(71, 27)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "Label6"
+        '
+        'n2
+        '
+        Me.n2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n2.Controls.Add(Me.LinkLabel3)
+        Me.n2.Controls.Add(Me.Label8)
+        Me.n2.Controls.Add(Me.Label9)
+        Me.n2.Location = New System.Drawing.Point(12, 204)
+        Me.n2.Name = "n2"
+        Me.n2.Size = New System.Drawing.Size(369, 116)
+        Me.n2.TabIndex = 5
+        Me.n2.Visible = False
+        '
+        'n3
+        '
+        Me.n3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n3.Controls.Add(Me.LinkLabel4)
+        Me.n3.Controls.Add(Me.Label11)
+        Me.n3.Controls.Add(Me.Label12)
+        Me.n3.Location = New System.Drawing.Point(12, 326)
+        Me.n3.Name = "n3"
+        Me.n3.Size = New System.Drawing.Size(369, 116)
+        Me.n3.TabIndex = 6
+        Me.n3.Visible = False
+        '
+        'n4
+        '
+        Me.n4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n4.Controls.Add(Me.LinkLabel5)
+        Me.n4.Controls.Add(Me.Label13)
+        Me.n4.Controls.Add(Me.Label14)
+        Me.n4.Location = New System.Drawing.Point(12, 448)
+        Me.n4.Name = "n4"
+        Me.n4.Size = New System.Drawing.Size(369, 116)
+        Me.n4.TabIndex = 7
+        Me.n4.Visible = False
+        '
+        'Timer4
+        '
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(34, 61)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(59, 20)
+        Me.Label8.TabIndex = 3
+        Me.Label8.Text = "Label8"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(33, 24)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(71, 27)
+        Me.Label9.TabIndex = 2
+        Me.Label9.Text = "Label9"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(34, 65)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(68, 20)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Label11"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(33, 28)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(79, 27)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "Label12"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(25, 57)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(68, 20)
+        Me.Label13.TabIndex = 9
+        Me.Label13.Text = "Label13"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(24, 20)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(79, 27)
+        Me.Label14.TabIndex = 8
+        Me.Label14.Text = "Label14"
+        '
+        'Timer5
+        '
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel2.Location = New System.Drawing.Point(323, 20)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel2.TabIndex = 2
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "X"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel3.Location = New System.Drawing.Point(323, 24)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel3.TabIndex = 4
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "X"
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel4.Location = New System.Drawing.Point(323, 19)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel4.TabIndex = 4
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "X"
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel5.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel5.Location = New System.Drawing.Point(323, 22)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel5.TabIndex = 10
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "X"
+        '
         'Form8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1924, 1056)
+        Me.ClientSize = New System.Drawing.Size(1942, 1102)
         Me.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Controls.Add(Me.n4)
+        Me.Controls.Add(Me.n3)
+        Me.Controls.Add(Me.n2)
+        Me.Controls.Add(Me.n1)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -206,6 +640,22 @@ Partial Class Form8
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
+        Me.Panel4.PerformLayout()
+        Me.Panel5.ResumeLayout(False)
+        Me.Panel5.PerformLayout()
+        Me.n1.ResumeLayout(False)
+        Me.n1.PerformLayout()
+        Me.n2.ResumeLayout(False)
+        Me.n2.PerformLayout()
+        Me.n3.ResumeLayout(False)
+        Me.n3.PerformLayout()
+        Me.n4.ResumeLayout(False)
+        Me.n4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -225,4 +675,39 @@ Partial Class Form8
     Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Timer3 As System.Windows.Forms.Timer
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Panel4 As System.Windows.Forms.Panel
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Panel5 As System.Windows.Forms.Panel
+    Friend WithEvents notif As System.Windows.Forms.Label
+    Friend WithEvents n1 As System.Windows.Forms.Panel
+    Friend WithEvents n2 As System.Windows.Forms.Panel
+    Friend WithEvents n3 As System.Windows.Forms.Panel
+    Friend WithEvents n4 As System.Windows.Forms.Panel
+    Friend WithEvents Button9 As System.Windows.Forms.Button
+    Friend WithEvents Timer4 As System.Windows.Forms.Timer
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Timer5 As System.Windows.Forms.Timer
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
 End Class
