@@ -139,7 +139,7 @@ Partial Class Form26
         Me.Button14.Name = "Button14"
         Me.Button14.Size = New System.Drawing.Size(75, 69)
         Me.Button14.TabIndex = 10
-        Me.Button14.Text = "Button14"
+        Me.Button14.Text = " "
         Me.Button14.UseVisualStyleBackColor = True
         '
         'Label9
@@ -158,7 +158,7 @@ Partial Class Form26
         Me.Button13.Name = "Button13"
         Me.Button13.Size = New System.Drawing.Size(75, 69)
         Me.Button13.TabIndex = 8
-        Me.Button13.Text = "Button13"
+        Me.Button13.Text = " "
         Me.Button13.UseVisualStyleBackColor = True
         '
         'Label8
@@ -177,7 +177,7 @@ Partial Class Form26
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(75, 69)
         Me.Button12.TabIndex = 6
-        Me.Button12.Text = "Button12"
+        Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = True
         '
         'Label7
@@ -196,7 +196,7 @@ Partial Class Form26
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(75, 69)
         Me.Button11.TabIndex = 4
-        Me.Button11.Text = "Button11"
+        Me.Button11.Text = " "
         Me.Button11.UseVisualStyleBackColor = True
         '
         'Label6
@@ -215,7 +215,7 @@ Partial Class Form26
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(75, 69)
         Me.Button10.TabIndex = 2
-        Me.Button10.Text = "Button10"
+        Me.Button10.Text = " "
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Label5
@@ -234,7 +234,7 @@ Partial Class Form26
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 69)
         Me.Button9.TabIndex = 0
-        Me.Button9.Text = "Button9"
+        Me.Button9.Text = " "
         Me.Button9.UseVisualStyleBackColor = True
         '
         'TabPage2

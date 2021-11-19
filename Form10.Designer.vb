@@ -65,7 +65,9 @@ Partial Class Form10
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -281,7 +283,7 @@ Partial Class Form10
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(769, 13)
+        Me.Label10.Location = New System.Drawing.Point(1242, 536)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(73, 17)
         Me.Label10.TabIndex = 21
@@ -301,7 +303,7 @@ Partial Class Form10
         '
         Me.l5.AutoSize = True
         Me.l5.ForeColor = System.Drawing.Color.White
-        Me.l5.Location = New System.Drawing.Point(885, 10)
+        Me.l5.Location = New System.Drawing.Point(483, 948)
         Me.l5.Name = "l5"
         Me.l5.Size = New System.Drawing.Size(57, 17)
         Me.l5.TabIndex = 31
@@ -312,7 +314,7 @@ Partial Class Form10
         '
         Me.b5.ContextMenuStrip = Me.ContextMenuStrip6
         Me.b5.Image = CType(resources.GetObject("b5.Image"), System.Drawing.Image)
-        Me.b5.Location = New System.Drawing.Point(1239, 697)
+        Me.b5.Location = New System.Drawing.Point(486, 868)
         Me.b5.Name = "b5"
         Me.b5.Size = New System.Drawing.Size(76, 60)
         Me.b5.TabIndex = 30
@@ -334,7 +336,7 @@ Partial Class Form10
         '
         Me.l4.AutoSize = True
         Me.l4.ForeColor = System.Drawing.Color.White
-        Me.l4.Location = New System.Drawing.Point(726, 10)
+        Me.l4.Location = New System.Drawing.Point(884, 10)
         Me.l4.Name = "l4"
         Me.l4.Size = New System.Drawing.Size(57, 17)
         Me.l4.TabIndex = 29
@@ -345,7 +347,7 @@ Partial Class Form10
         '
         Me.b4.ContextMenuStrip = Me.ContextMenuStrip5
         Me.b4.Image = CType(resources.GetObject("b4.Image"), System.Drawing.Image)
-        Me.b4.Location = New System.Drawing.Point(1080, 697)
+        Me.b4.Location = New System.Drawing.Point(1245, 697)
         Me.b4.Name = "b4"
         Me.b4.Size = New System.Drawing.Size(76, 60)
         Me.b4.TabIndex = 28
@@ -362,7 +364,7 @@ Partial Class Form10
         '
         Me.l3.AutoSize = True
         Me.l3.ForeColor = System.Drawing.Color.White
-        Me.l3.Location = New System.Drawing.Point(540, 10)
+        Me.l3.Location = New System.Drawing.Point(720, 10)
         Me.l3.Name = "l3"
         Me.l3.Size = New System.Drawing.Size(57, 17)
         Me.l3.TabIndex = 27
@@ -373,7 +375,7 @@ Partial Class Form10
         '
         Me.b3.ContextMenuStrip = Me.ContextMenuStrip4
         Me.b3.Image = CType(resources.GetObject("b3.Image"), System.Drawing.Image)
-        Me.b3.Location = New System.Drawing.Point(886, 697)
+        Me.b3.Location = New System.Drawing.Point(1081, 697)
         Me.b3.Name = "b3"
         Me.b3.Size = New System.Drawing.Size(76, 60)
         Me.b3.TabIndex = 26
@@ -390,7 +392,7 @@ Partial Class Form10
         '
         Me.l2.AutoSize = True
         Me.l2.ForeColor = System.Drawing.Color.White
-        Me.l2.Location = New System.Drawing.Point(321, 10)
+        Me.l2.Location = New System.Drawing.Point(525, 10)
         Me.l2.Name = "l2"
         Me.l2.Size = New System.Drawing.Size(57, 17)
         Me.l2.TabIndex = 25
@@ -401,7 +403,7 @@ Partial Class Form10
         '
         Me.l1.AutoSize = True
         Me.l1.ForeColor = System.Drawing.Color.White
-        Me.l1.Location = New System.Drawing.Point(136, 10)
+        Me.l1.Location = New System.Drawing.Point(315, 10)
         Me.l1.Name = "l1"
         Me.l1.Size = New System.Drawing.Size(57, 17)
         Me.l1.TabIndex = 24
@@ -412,7 +414,7 @@ Partial Class Form10
         '
         Me.b2.ContextMenuStrip = Me.ContextMenuStrip3
         Me.b2.Image = CType(resources.GetObject("b2.Image"), System.Drawing.Image)
-        Me.b2.Location = New System.Drawing.Point(675, 697)
+        Me.b2.Location = New System.Drawing.Point(886, 697)
         Me.b2.Name = "b2"
         Me.b2.Size = New System.Drawing.Size(76, 60)
         Me.b2.TabIndex = 23
@@ -429,7 +431,7 @@ Partial Class Form10
         '
         Me.b1.ContextMenuStrip = Me.ContextMenuStrip2
         Me.b1.Image = CType(resources.GetObject("b1.Image"), System.Drawing.Image)
-        Me.b1.Location = New System.Drawing.Point(490, 697)
+        Me.b1.Location = New System.Drawing.Point(671, 697)
         Me.b1.Name = "b1"
         Me.b1.Size = New System.Drawing.Size(76, 60)
         Me.b1.TabIndex = 22
@@ -455,23 +457,32 @@ Partial Class Form10
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Location = New System.Drawing.Point(463, 523)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(865, 44)
+        Me.Panel2.Size = New System.Drawing.Size(750, 44)
         Me.Panel2.TabIndex = 33
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.l3)
+        Me.Panel3.Controls.Add(Me.Label12)
         Me.Panel3.Controls.Add(Me.l4)
         Me.Panel3.Controls.Add(Me.l1)
         Me.Panel3.Controls.Add(Me.l2)
-        Me.Panel3.Controls.Add(Me.l3)
-        Me.Panel3.Controls.Add(Me.l5)
         Me.Panel3.Location = New System.Drawing.Point(358, 763)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1095, 46)
         Me.Panel3.TabIndex = 34
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(102, 10)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(124, 17)
+        Me.Label12.TabIndex = 41
+        Me.Label12.Text = "OliveWeb Security"
         '
         'Label11
         '
@@ -483,12 +494,25 @@ Partial Class Form10
         Me.Label11.Text = "Label11"
         Me.Label11.Visible = False
         '
+        'Button12
+        '
+        Me.Button12.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.securityapp__1_
+        Me.Button12.Location = New System.Drawing.Point(490, 697)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(76, 60)
+        Me.Button12.TabIndex = 40
+        Me.Button12.Text = " "
+        Me.Button12.UseVisualStyleBackColor = True
+        '
         'Form10
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1102)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.l5)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -569,4 +593,6 @@ Partial Class Form10
     Friend WithEvents ContextMenuStrip5 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents ContextMenuStrip6 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Button12 As System.Windows.Forms.Button
 End Class

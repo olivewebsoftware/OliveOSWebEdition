@@ -13,6 +13,12 @@
     Dim p As Integer = 0
     Dim u As Integer = 0
     Dim z As Integer = 0
+    Dim bruh As Integer = 0
+    Private p1 As String
+    Private p2 As String
+    Private p3 As String
+    Private p4 As String
+    Private p5 As String
     Private f As String = ""
     Dim runningscripts As Integer = 0
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
@@ -123,79 +129,125 @@
    "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "Edit4", Nothing)
         Dim edit5 = My.Computer.Registry.GetValue(
    "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "Edit5", Nothing)
-        If edit1 <> "" Then
+        If edit1 = "1" Then
             If label.Text = "1" Then
-                'runVbs()
+                runVbs()
                 runNotif()
+                runInBackground()
             End If
         End If
-        If edit2 <> "" Then
+        If edit2 = "1" Then
             If label.Text = "2" Then
                 runVbs()
+                runNotif()
+                runInBackground()
             End If
         End If
-        If edit3 <> "" Then
+        If edit3 = "1" Then
             If Label1.Text = "3" Then
                 runVbs()
+                runNotif()
+                runInBackground()
             End If
         End If
-        If edit4 <> "" Then
+        If edit4 = "1" Then
             If Label1.Text = "4" Then
                 runVbs()
+                runNotif()
+                runInBackground()
             End If
         End If
-        If edit5 <> "" Then
+        If edit5 = "1" Then
             If Label1.Text = "5" Then
                 runVbs()
+                runNotif()
+                runInBackground()
             End If
         End If
     End Sub
     Private Sub runVbs()
-        If p = 10 Then
-            c = wb.Document.GetElementById("vbscripts").InnerText
-            a = wb.Document.GetElementById("background").InnerText
-            b = wb.Document.GetElementById("notif").InnerText
-            d = wb.Document.GetElementById("script").InnerText
-        Else
-            p += 1
-        End If
-        If c = "1" Then
-            Dim user = My.Computer.Registry.GetValue(
-"HKEY_CURRENT_USER\Software\Olive OS Web Edition", "User", Nothing)
-            Dim sf As New SaveFileDialog
-            With sf
-                .FileName = "C:\Users\" & user & "\AppData\Local\Temp\edit1.vbs"
-            End With
-            If runningscripts = 0 Then
-                System.IO.File.WriteAllText(sf.FileName, d)
-                Process.Start(sf.FileName)
-                runningscripts = 1
+        Try
+            If p = 10 Then
+                c = wb.Document.GetElementById("vbscripts").InnerText
+                a = wb.Document.GetElementById("background").InnerText
+                b = wb.Document.GetElementById("notif").InnerText
+                d = wb.Document.GetElementById("script").InnerText
             Else
-                'do nothing
+                p += 1
             End If
-        End If
+            If a = "1" Then
+                Exit Sub
+            End If
+            If c = "1" Then
+                Dim user = My.Computer.Registry.GetValue(
+    "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "User", Nothing)
+                Dim sf As New SaveFileDialog
+                With sf
+                    .FileName = "C:\Users\" & user & "\AppData\Local\Temp\edit1.vbs"
+                End With
+                If runningscripts = 0 Then
+                    System.IO.File.WriteAllText(sf.FileName, d)
+                    Process.Start(sf.FileName)
+                    runningscripts = 1
+                Else
+                    'do nothing
+                End If
+            End If
+        Catch ex As Exception
+            Me.Close()
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.scripterr
+        End Try
+        
 
     End Sub
     Private Sub runNotif()
-        If u = 10 Then
-            b = wb.Document.GetElementById("notif").InnerText
-            f = wb.Document.GetElementById("notif_title").InnerText
-            g = wb.Document.GetElementById("notif_body").InnerText
-            z = 1
-        Else
-            u += 1
-        End If
-        If z = 1 Then
-            If Form8.n1.Visible Then
-                If Form8.n2.Visible Then
-                    If Form8.n3.Visible Then
-                        If Form8.n4.Visible Then
-                            'no spots ready
+        If p = 10 Then
+            Try
+                If u = 10 Then
+                    b = wb.Document.GetElementById("notif").InnerText
+                    If b = "" Then
+                        Exit Sub
+                    End If
+                    f = wb.Document.GetElementById("notif_title").InnerText
+                    g = wb.Document.GetElementById("notif_body").InnerText
+                    z = 1
+                Else
+                    u += 1
+                End If
+                If z = 1 Then
+                    If Form8.n1.Visible Then
+                        If Form8.n2.Visible Then
+                            If Form8.n3.Visible Then
+                                If Form8.n4.Visible Then
+                                    'no spots ready
+                                Else
+                                    If m = 0 Then
+                                        Form8.Label14.Text = g
+                                        Form8.Label13.Text = f
+                                        Form8.n4.Show()
+                                        My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+                                        m = 1
+                                    Else
+                                        'nothing
+                                    End If
+                                End If
+                            Else
+                                If m = 0 Then
+                                    Form8.Label12.Text = g
+                                    Form8.Label11.Text = f
+                                    Form8.n3.Show()
+                                    My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+                                    m = 1
+                                Else
+                                    'nothing
+                                End If
+                            End If
                         Else
                             If m = 0 Then
-                                Form8.Label14.Text = g
-                                Form8.Label13.Text = f
-                                Form8.n4.Show()
+                                Form8.Label9.Text = g
+                                Form8.Label8.Text = f
+                                Form8.n2.Show()
                                 My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
                                 m = 1
                             Else
@@ -204,38 +256,58 @@
                         End If
                     Else
                         If m = 0 Then
-                            Form8.Label12.Text = g
-                            Form8.Label11.Text = f
-                            Form8.n3.Show()
+                            Form8.Label7.Text = g
+                            Form8.Label6.Text = f
+                            Form8.n1.Show()
                             My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
                             m = 1
                         Else
                             'nothing
                         End If
-                    End If
-                Else
-                    If m = 0 Then
-                        Form8.Label9.Text = g
-                        Form8.Label8.Text = f
-                        Form8.n2.Show()
-                        My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
-                        m = 1
-                    Else
-                        'nothing
-                    End If
-                End If
-            Else
-                If m = 0 Then
-                    Form8.Label7.Text = g
-                    Form8.Label6.Text = f
-                    Form8.n1.Show()
-                    My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
-                    m = 1
-                Else
-                    'nothing
-                End If
 
-            End If
+                    End If
+                End If
+            Catch ex As Exception
+                Me.Close()
+                Form4.Show()
+                Form4.Label1.Text = My.Resources.scripterr
+            End Try
+        Else
+            p += 1
         End If
+       
+
+    End Sub
+    Private Sub runInBackground()
+        If bruh = 10 Then
+            p1 = wb.Document.GetElementById("website").InnerText
+            If p1 = "" Then
+                Exit Sub
+            End If
+            If label.Text = "1" Then
+                My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+           "site1", p1)
+            End If
+            If label.Text = "2" Then
+                My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+          "site2", p1)
+            End If
+            If label.Text = "3" Then
+                My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+              "site3", p1)
+            End If
+            If label.Text = "4" Then
+                My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+          "site4", p1)
+            End If
+            If label.Text = "5" Then
+                My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+              "site5", p1)
+            End If
+
+        Else
+            bruh += 1
+        End If
+       
     End Sub
 End Class

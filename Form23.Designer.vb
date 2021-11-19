@@ -68,7 +68,7 @@ Partial Class Form23
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(327, 25)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "OLIVEWEB WEB APP PLAYER 1.0"
+        Me.Label1.Text = "OLIVEWEB WEB APP PLAYER 1.2"
         '
         'Button7
         '

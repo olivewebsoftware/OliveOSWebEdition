@@ -216,7 +216,7 @@ Partial Class Form21
         Me.Label9.Size = New System.Drawing.Size(266, 85)
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "By clicking ""Install"" you agree that" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any damage this webapp causes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to the OS or" & _
-            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. {incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
+            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. (incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
             "de)"
         '
         'Button1
@@ -354,7 +354,7 @@ Partial Class Form21
         Me.Label10.Size = New System.Drawing.Size(266, 85)
         Me.Label10.TabIndex = 19
         Me.Label10.Text = "By clicking ""Install"" you agree that" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any damage this webapp causes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to the OS or" & _
-            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. {incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
+            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. (incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
             "de)"
         '
         'Button2
@@ -492,7 +492,7 @@ Partial Class Form21
         Me.Label16.Size = New System.Drawing.Size(266, 85)
         Me.Label16.TabIndex = 19
         Me.Label16.Text = "By clicking ""Install"" you agree that" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any damage this webapp causes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to the OS or" & _
-            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. {incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
+            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. (incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
             "de)"
         '
         'Button3
@@ -630,7 +630,7 @@ Partial Class Form21
         Me.Label22.Size = New System.Drawing.Size(266, 85)
         Me.Label22.TabIndex = 19
         Me.Label22.Text = "By clicking ""Install"" you agree that" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any damage this webapp causes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to the OS or" & _
-            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. {incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
+            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. (incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
             "de)"
         '
         'Button4
@@ -768,7 +768,7 @@ Partial Class Form21
         Me.Label28.Size = New System.Drawing.Size(266, 85)
         Me.Label28.TabIndex = 19
         Me.Label28.Text = "By clicking ""Install"" you agree that" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "any damage this webapp causes" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "to the OS or" & _
-            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. {incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
+            " your computer is your" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "fault. (incase the app or website contains" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "malicious co" & _
             "de)"
         '
         'Button5

@@ -22,6 +22,7 @@ Partial Class Form18
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form18))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -42,6 +43,8 @@ Partial Class Form18
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.LinkLabel15 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel14 = New System.Windows.Forms.LinkLabel()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
@@ -50,6 +53,7 @@ Partial Class Form18
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.LinkLabel11 = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -79,6 +83,7 @@ Partial Class Form18
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.wb = New System.Windows.Forms.WebBrowser()
         Me.Label51 = New System.Windows.Forms.Label()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Label50 = New System.Windows.Forms.Label()
@@ -99,8 +104,35 @@ Partial Class Form18
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.LinkLabel13 = New System.Windows.Forms.LinkLabel()
+        Me.Label61 = New System.Windows.Forms.Label()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Label43 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.LinkLabel12 = New System.Windows.Forms.LinkLabel()
+        Me.Label60 = New System.Windows.Forms.Label()
+        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.Label59 = New System.Windows.Forms.Label()
+        Me.Label58 = New System.Windows.Forms.Label()
+        Me.Label57 = New System.Windows.Forms.Label()
+        Me.Label56 = New System.Windows.Forms.Label()
+        Me.Label55 = New System.Windows.Forms.Label()
+        Me.Label54 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
@@ -125,20 +157,18 @@ Partial Class Form18
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Label28 = New System.Windows.Forms.Label()
+        Me.TabPage8 = New System.Windows.Forms.TabPage()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Label66 = New System.Windows.Forms.Label()
+        Me.Label65 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label64 = New System.Windows.Forms.Label()
+        Me.Label63 = New System.Windows.Forms.Label()
+        Me.Label62 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label53 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -152,15 +182,15 @@ Partial Class Form18
         Me.TabPage4.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.TabPage5.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage6.SuspendLayout()
         Me.Panel8.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage8.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -223,6 +253,7 @@ Partial Class Form18
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
         Me.TabControl1.Location = New System.Drawing.Point(-1, 73)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
@@ -344,9 +375,9 @@ Partial Class Form18
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(443, 191)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(227, 50)
+        Me.Label2.Size = New System.Drawing.Size(179, 50)
         Me.Label2.TabIndex = 27
-        Me.Label2.Text = "My Account"
+        Me.Label2.Text = "Accounts"
         '
         'TabPage2
         '
@@ -361,6 +392,8 @@ Partial Class Form18
         '
         'Panel4
         '
+        Me.Panel4.Controls.Add(Me.LinkLabel15)
+        Me.Panel4.Controls.Add(Me.LinkLabel14)
         Me.Panel4.Controls.Add(Me.Label26)
         Me.Panel4.Controls.Add(Me.Label25)
         Me.Panel4.Controls.Add(Me.LinkLabel5)
@@ -378,6 +411,28 @@ Partial Class Form18
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1517, 598)
         Me.Panel4.TabIndex = 1
+        '
+        'LinkLabel15
+        '
+        Me.LinkLabel15.AutoSize = True
+        Me.LinkLabel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel15.Location = New System.Drawing.Point(524, 482)
+        Me.LinkLabel15.Name = "LinkLabel15"
+        Me.LinkLabel15.Size = New System.Drawing.Size(245, 25)
+        Me.LinkLabel15.TabIndex = 44
+        Me.LinkLabel15.TabStop = True
+        Me.LinkLabel15.Text = "Add Another User Account"
+        '
+        'LinkLabel14
+        '
+        Me.LinkLabel14.AutoSize = True
+        Me.LinkLabel14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel14.Location = New System.Drawing.Point(524, 444)
+        Me.LinkLabel14.Name = "LinkLabel14"
+        Me.LinkLabel14.Size = New System.Drawing.Size(143, 25)
+        Me.LinkLabel14.TabIndex = 43
+        Me.LinkLabel14.TabStop = True
+        Me.LinkLabel14.Text = "Add Kiosk App"
         '
         'Label26
         '
@@ -407,7 +462,7 @@ Partial Class Form18
         '
         Me.LinkLabel5.AutoSize = True
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel5.Location = New System.Drawing.Point(524, 446)
+        Me.LinkLabel5.Location = New System.Drawing.Point(524, 405)
         Me.LinkLabel5.Name = "LinkLabel5"
         Me.LinkLabel5.Size = New System.Drawing.Size(394, 25)
         Me.LinkLabel5.TabIndex = 40
@@ -460,6 +515,7 @@ Partial Class Form18
         '
         'Panel9
         '
+        Me.Panel9.Controls.Add(Me.LinkLabel11)
         Me.Panel9.Controls.Add(Me.LinkLabel1)
         Me.Panel9.Controls.Add(Me.Button6)
         Me.Panel9.Controls.Add(Me.Label22)
@@ -473,10 +529,20 @@ Partial Class Form18
         Me.Panel9.TabIndex = 34
         Me.Panel9.Visible = False
         '
+        'LinkLabel11
+        '
+        Me.LinkLabel11.AutoSize = True
+        Me.LinkLabel11.Location = New System.Drawing.Point(62, 338)
+        Me.LinkLabel11.Name = "LinkLabel11"
+        Me.LinkLabel11.Size = New System.Drawing.Size(162, 17)
+        Me.LinkLabel11.TabIndex = 39
+        Me.LinkLabel11.TabStop = True
+        Me.LinkLabel11.Text = "Edit security questions..."
+        '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(111, 350)
+        Me.LinkLabel1.Location = New System.Drawing.Point(107, 364)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(51, 17)
         Me.LinkLabel1.TabIndex = 38
@@ -486,7 +552,7 @@ Partial Class Form18
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(94, 275)
+        Me.Button6.Location = New System.Drawing.Point(93, 261)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(83, 52)
         Me.Button6.TabIndex = 37
@@ -545,9 +611,9 @@ Partial Class Form18
         Me.Label16.ForeColor = System.Drawing.Color.Black
         Me.Label16.Location = New System.Drawing.Point(590, 15)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(358, 78)
+        Me.Label16.Size = New System.Drawing.Size(282, 78)
         Me.Label16.TabIndex = 33
-        Me.Label16.Text = "My Account"
+        Me.Label16.Text = "Accounts"
         '
         'Label14
         '
@@ -772,6 +838,7 @@ Partial Class Form18
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.wb)
         Me.Panel6.Controls.Add(Me.Label51)
         Me.Panel6.Controls.Add(Me.Button16)
         Me.Panel6.Controls.Add(Me.Label50)
@@ -796,11 +863,21 @@ Partial Class Form18
         Me.Panel6.Size = New System.Drawing.Size(1517, 598)
         Me.Panel6.TabIndex = 1
         '
+        'wb
+        '
+        Me.wb.Location = New System.Drawing.Point(1313, 32)
+        Me.wb.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb.Name = "wb"
+        Me.wb.Size = New System.Drawing.Size(129, 189)
+        Me.wb.TabIndex = 54
+        Me.wb.Url = New System.Uri("https://olivewebsoftware.github.io/idkbro/update.html", System.UriKind.Absolute)
+        Me.wb.Visible = False
+        '
         'Label51
         '
         Me.Label51.AutoSize = True
         Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label51.Location = New System.Drawing.Point(914, 403)
+        Me.Label51.Location = New System.Drawing.Point(914, 377)
         Me.Label51.Name = "Label51"
         Me.Label51.Size = New System.Drawing.Size(343, 100)
         Me.Label51.TabIndex = 53
@@ -810,7 +887,7 @@ Partial Class Form18
         'Button16
         '
         Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(918, 511)
+        Me.Button16.Location = New System.Drawing.Point(918, 496)
         Me.Button16.Name = "Button16"
         Me.Button16.Size = New System.Drawing.Size(202, 63)
         Me.Button16.TabIndex = 52
@@ -823,19 +900,19 @@ Partial Class Form18
         Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label50.Location = New System.Drawing.Point(915, 183)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(351, 120)
+        Me.Label50.Size = New System.Drawing.Size(284, 96)
         Me.Label50.TabIndex = 51
-        Me.Label50.Text = "Copy Refresh:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If this copy of Olive OS Web Edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is not running well, or is c" & _
-            "orrupted, you" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "can download a new copy of the OS and" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "keep your settings."
+        Me.Label50.Text = "System Recovery:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Boot into system recovery to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "change settings, reset, and a few" & _
+            "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "more things."
         '
         'Button15
         '
         Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(918, 320)
+        Me.Button15.Location = New System.Drawing.Point(918, 294)
         Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(202, 63)
+        Me.Button15.Size = New System.Drawing.Size(245, 63)
         Me.Button15.TabIndex = 50
-        Me.Button15.Text = "Refresh This Copy"
+        Me.Button15.Text = "Start System Recovery"
         Me.Button15.UseVisualStyleBackColor = True
         '
         'Label49
@@ -931,7 +1008,7 @@ Partial Class Form18
         '
         Me.Label46.AutoSize = True
         Me.Label46.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(57, 208)
+        Me.Label46.Location = New System.Drawing.Point(57, 183)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(227, 31)
         Me.Label46.TabIndex = 41
@@ -943,7 +1020,7 @@ Partial Class Form18
         Me.Label45.BackColor = System.Drawing.Color.Transparent
         Me.Label45.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.ForeColor = System.Drawing.Color.Black
-        Me.Label45.Location = New System.Drawing.Point(55, 138)
+        Me.Label45.Location = New System.Drawing.Point(55, 123)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(314, 48)
         Me.Label45.TabIndex = 40
@@ -1016,6 +1093,156 @@ Partial Class Form18
         Me.TabPage5.Text = "TabPage5"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'Panel7
+        '
+        Me.Panel7.Controls.Add(Me.LinkLabel13)
+        Me.Panel7.Controls.Add(Me.Label61)
+        Me.Panel7.Controls.Add(Me.Label53)
+        Me.Panel7.Controls.Add(Me.PictureBox3)
+        Me.Panel7.Controls.Add(Me.PictureBox2)
+        Me.Panel7.Controls.Add(Me.PictureBox1)
+        Me.Panel7.Controls.Add(Me.Label52)
+        Me.Panel7.Controls.Add(Me.Label44)
+        Me.Panel7.Controls.Add(Me.Button13)
+        Me.Panel7.Controls.Add(Me.Button12)
+        Me.Panel7.Controls.Add(Me.Label43)
+        Me.Panel7.Controls.Add(Me.Label18)
+        Me.Panel7.Controls.Add(Me.Label11)
+        Me.Panel7.Location = New System.Drawing.Point(10, 8)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(1517, 598)
+        Me.Panel7.TabIndex = 1
+        '
+        'LinkLabel13
+        '
+        Me.LinkLabel13.AutoSize = True
+        Me.LinkLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel13.Location = New System.Drawing.Point(998, 227)
+        Me.LinkLabel13.Name = "LinkLabel13"
+        Me.LinkLabel13.Size = New System.Drawing.Size(253, 25)
+        Me.LinkLabel13.TabIndex = 48
+        Me.LinkLabel13.TabStop = True
+        Me.LinkLabel13.Text = "OliveWeb NEON Awesome"
+        '
+        'Label61
+        '
+        Me.Label61.AutoSize = True
+        Me.Label61.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.Location = New System.Drawing.Point(996, 152)
+        Me.Label61.Name = "Label61"
+        Me.Label61.Size = New System.Drawing.Size(453, 39)
+        Me.Label61.TabIndex = 47
+        Me.Label61.Text = "Download Themes for Olive OS:"
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Location = New System.Drawing.Point(496, 317)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(227, 34)
+        Me.Label53.TabIndex = 46
+        Me.Label53.Text = "Changing the profile image doesn't" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "require a password."
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use3
+        Me.PictureBox3.Location = New System.Drawing.Point(711, 210)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(100, 92)
+        Me.PictureBox3.TabIndex = 44
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use2
+        Me.PictureBox2.Location = New System.Drawing.Point(605, 210)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 92)
+        Me.PictureBox2.TabIndex = 43
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use1
+        Me.PictureBox1.Location = New System.Drawing.Point(499, 210)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
+        Me.PictureBox1.TabIndex = 42
+        Me.PictureBox1.TabStop = False
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label52.Location = New System.Drawing.Point(492, 152)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(325, 39)
+        Me.Label52.TabIndex = 41
+        Me.Label52.Text = "Change Profile Picture:"
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.Location = New System.Drawing.Point(95, 317)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(301, 75)
+        Me.Label44.TabIndex = 40
+        Me.Label44.Text = "The desktop will restart after" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "applying the new theme, so make" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sure all work is" & _
+            " saved."
+        '
+        'Button13
+        '
+        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button13.Location = New System.Drawing.Point(98, 208)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(102, 44)
+        Me.Button13.TabIndex = 39
+        Me.Button13.Text = "Dark"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(98, 258)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(102, 44)
+        Me.Button12.TabIndex = 38
+        Me.Button12.Text = "Light"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Label43
+        '
+        Me.Label43.AutoSize = True
+        Me.Label43.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label43.Location = New System.Drawing.Point(91, 152)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(203, 39)
+        Me.Label43.TabIndex = 37
+        Me.Label43.Text = "Menu Theme:"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.Black
+        Me.Label18.Location = New System.Drawing.Point(566, 15)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(339, 78)
+        Me.Label18.TabIndex = 30
+        Me.Label18.Text = "Personalize"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(18, 15)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(49, 50)
+        Me.Label11.TabIndex = 29
+        Me.Label11.Text = "<"
+        '
         'TabPage6
         '
         Me.TabPage6.Controls.Add(Me.Panel8)
@@ -1029,12 +1256,151 @@ Partial Class Form18
         '
         'Panel8
         '
+        Me.Panel8.Controls.Add(Me.LinkLabel12)
+        Me.Panel8.Controls.Add(Me.Label60)
+        Me.Panel8.Controls.Add(Me.CheckBox6)
+        Me.Panel8.Controls.Add(Me.CheckBox5)
+        Me.Panel8.Controls.Add(Me.CheckBox4)
+        Me.Panel8.Controls.Add(Me.CheckBox3)
+        Me.Panel8.Controls.Add(Me.CheckBox2)
+        Me.Panel8.Controls.Add(Me.Label59)
+        Me.Panel8.Controls.Add(Me.Label58)
+        Me.Panel8.Controls.Add(Me.Label57)
+        Me.Panel8.Controls.Add(Me.Label56)
+        Me.Panel8.Controls.Add(Me.Label55)
+        Me.Panel8.Controls.Add(Me.Label54)
         Me.Panel8.Controls.Add(Me.Label19)
         Me.Panel8.Controls.Add(Me.Label12)
         Me.Panel8.Location = New System.Drawing.Point(10, 8)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(1517, 598)
         Me.Panel8.TabIndex = 1
+        '
+        'LinkLabel12
+        '
+        Me.LinkLabel12.AutoSize = True
+        Me.LinkLabel12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel12.Location = New System.Drawing.Point(1286, 504)
+        Me.LinkLabel12.Name = "LinkLabel12"
+        Me.LinkLabel12.Size = New System.Drawing.Size(160, 25)
+        Me.LinkLabel12.TabIndex = 43
+        Me.LinkLabel12.TabStop = True
+        Me.LinkLabel12.Text = "Install Web Apps"
+        '
+        'Label60
+        '
+        Me.Label60.AutoSize = True
+        Me.Label60.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label60.Location = New System.Drawing.Point(650, 474)
+        Me.Label60.Name = "Label60"
+        Me.Label60.Size = New System.Drawing.Size(344, 40)
+        Me.Label60.TabIndex = 42
+        Me.Label60.Text = "Checking ""Allow"" lets this web app have user" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "given privilages."
+        '
+        'CheckBox6
+        '
+        Me.CheckBox6.AutoSize = True
+        Me.CheckBox6.Location = New System.Drawing.Point(849, 337)
+        Me.CheckBox6.Name = "CheckBox6"
+        Me.CheckBox6.Size = New System.Drawing.Size(62, 21)
+        Me.CheckBox6.TabIndex = 41
+        Me.CheckBox6.Text = "Allow"
+        Me.CheckBox6.UseVisualStyleBackColor = True
+        '
+        'CheckBox5
+        '
+        Me.CheckBox5.AutoSize = True
+        Me.CheckBox5.Location = New System.Drawing.Point(849, 257)
+        Me.CheckBox5.Name = "CheckBox5"
+        Me.CheckBox5.Size = New System.Drawing.Size(62, 21)
+        Me.CheckBox5.TabIndex = 40
+        Me.CheckBox5.Text = "Allow"
+        Me.CheckBox5.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(654, 419)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(62, 21)
+        Me.CheckBox4.TabIndex = 39
+        Me.CheckBox4.Text = "Allow"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(654, 337)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(62, 21)
+        Me.CheckBox3.TabIndex = 38
+        Me.CheckBox3.Text = "Allow"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(654, 257)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(62, 21)
+        Me.CheckBox2.TabIndex = 37
+        Me.CheckBox2.Text = "Allow"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'Label59
+        '
+        Me.Label59.AutoSize = True
+        Me.Label59.Location = New System.Drawing.Point(846, 295)
+        Me.Label59.Name = "Label59"
+        Me.Label59.Size = New System.Drawing.Size(78, 17)
+        Me.Label59.TabIndex = 36
+        Me.Label59.Text = "Web App 5"
+        '
+        'Label58
+        '
+        Me.Label58.AutoSize = True
+        Me.Label58.Location = New System.Drawing.Point(846, 225)
+        Me.Label58.Name = "Label58"
+        Me.Label58.Size = New System.Drawing.Size(78, 17)
+        Me.Label58.TabIndex = 35
+        Me.Label58.Text = "Web App 4"
+        '
+        'Label57
+        '
+        Me.Label57.AutoSize = True
+        Me.Label57.Location = New System.Drawing.Point(651, 385)
+        Me.Label57.Name = "Label57"
+        Me.Label57.Size = New System.Drawing.Size(78, 17)
+        Me.Label57.TabIndex = 34
+        Me.Label57.Text = "Web App 3"
+        '
+        'Label56
+        '
+        Me.Label56.AutoSize = True
+        Me.Label56.Location = New System.Drawing.Point(651, 295)
+        Me.Label56.Name = "Label56"
+        Me.Label56.Size = New System.Drawing.Size(78, 17)
+        Me.Label56.TabIndex = 33
+        Me.Label56.Text = "Web App 2"
+        '
+        'Label55
+        '
+        Me.Label55.AutoSize = True
+        Me.Label55.Location = New System.Drawing.Point(651, 225)
+        Me.Label55.Name = "Label55"
+        Me.Label55.Size = New System.Drawing.Size(78, 17)
+        Me.Label55.TabIndex = 32
+        Me.Label55.Text = "Web App 1"
+        '
+        'Label54
+        '
+        Me.Label54.AutoSize = True
+        Me.Label54.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label54.Location = New System.Drawing.Point(581, 117)
+        Me.Label54.Name = "Label54"
+        Me.Label54.Size = New System.Drawing.Size(400, 78)
+        Me.Label54.TabIndex = 31
+        Me.Label54.Text = "Add and Remove user given" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "privilages."
         '
         'Label19
         '
@@ -1313,149 +1679,125 @@ Partial Class Form18
         Me.Label28.Text = "Let's enroll your device!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Chose what features, settings, and apps" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "are allowed" & _
             "/not allowed."
         '
+        'TabPage8
+        '
+        Me.TabPage8.Controls.Add(Me.Button19)
+        Me.TabPage8.Controls.Add(Me.Button17)
+        Me.TabPage8.Controls.Add(Me.Button18)
+        Me.TabPage8.Controls.Add(Me.Label66)
+        Me.TabPage8.Controls.Add(Me.Label65)
+        Me.TabPage8.Controls.Add(Me.TextBox5)
+        Me.TabPage8.Controls.Add(Me.Label64)
+        Me.TabPage8.Controls.Add(Me.Label63)
+        Me.TabPage8.Controls.Add(Me.Label62)
+        Me.TabPage8.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage8.Name = "TabPage8"
+        Me.TabPage8.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage8.Size = New System.Drawing.Size(1536, 614)
+        Me.TabPage8.TabIndex = 7
+        Me.TabPage8.Text = "TabPage8"
+        Me.TabPage8.UseVisualStyleBackColor = True
+        '
+        'Button19
+        '
+        Me.Button19.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button19.Location = New System.Drawing.Point(962, 467)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(275, 63)
+        Me.Button19.TabIndex = 52
+        Me.Button19.Text = "Cancel"
+        Me.Button19.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button17.Location = New System.Drawing.Point(962, 398)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(275, 63)
+        Me.Button17.TabIndex = 51
+        Me.Button17.Text = "Save Settings"
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button18.Location = New System.Drawing.Point(962, 329)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(275, 63)
+        Me.Button18.TabIndex = 50
+        Me.Button18.Text = "Delete Kiosk"
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Label66
+        '
+        Me.Label66.AutoSize = True
+        Me.Label66.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label66.Location = New System.Drawing.Point(884, 274)
+        Me.Label66.Name = "Label66"
+        Me.Label66.Size = New System.Drawing.Size(424, 32)
+        Me.Label66.TabIndex = 38
+        Me.Label66.Text = "Extra settings for your kiosk app:"
+        '
+        'Label65
+        '
+        Me.Label65.AutoSize = True
+        Me.Label65.Location = New System.Drawing.Point(173, 491)
+        Me.Label65.Name = "Label65"
+        Me.Label65.Size = New System.Drawing.Size(427, 17)
+        Me.Label65.TabIndex = 37
+        Me.Label65.Text = "Example: https://blueskyairlines.com/ or https://store-check-in.com/"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(176, 434)
+        Me.TextBox5.Multiline = True
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(377, 42)
+        Me.TextBox5.TabIndex = 36
+        '
+        'Label64
+        '
+        Me.Label64.AutoSize = True
+        Me.Label64.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label64.Location = New System.Drawing.Point(170, 329)
+        Me.Label64.Name = "Label64"
+        Me.Label64.Size = New System.Drawing.Size(472, 64)
+        Me.Label64.TabIndex = 34
+        Me.Label64.Text = "Enter the domain (http/https) of what" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "website you want the kiosk to be:"
+        '
+        'Label63
+        '
+        Me.Label63.AutoSize = True
+        Me.Label63.Font = New System.Drawing.Font("Microsoft YaHei UI", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label63.Location = New System.Drawing.Point(543, 146)
+        Me.Label63.Name = "Label63"
+        Me.Label63.Size = New System.Drawing.Size(420, 93)
+        Me.Label63.TabIndex = 33
+        Me.Label63.Text = "Set up this device to run kiosk apps" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "from the login screen. You can run" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "up to 1" & _
+            " kiosk app."
+        '
+        'Label62
+        '
+        Me.Label62.AutoSize = True
+        Me.Label62.BackColor = System.Drawing.Color.Transparent
+        Me.Label62.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label62.ForeColor = System.Drawing.Color.Black
+        Me.Label62.Location = New System.Drawing.Point(591, 35)
+        Me.Label62.Name = "Label62"
+        Me.Label62.Size = New System.Drawing.Size(326, 78)
+        Me.Label62.TabIndex = 32
+        Me.Label62.Text = "Kiosk Apps"
+        '
         'Panel3
         '
         Me.Panel3.Location = New System.Drawing.Point(3, 48)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1540, 32)
+        Me.Panel3.Size = New System.Drawing.Size(1540, 66)
         Me.Panel3.TabIndex = 28
         '
-        'Label11
+        'Timer1
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(18, 15)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 50)
-        Me.Label11.TabIndex = 29
-        Me.Label11.Text = "<"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.Black
-        Me.Label18.Location = New System.Drawing.Point(566, 15)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(339, 78)
-        Me.Label18.TabIndex = 30
-        Me.Label18.Text = "Personalize"
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label43.Location = New System.Drawing.Point(91, 152)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(203, 39)
-        Me.Label43.TabIndex = 37
-        Me.Label43.Text = "Menu Theme:"
-        '
-        'Button12
-        '
-        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(98, 258)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(102, 44)
-        Me.Button12.TabIndex = 38
-        Me.Button12.Text = "Light"
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Button13
-        '
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(98, 208)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(102, 44)
-        Me.Button13.TabIndex = 39
-        Me.Button13.Text = "Dark"
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.Location = New System.Drawing.Point(95, 317)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(301, 75)
-        Me.Label44.TabIndex = 40
-        Me.Label44.Text = "The desktop will restart after" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "applying the new theme, so make" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "sure all work is" & _
-            " saved."
-        '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.Label53)
-        Me.Panel7.Controls.Add(Me.PictureBox4)
-        Me.Panel7.Controls.Add(Me.PictureBox3)
-        Me.Panel7.Controls.Add(Me.PictureBox2)
-        Me.Panel7.Controls.Add(Me.PictureBox1)
-        Me.Panel7.Controls.Add(Me.Label52)
-        Me.Panel7.Controls.Add(Me.Label44)
-        Me.Panel7.Controls.Add(Me.Button13)
-        Me.Panel7.Controls.Add(Me.Button12)
-        Me.Panel7.Controls.Add(Me.Label43)
-        Me.Panel7.Controls.Add(Me.Label18)
-        Me.Panel7.Controls.Add(Me.Label11)
-        Me.Panel7.Location = New System.Drawing.Point(10, 8)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1517, 598)
-        Me.Panel7.TabIndex = 1
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(492, 152)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(325, 39)
-        Me.Label52.TabIndex = 41
-        Me.Label52.Text = "Change Profile Picture:"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._1
-        Me.PictureBox1.Location = New System.Drawing.Point(499, 210)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox1.TabIndex = 42
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._2
-        Me.PictureBox2.Location = New System.Drawing.Point(605, 210)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox2.TabIndex = 43
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._3
-        Me.PictureBox3.Location = New System.Drawing.Point(711, 210)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox3.TabIndex = 44
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._4
-        Me.PictureBox4.Location = New System.Drawing.Point(817, 210)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox4.TabIndex = 45
-        Me.PictureBox4.TabStop = False
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(496, 317)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(227, 34)
-        Me.Label53.TabIndex = 46
-        Me.Label53.Text = "Changing the profile image doesn't" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "require a password."
         '
         'Form18
         '
@@ -1490,18 +1832,19 @@ Partial Class Form18
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage6.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
         Me.Panel8.PerformLayout()
         Me.TabPage7.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage8.ResumeLayout(False)
+        Me.TabPage8.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1609,7 +1952,6 @@ Partial Class Form18
     Friend WithEvents Label51 As System.Windows.Forms.Label
     Friend WithEvents Button16 As System.Windows.Forms.Button
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
@@ -1621,4 +1963,34 @@ Partial Class Form18
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label53 As System.Windows.Forms.Label
+    Friend WithEvents Label55 As System.Windows.Forms.Label
+    Friend WithEvents Label54 As System.Windows.Forms.Label
+    Friend WithEvents Label60 As System.Windows.Forms.Label
+    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label59 As System.Windows.Forms.Label
+    Friend WithEvents Label58 As System.Windows.Forms.Label
+    Friend WithEvents Label57 As System.Windows.Forms.Label
+    Friend WithEvents Label56 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel11 As System.Windows.Forms.LinkLabel
+    Friend WithEvents wb As System.Windows.Forms.WebBrowser
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents LinkLabel12 As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label61 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel13 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel14 As System.Windows.Forms.LinkLabel
+    Friend WithEvents TabPage8 As System.Windows.Forms.TabPage
+    Friend WithEvents Button19 As System.Windows.Forms.Button
+    Friend WithEvents Button17 As System.Windows.Forms.Button
+    Friend WithEvents Button18 As System.Windows.Forms.Button
+    Friend WithEvents Label66 As System.Windows.Forms.Label
+    Friend WithEvents Label65 As System.Windows.Forms.Label
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label64 As System.Windows.Forms.Label
+    Friend WithEvents Label63 As System.Windows.Forms.Label
+    Friend WithEvents Label62 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel15 As System.Windows.Forms.LinkLabel
 End Class

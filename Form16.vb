@@ -25,6 +25,7 @@
         wb3.ScriptErrorsSuppressed = True
         wb4.ScriptErrorsSuppressed = True
         wb5.ScriptErrorsSuppressed = True
+        Timer7.Start()
         wb1.IsWebBrowserContextMenuEnabled = False
         wb2.IsWebBrowserContextMenuEnabled = False
         wb3.IsWebBrowserContextMenuEnabled = False
@@ -55,8 +56,6 @@
         End If
         If r = 1 Then
             Timer6.Start()
-        Else
-            'nothing
         End If
     End Sub
 
@@ -609,5 +608,18 @@
 
     Private Sub webbr_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles webbr.DocumentCompleted
 
+    End Sub
+
+    Private Sub Timer7_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer7.Tick
+        If Cursor = Cursors.Hand Then
+            Dim cursor As Icon
+            cursor = (My.Resources.hnd)
+            Me.Cursor = New Cursor(cursor.Handle)
+        End If
+        If Cursor = Cursors.IBeam Then
+            Dim cursor As Icon
+            cursor = (My.Resources.italic)
+            Me.Cursor = New Cursor(cursor.Handle)
+        End If
     End Sub
 End Class

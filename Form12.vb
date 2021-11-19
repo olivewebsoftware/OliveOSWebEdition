@@ -3,8 +3,10 @@
     Private a As String
     Private b As String
     Private c As String
+    Dim fd As Integer = 0
     Private d As String
     Private r As String
+    Private t As String
     Private Sub WebBrowser1_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         Timer1.Start()
     End Sub
@@ -42,6 +44,23 @@
         c = WebBrowser1.Document.GetElementById("c").InnerText
         d = WebBrowser1.Document.GetElementById("d").InnerText
         r = WebBrowser1.Document.GetElementById("e").InnerText
+        t = WebBrowser1.Document.GetElementById("f").InnerText
+        If t = "1" Then
+            If fd = 0 Then
+                fd = 1
+                If OpenFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                    My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+                    "Wallpaper", OpenFileDialog1.FileName)
+                    My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+                    "PackEnabled", "yes")
+                    Form4.Show()
+                    Form4.Label1.Text = "Set."
+                    Me.Close()
+                    Form8.Close()
+                    Form8.Show()
+                End If
+            End If
+        End If
         If a = "1" Then
             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
            "Wallpaper", "def")

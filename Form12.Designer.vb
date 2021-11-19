@@ -31,6 +31,7 @@ Partial Class Form12
         Me.RefreshToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewSourceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Panel1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -96,6 +97,10 @@ Partial Class Form12
         'Timer1
         '
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form12
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -122,4 +127,5 @@ Partial Class Form12
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents RefreshToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ViewSourceToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class

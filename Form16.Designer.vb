@@ -92,6 +92,7 @@ Partial Class Form16
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cb = New System.Windows.Forms.ComboBox()
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -649,6 +650,9 @@ Partial Class Form16
         'Timer6
         '
         '
+        'Timer7
+        '
+        '
         'Form16
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -760,4 +764,5 @@ Partial Class Form16
     Friend WithEvents ForwardToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReloadToolStripMenuItem4 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ViewSourceToolStripMenuItem5 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Timer7 As System.Windows.Forms.Timer
 End Class

@@ -6,7 +6,7 @@ Public Class Form9
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Me.Close()
         Form8.Close()
-        Form7.Show()
+        Form41.Show()
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -30,16 +30,14 @@ Public Class Form9
         Dim pic = My.Computer.Registry.GetValue(
     "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PFP", Nothing)
         If pic = "1" Then
-            pb.Image = My.Resources._1
+            pb.Image = My.Resources.use2
+        End If
+       
+        If pic = "3" Then
+            pb.Image = My.Resources.use3
         End If
         If pic = "2" Then
-            pb.Image = My.Resources._2
-        End If
-        If pic = "3" Then
-            pb.Image = My.Resources._3
-        End If
-        If pic = "4" Then
-            pb.Image = My.Resources._4
+            pb.Image = My.Resources.use2
         End If
         Dim power2 As PowerStatus = SystemInformation.PowerStatus
         Dim percent2 As Single = power2.BatteryLifePercent
@@ -138,9 +136,16 @@ Public Class Form9
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-        Me.Close()
-        Form8.Close()
-        Form7.Close()
-        Form7.Show()
+        If Form8.Label16.Text = "1" Then
+            Me.Close()
+            Form8.Close()
+            Form7.Close()
+            Form39.Show()
+        Else
+            Me.Close()
+            Form8.Close()
+            Form7.Close()
+            Form7.Show()
+        End If
     End Sub
 End Class

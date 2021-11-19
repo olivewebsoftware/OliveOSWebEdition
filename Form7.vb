@@ -15,7 +15,12 @@
         Dim setup = My.Computer.Registry.GetValue(
         "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Wallpaper", Nothing)
         If pack = "yes" Then
-            Me.BackgroundImage = Image.FromFile(setup)
+            Try
+                Me.BackgroundImage = Image.FromFile(setup)
+            Catch ex As Exception
+                Form4.Show()
+                Form4.Label1.Text = "We can't load your wallpaper."
+            End Try
         End If
         If setup = "def" Then
             Me.BackgroundImage = My.Resources.def
@@ -38,16 +43,14 @@
         Dim pic = My.Computer.Registry.GetValue(
       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PFP", Nothing)
         If pic = "1" Then
-            pb.Image = My.Resources._1
+            pb.Image = My.Resources.use1
+        End If
+      
+        If pic = "3" Then
+            pb.Image = My.Resources.use3
         End If
         If pic = "2" Then
-            pb.Image = My.Resources._2
-        End If
-        If pic = "3" Then
-            pb.Image = My.Resources._3
-        End If
-        If pic = "4" Then
-            pb.Image = My.Resources._4
+            pb.Image = My.Resources.use2
         End If
     End Sub
 
@@ -117,5 +120,28 @@
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         Panel1.Show()
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim ui = My.Computer.Registry.GetValue(
+     "HKEY_CURRENT_USER\Software\Olive OS Web Edition\Login", "SetupState", Nothing)
+        If ui = "" Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.dang
+        Else
+            Form32.Show()
+        End If
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+        Panel1.Hide()
+        Form4.Show()
+        Form4.Label1.Text = "Enter password to return to Olive OS."
+        Form37.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Panel1_Paint_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
+
     End Sub
 End Class

@@ -24,6 +24,7 @@ Partial Class Form8
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -43,6 +44,7 @@ Partial Class Form8
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.bat = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
@@ -57,23 +59,37 @@ Partial Class Form8
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.notif = New System.Windows.Forms.Label()
         Me.n1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.n2 = New System.Windows.Forms.Panel()
-        Me.n3 = New System.Windows.Forms.Panel()
-        Me.n4 = New System.Windows.Forms.Panel()
-        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.n3 = New System.Windows.Forms.Panel()
+        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.n4 = New System.Windows.Forms.Panel()
+        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel()
+        Me.web = New System.Windows.Forms.WebBrowser()
+        Me.wb2 = New System.Windows.Forms.WebBrowser()
+        Me.wb3 = New System.Windows.Forms.WebBrowser()
+        Me.wb4 = New System.Windows.Forms.WebBrowser()
+        Me.wb5 = New System.Windows.Forms.WebBrowser()
+        Me.sign = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.wb = New System.Windows.Forms.WebBrowser()
+        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -85,11 +101,13 @@ Partial Class Form8
         Me.n2.SuspendLayout()
         Me.n3.SuspendLayout()
         Me.n4.SuspendLayout()
+        Me.sign.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button11)
         Me.Panel1.Controls.Add(Me.Button9)
         Me.Panel1.Controls.Add(Me.Button6)
         Me.Panel1.Controls.Add(Me.Button5)
@@ -107,10 +125,20 @@ Partial Class Form8
         Me.Panel1.Size = New System.Drawing.Size(1688, 82)
         Me.Panel1.TabIndex = 0
         '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(1223, 7)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(75, 63)
+        Me.Button11.TabIndex = 11
+        Me.Button11.Text = "help"
+        Me.Button11.UseVisualStyleBackColor = True
+        Me.Button11.Visible = False
+        '
         'Button9
         '
         Me.Button9.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.filee
-        Me.Button9.Location = New System.Drawing.Point(218, 10)
+        Me.Button9.Location = New System.Drawing.Point(203, 7)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 63)
         Me.Button9.TabIndex = 10
@@ -118,7 +146,7 @@ Partial Class Form8
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(866, 10)
+        Me.Button6.Location = New System.Drawing.Point(851, 7)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 63)
         Me.Button6.TabIndex = 9
@@ -128,7 +156,7 @@ Partial Class Form8
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(785, 10)
+        Me.Button5.Location = New System.Drawing.Point(770, 7)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 63)
         Me.Button5.TabIndex = 8
@@ -138,7 +166,7 @@ Partial Class Form8
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(704, 10)
+        Me.Button4.Location = New System.Drawing.Point(689, 7)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 63)
         Me.Button4.TabIndex = 7
@@ -148,7 +176,7 @@ Partial Class Form8
         '
         'd
         '
-        Me.d.Location = New System.Drawing.Point(623, 10)
+        Me.d.Location = New System.Drawing.Point(608, 7)
         Me.d.Name = "d"
         Me.d.Size = New System.Drawing.Size(75, 63)
         Me.d.TabIndex = 6
@@ -158,7 +186,7 @@ Partial Class Form8
         '
         'c
         '
-        Me.c.Location = New System.Drawing.Point(542, 10)
+        Me.c.Location = New System.Drawing.Point(527, 7)
         Me.c.Name = "c"
         Me.c.Size = New System.Drawing.Size(75, 63)
         Me.c.TabIndex = 5
@@ -168,7 +196,7 @@ Partial Class Form8
         '
         'b
         '
-        Me.b.Location = New System.Drawing.Point(461, 10)
+        Me.b.Location = New System.Drawing.Point(446, 7)
         Me.b.Name = "b"
         Me.b.Size = New System.Drawing.Size(75, 63)
         Me.b.TabIndex = 4
@@ -178,7 +206,7 @@ Partial Class Form8
         '
         'a
         '
-        Me.a.Location = New System.Drawing.Point(380, 10)
+        Me.a.Location = New System.Drawing.Point(365, 7)
         Me.a.Name = "a"
         Me.a.Size = New System.Drawing.Size(75, 63)
         Me.a.TabIndex = 3
@@ -189,7 +217,7 @@ Partial Class Form8
         'Button3
         '
         Me.Button3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.appstore
-        Me.Button3.Location = New System.Drawing.Point(299, 10)
+        Me.Button3.Location = New System.Drawing.Point(284, 7)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 63)
         Me.Button3.TabIndex = 2
@@ -199,7 +227,7 @@ Partial Class Form8
         'Button2
         '
         Me.Button2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.webb
-        Me.Button2.Location = New System.Drawing.Point(137, 10)
+        Me.Button2.Location = New System.Drawing.Point(122, 7)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 63)
         Me.Button2.TabIndex = 1
@@ -270,6 +298,7 @@ Partial Class Form8
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.bat)
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Controls.Add(Me.Button7)
         Me.Panel3.Controls.Add(Me.ProgressBar1)
@@ -280,6 +309,18 @@ Partial Class Form8
         Me.Panel3.Size = New System.Drawing.Size(270, 240)
         Me.Panel3.TabIndex = 1
         Me.Panel3.Visible = False
+        '
+        'bat
+        '
+        Me.bat.AutoSize = True
+        Me.bat.BackColor = System.Drawing.Color.Transparent
+        Me.bat.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bat.ForeColor = System.Drawing.Color.White
+        Me.bat.Location = New System.Drawing.Point(17, 137)
+        Me.bat.Name = "bat"
+        Me.bat.Size = New System.Drawing.Size(107, 20)
+        Me.bat.TabIndex = 29
+        Me.bat.Text = "Not Charging"
         '
         'Label3
         '
@@ -315,7 +356,7 @@ Partial Class Form8
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(17, 141)
+        Me.Label2.Location = New System.Drawing.Point(17, 167)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(187, 20)
         Me.Label2.TabIndex = 25
@@ -424,9 +465,22 @@ Partial Class Form8
         Me.n1.Controls.Add(Me.Label6)
         Me.n1.Location = New System.Drawing.Point(12, 82)
         Me.n1.Name = "n1"
-        Me.n1.Size = New System.Drawing.Size(369, 116)
+        Me.n1.Size = New System.Drawing.Size(385, 150)
         Me.n1.TabIndex = 4
         Me.n1.Visible = False
+        '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel2.Location = New System.Drawing.Point(323, 20)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel2.TabIndex = 2
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "X"
         '
         'Label7
         '
@@ -458,38 +512,24 @@ Partial Class Form8
         Me.n2.Controls.Add(Me.LinkLabel3)
         Me.n2.Controls.Add(Me.Label8)
         Me.n2.Controls.Add(Me.Label9)
-        Me.n2.Location = New System.Drawing.Point(12, 204)
+        Me.n2.Location = New System.Drawing.Point(12, 238)
         Me.n2.Name = "n2"
-        Me.n2.Size = New System.Drawing.Size(369, 116)
+        Me.n2.Size = New System.Drawing.Size(385, 140)
         Me.n2.TabIndex = 5
         Me.n2.Visible = False
         '
-        'n3
+        'LinkLabel3
         '
-        Me.n3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.n3.Controls.Add(Me.LinkLabel4)
-        Me.n3.Controls.Add(Me.Label11)
-        Me.n3.Controls.Add(Me.Label12)
-        Me.n3.Location = New System.Drawing.Point(12, 326)
-        Me.n3.Name = "n3"
-        Me.n3.Size = New System.Drawing.Size(369, 116)
-        Me.n3.TabIndex = 6
-        Me.n3.Visible = False
-        '
-        'n4
-        '
-        Me.n4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.n4.Controls.Add(Me.LinkLabel5)
-        Me.n4.Controls.Add(Me.Label13)
-        Me.n4.Controls.Add(Me.Label14)
-        Me.n4.Location = New System.Drawing.Point(12, 448)
-        Me.n4.Name = "n4"
-        Me.n4.Size = New System.Drawing.Size(369, 116)
-        Me.n4.TabIndex = 7
-        Me.n4.Visible = False
-        '
-        'Timer4
-        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel3.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel3.Location = New System.Drawing.Point(323, 24)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel3.TabIndex = 4
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "X"
         '
         'Label8
         '
@@ -515,6 +555,31 @@ Partial Class Form8
         Me.Label9.TabIndex = 2
         Me.Label9.Text = "Label9"
         '
+        'n3
+        '
+        Me.n3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n3.Controls.Add(Me.LinkLabel4)
+        Me.n3.Controls.Add(Me.Label11)
+        Me.n3.Controls.Add(Me.Label12)
+        Me.n3.Location = New System.Drawing.Point(12, 384)
+        Me.n3.Name = "n3"
+        Me.n3.Size = New System.Drawing.Size(385, 131)
+        Me.n3.TabIndex = 6
+        Me.n3.Visible = False
+        '
+        'LinkLabel4
+        '
+        Me.LinkLabel4.AutoSize = True
+        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel4.Location = New System.Drawing.Point(323, 19)
+        Me.LinkLabel4.Name = "LinkLabel4"
+        Me.LinkLabel4.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel4.TabIndex = 4
+        Me.LinkLabel4.TabStop = True
+        Me.LinkLabel4.Text = "X"
+        '
         'Label11
         '
         Me.Label11.AutoSize = True
@@ -538,6 +603,31 @@ Partial Class Form8
         Me.Label12.Size = New System.Drawing.Size(79, 27)
         Me.Label12.TabIndex = 2
         Me.Label12.Text = "Label12"
+        '
+        'n4
+        '
+        Me.n4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.n4.Controls.Add(Me.LinkLabel5)
+        Me.n4.Controls.Add(Me.Label13)
+        Me.n4.Controls.Add(Me.Label14)
+        Me.n4.Location = New System.Drawing.Point(12, 521)
+        Me.n4.Name = "n4"
+        Me.n4.Size = New System.Drawing.Size(385, 135)
+        Me.n4.TabIndex = 7
+        Me.n4.Visible = False
+        '
+        'LinkLabel5
+        '
+        Me.LinkLabel5.AutoSize = True
+        Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel5.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel5.Location = New System.Drawing.Point(323, 22)
+        Me.LinkLabel5.Name = "LinkLabel5"
+        Me.LinkLabel5.Size = New System.Drawing.Size(26, 25)
+        Me.LinkLabel5.TabIndex = 10
+        Me.LinkLabel5.TabStop = True
+        Me.LinkLabel5.Text = "X"
         '
         'Label13
         '
@@ -563,60 +653,132 @@ Partial Class Form8
         Me.Label14.TabIndex = 8
         Me.Label14.Text = "Label14"
         '
+        'Timer4
+        '
+        '
         'Timer5
         '
         '
-        'LinkLabel2
+        'web
         '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(323, 20)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(26, 25)
-        Me.LinkLabel2.TabIndex = 2
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "X"
+        Me.web.IsWebBrowserContextMenuEnabled = False
+        Me.web.Location = New System.Drawing.Point(1796, 12)
+        Me.web.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.web.Name = "web"
+        Me.web.ScriptErrorsSuppressed = True
+        Me.web.Size = New System.Drawing.Size(125, 64)
+        Me.web.TabIndex = 8
+        Me.web.Url = New System.Uri("", System.UriKind.Relative)
+        Me.web.Visible = False
         '
-        'LinkLabel3
+        'wb2
         '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel3.Location = New System.Drawing.Point(323, 24)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(26, 25)
-        Me.LinkLabel3.TabIndex = 4
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "X"
+        Me.wb2.IsWebBrowserContextMenuEnabled = False
+        Me.wb2.Location = New System.Drawing.Point(1796, 82)
+        Me.wb2.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb2.Name = "wb2"
+        Me.wb2.ScriptErrorsSuppressed = True
+        Me.wb2.Size = New System.Drawing.Size(125, 64)
+        Me.wb2.TabIndex = 9
+        Me.wb2.Visible = False
         '
-        'LinkLabel4
+        'wb3
         '
-        Me.LinkLabel4.AutoSize = True
-        Me.LinkLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel4.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel4.Location = New System.Drawing.Point(323, 19)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(26, 25)
-        Me.LinkLabel4.TabIndex = 4
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "X"
+        Me.wb3.IsWebBrowserContextMenuEnabled = False
+        Me.wb3.Location = New System.Drawing.Point(1796, 152)
+        Me.wb3.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb3.Name = "wb3"
+        Me.wb3.ScriptErrorsSuppressed = True
+        Me.wb3.Size = New System.Drawing.Size(125, 64)
+        Me.wb3.TabIndex = 10
+        Me.wb3.Visible = False
         '
-        'LinkLabel5
+        'wb4
         '
-        Me.LinkLabel5.AutoSize = True
-        Me.LinkLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(323, 22)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(26, 25)
-        Me.LinkLabel5.TabIndex = 10
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "X"
+        Me.wb4.IsWebBrowserContextMenuEnabled = False
+        Me.wb4.Location = New System.Drawing.Point(1796, 222)
+        Me.wb4.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb4.Name = "wb4"
+        Me.wb4.ScriptErrorsSuppressed = True
+        Me.wb4.Size = New System.Drawing.Size(125, 64)
+        Me.wb4.TabIndex = 11
+        Me.wb4.Visible = False
+        '
+        'wb5
+        '
+        Me.wb5.IsWebBrowserContextMenuEnabled = False
+        Me.wb5.Location = New System.Drawing.Point(1796, 292)
+        Me.wb5.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb5.Name = "wb5"
+        Me.wb5.ScriptErrorsSuppressed = True
+        Me.wb5.Size = New System.Drawing.Size(125, 64)
+        Me.wb5.TabIndex = 12
+        Me.wb5.Visible = False
+        '
+        'sign
+        '
+        Me.sign.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.sign.Controls.Add(Me.Button10)
+        Me.sign.Controls.Add(Me.Label15)
+        Me.sign.Location = New System.Drawing.Point(853, 102)
+        Me.sign.Name = "sign"
+        Me.sign.Size = New System.Drawing.Size(435, 184)
+        Me.sign.TabIndex = 13
+        Me.sign.Visible = False
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(339, 136)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(75, 33)
+        Me.Button10.TabIndex = 4
+        Me.Button10.Text = "Cancel"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(35, 36)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(348, 78)
+        Me.Label15.TabIndex = 3
+        Me.Label15.Text = "Double click the desktop" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "again to sign out."
+        '
+        'Timer6
+        '
+        '
+        'Timer7
+        '
+        Me.Timer7.Interval = 1000
+        '
+        'Timer8
+        '
+        '
+        'wb
+        '
+        Me.wb.Location = New System.Drawing.Point(637, 102)
+        Me.wb.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.wb.Name = "wb"
+        Me.wb.Size = New System.Drawing.Size(129, 189)
+        Me.wb.TabIndex = 55
+        Me.wb.Url = New System.Uri("https://olivewebsoftware.github.io/idkbro/update.html", System.UriKind.Absolute)
+        Me.wb.Visible = False
+        '
+        'Timer9
+        '
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(697, 32)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(16, 17)
+        Me.Label16.TabIndex = 56
+        Me.Label16.Text = "0"
+        Me.Label16.Visible = False
         '
         'Form8
         '
@@ -624,6 +786,14 @@ Partial Class Form8
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1942, 1102)
         Me.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.wb)
+        Me.Controls.Add(Me.sign)
+        Me.Controls.Add(Me.wb5)
+        Me.Controls.Add(Me.wb4)
+        Me.Controls.Add(Me.wb3)
+        Me.Controls.Add(Me.wb2)
+        Me.Controls.Add(Me.web)
         Me.Controls.Add(Me.n4)
         Me.Controls.Add(Me.n3)
         Me.Controls.Add(Me.n2)
@@ -656,7 +826,10 @@ Partial Class Form8
         Me.n3.PerformLayout()
         Me.n4.ResumeLayout(False)
         Me.n4.PerformLayout()
+        Me.sign.ResumeLayout(False)
+        Me.sign.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -710,4 +883,20 @@ Partial Class Form8
     Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
+    Friend WithEvents bat As System.Windows.Forms.Label
+    Friend WithEvents web As System.Windows.Forms.WebBrowser
+    Friend WithEvents wb2 As System.Windows.Forms.WebBrowser
+    Friend WithEvents wb3 As System.Windows.Forms.WebBrowser
+    Friend WithEvents wb4 As System.Windows.Forms.WebBrowser
+    Friend WithEvents wb5 As System.Windows.Forms.WebBrowser
+    Friend WithEvents sign As System.Windows.Forms.Panel
+    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents Timer6 As System.Windows.Forms.Timer
+    Friend WithEvents Button10 As System.Windows.Forms.Button
+    Friend WithEvents Timer7 As System.Windows.Forms.Timer
+    Friend WithEvents Timer8 As System.Windows.Forms.Timer
+    Friend WithEvents wb As System.Windows.Forms.WebBrowser
+    Friend WithEvents Timer9 As System.Windows.Forms.Timer
+    Friend WithEvents Button11 As System.Windows.Forms.Button
+    Friend WithEvents Label16 As System.Windows.Forms.Label
 End Class

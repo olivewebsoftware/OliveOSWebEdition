@@ -22,165 +22,125 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.pb = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'Label6
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(663, 232)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(785, 62)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Welcome to Olive OS Web Edition!"
+        Me.Label6.Location = New System.Drawing.Point(0, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(100, 23)
+        Me.Label6.TabIndex = 15
         '
-        'Label2
+        'TextBox3
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(762, 321)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(513, 42)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Create a profile and click ""Next>"""
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Location = New System.Drawing.Point(62, 166)
+        Me.TextBox3.Multiline = True
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(408, 39)
+        Me.TextBox3.TabIndex = 1
+        Me.TextBox3.Text = "Username"
         '
-        'TextBox1
+        'TextBox4
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(674, 451)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(774, 41)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(62, 211)
+        Me.TextBox4.Multiline = True
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(408, 39)
+        Me.TextBox4.TabIndex = 2
+        Me.TextBox4.Text = "Password"
         '
-        'Label3
+        'Button2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(666, 396)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(177, 42)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Username:"
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(62, 436)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(130, 54)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "Go >"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label4
+        'pb
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(666, 504)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(166, 42)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Password:"
+        Me.pb.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use1
+        Me.pb.Location = New System.Drawing.Point(62, 316)
+        Me.pb.Name = "pb"
+        Me.pb.Size = New System.Drawing.Size(100, 92)
+        Me.pb.TabIndex = 12
+        Me.pb.TabStop = False
         '
-        'TextBox2
+        'PictureBox5
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(674, 561)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(774, 41)
-        Me.TextBox2.TabIndex = 4
+        Me.PictureBox5.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use2
+        Me.PictureBox5.Location = New System.Drawing.Point(168, 316)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(100, 92)
+        Me.PictureBox5.TabIndex = 13
+        Me.PictureBox5.TabStop = False
         '
-        'PictureBox1
+        'PictureBox6
         '
-        Me.PictureBox1.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._1
-        Me.PictureBox1.Location = New System.Drawing.Point(674, 680)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox6.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.use3
+        Me.PictureBox6.Location = New System.Drawing.Point(274, 316)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(100, 92)
+        Me.PictureBox6.TabIndex = 14
+        Me.PictureBox6.TabStop = False
         '
-        'PictureBox2
+        'Label7
         '
-        Me.PictureBox2.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._2
-        Me.PictureBox2.Location = New System.Drawing.Point(780, 680)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox2.TabIndex = 7
-        Me.PictureBox2.TabStop = False
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei UI", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(59, 48)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(554, 86)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Welcome to Olive OS Web Editon" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Setup!"
         '
-        'PictureBox3
+        'LinkLabel1
         '
-        Me.PictureBox3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._3
-        Me.PictureBox3.Location = New System.Drawing.Point(886, 680)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox3.TabIndex = 8
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources._4
-        Me.PictureBox4.Location = New System.Drawing.Point(992, 680)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(100, 92)
-        Me.PictureBox4.TabIndex = 9
-        Me.PictureBox4.TabStop = False
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(666, 618)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(221, 42)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Profile Image:"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(992, 819)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(136, 66)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Next >"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(64, 504)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(108, 25)
+        Me.LinkLabel1.TabIndex = 17
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Shut Down"
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1924, 966)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1577, 553)
+        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.pb)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label6)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "setup"
+        Me.Text = "visual studio is the worst software in the earth"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -197,4 +157,13 @@ Partial Class Form2
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents pb As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
 End Class

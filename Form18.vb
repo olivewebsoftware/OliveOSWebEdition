@@ -6,6 +6,8 @@ Imports System.Net.NetworkInformation
 
 
 Public Class Form18
+    Dim l As Integer = 0
+    Private lk As String
     Dim mouse_move As System.Drawing.Point
 
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
@@ -65,16 +67,14 @@ Public Class Form18
         Dim pic = My.Computer.Registry.GetValue(
      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PFP", Nothing)
         If pic = "1" Then
-            pb.Image = My.Resources._1
+            pb.Image = My.Resources.use1
+        End If
+      
+        If pic = "3" Then
+            pb.Image = My.Resources.use3
         End If
         If pic = "2" Then
-            pb.Image = My.Resources._2
-        End If
-        If pic = "3" Then
-            pb.Image = My.Resources._3
-        End If
-        If pic = "4" Then
-            pb.Image = My.Resources._4
+            pb.Image = My.Resources.use2
         End If
         Label37.Text = "Physical MAC Address: " & getMacAddress()
         Label35.Text = "Link-local IPv6 Address: " & Dns.GetHostEntry(Dns.GetHostName).AddressList(0).ToString()
@@ -133,7 +133,14 @@ Public Class Form18
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
-        TabControl1.SelectTab(5)
+        Dim admin = My.Computer.Registry.GetValue(
+"HKEY_CURRENT_USER\Software\Olive OS Web Edition\AdminControl", "WebApps", Nothing)
+        If admin = "no" Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.warning
+        Else
+            TabControl1.SelectTab(5)
+        End If
     End Sub
 
     Private Sub Panel3_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel3.Paint
@@ -244,28 +251,15 @@ Public Class Form18
     End Sub
 
     Private Sub Button10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button10.Click
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-          "AdminName", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-          "AdminIsOn", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-             "WebApps", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-               "Wallpaper", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-              "Recovery", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-              "AccountImage", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-              "Passwird", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-               "Settings", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-               "BrowserSettings", "")
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\AdminControl",
-               "TaskMgr", "")
-        Form4.Show()
-        Form4.Label1.Text = "Set. Reboot to apply changes."
+        Try
+            My.Computer.Registry.CurrentUser.DeleteSubKey(
+   "SOFTWARE\Olive OS Web Edition\AdminControl")
+            Form4.Show()
+            Form4.Label1.Text = "Set. Reboot to apply changes."
+        Catch ex As Exception
+            Form4.Show()
+            Form4.Label1.Text = "No specified value exists."
+        End Try
     End Sub
 
     Private Sub Button11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button11.Click
@@ -326,10 +320,135 @@ Public Class Form18
         Form4.Label1.Text = "Set."
     End Sub
 
-    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
+    Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
        "PFP", "4")
         Form4.Show()
         Form4.Label1.Text = "Set."
+    End Sub
+
+    Private Sub Button16_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button16.Click
+        Select Case MsgBox("Are you sure you want to reset? This cannot be undone.", MsgBoxStyle.YesNo, "Confirm Reset.")
+            Case MsgBoxResult.Yes
+                Me.Close()
+                Form8.Close()
+                Form29.Show()
+        End Select
+
+    End Sub
+
+    Private Sub LinkLabel9_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel9.LinkClicked
+        Process.Start("mailto://kk.online@mail.com?subject=Feature Request")
+    End Sub
+
+    Private Sub LinkLabel8_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
+        Process.Start("mailto://kk.online@mail.com?subject=Feedback")
+    End Sub
+
+    Private Sub LinkLabel10_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel10.LinkClicked
+        Form16.Show()
+        Form16.webbr.Navigate("https://github.com/olivewebsoftware/OliveOSWebEdition")
+    End Sub
+
+    Private Sub wallpaper_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles wallpaper.CheckedChanged
+
+    End Sub
+
+    Private Sub LinkLabel11_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel11.LinkClicked
+        Form30.Show()
+    End Sub
+
+    Private Sub Button15_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button15.Click
+        Me.Close()
+        Form8.Close()
+        Form7.Close()
+        Form36.Show()
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        If l = 10 Then
+            Timer1.Stop()
+            lk = wb.Document.GetElementById("version").InnerText
+            Dim ver = My.Computer.Registry.GetValue(
+      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Version", Nothing)
+            If lk = ver Then
+                Label46.Text = "You are up to date."
+            Else
+                Label46.Text = "Updates need to be installed."
+            End If
+        Else
+            l += 1
+        End If
+    End Sub
+
+    Private Sub Button14_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button14.Click
+        Timer1.Start()
+        Label46.Text = "Checking for updates..."
+    End Sub
+
+    Private Sub Panel6_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel6.Paint
+
+    End Sub
+
+    Private Sub LinkLabel7_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
+        Form34.Show()
+    End Sub
+
+    Private Sub CheckBox5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox5.CheckedChanged
+
+    End Sub
+
+    Private Sub LinkLabel12_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel12.LinkClicked
+        Form21.Show()
+    End Sub
+
+    Private Sub Panel7_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel7.Paint
+
+    End Sub
+
+    Private Sub Label48_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label48.Click
+
+    End Sub
+
+    Private Sub LinkLabel13_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel13.LinkClicked
+        Form16.Show()
+        Me.Close()
+        Form16.webbr.Navigate("https://olivewebsoftware.github.io/oliveweb/OliveWeb%20NEON%20Awesome.exe")
+        Form16.TopMost = False
+    End Sub
+
+    Private Sub Button17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button17.Click
+        If MsgBox("Are you sure you want to enable the kiosk mode?", MsgBoxStyle.YesNo, "Add kiosk?") = MsgBoxResult.Yes Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+           "KioskName", TextBox5.Text)
+            Form4.Show()
+            Form4.Label1.Text = "Set. Reboot to apply changes."
+            Me.Close()
+        Else
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub LinkLabel14_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel14.LinkClicked
+        TabControl1.SelectTab(7)
+    End Sub
+
+    Private Sub Button19_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button19.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Button18_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button18.Click
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "KioskName", "")
+        Form4.Show()
+        Form4.Label1.Text = "Deleted. Reboot to apply changes."
+    End Sub
+
+    Private Sub TabPage8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TabPage8.Click
+
+    End Sub
+
+    Private Sub LinkLabel15_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel15.LinkClicked
+        Form40.Show()
     End Sub
 End Class

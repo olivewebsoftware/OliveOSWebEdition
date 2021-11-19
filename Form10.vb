@@ -58,6 +58,7 @@ Public Class Form10
             Label8.ForeColor = Color.Black
             Label9.ForeColor = Color.Black
             Label10.ForeColor = Color.Black
+            Label12.ForeColor = Color.Black
             l1.ForeColor = Color.Black
             l2.ForeColor = Color.Black
             l3.ForeColor = Color.Black
@@ -216,30 +217,65 @@ Public Class Form10
     End Sub
 
     Private Sub b1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles b1.Click
+        Dim web1 = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "MalwarePresent1", Nothing)
+        If web1 = 1 Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.oof
+            Exit Sub
+        End If
         Form23.Show()
         Form23.label.Text = "1"
         Me.Close()
     End Sub
 
     Private Sub b2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles b2.Click
+        Dim web1 = My.Computer.Registry.GetValue(
+     "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "MalwarePresent2", Nothing)
+        If web1 = 1 Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.oof
+            Exit Sub
+        End If
         Form23.Show()
         Form23.label.Text = "2"
         Me.Close()
     End Sub
 
     Private Sub b3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles b3.Click
+        Dim web1 = My.Computer.Registry.GetValue(
+     "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "MalwarePresent3", Nothing)
+        If web1 = 1 Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.oof
+            Exit Sub
+        End If
         Form23.Show()
         Form23.label.Text = "3"
         Me.Close()
     End Sub
 
     Private Sub b4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles b4.Click
+        Dim web1 = My.Computer.Registry.GetValue(
+     "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "MalwarePresent4", Nothing)
+        If web1 = 1 Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.oof
+            Exit Sub
+        End If
         Form23.Show()
         Form23.label.Text = "4"
         Me.Close()
     End Sub
 
     Private Sub b5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles b5.Click
+        Dim web1 = My.Computer.Registry.GetValue(
+     "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "MalwarePresent5", Nothing)
+        If web1 = 1 Then
+            Form4.Show()
+            Form4.Label1.Text = My.Resources.oof
+            Exit Sub
+        End If
         Form23.Show()
         Form23.label.Text = "5"
         Me.Close()
@@ -268,5 +304,15 @@ Public Class Form10
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Form26.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
+        Form33.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        Form4.Show()
+        Form4.Label1.Text = "Feature not set (0xa)"
     End Sub
 End Class
