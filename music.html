@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Music Player</title>
+    </head>
+    <body>
+        <p id="titlee">Music Player</p>
+        <img id="play" src="https://olivewebsoftware.github.io/idkbro/play.png" onclick="playState()"></img>
+        <img id="pause" src="https://olivewebsoftware.github.io/idkbro/pause.png" onclick="pauseState()"></img>
+        <img id="stop" src="https://olivewebsoftware.github.io/idkbro/stop.png" onclick="stopState()"></img>
+        <br>
+        <br>
+        <img id="ff" src="https://olivewebsoftware.github.io/idkbro/fr.png" onclick="frState()"></img>
+        <img id="fr" src="https://olivewebsoftware.github.io/idkbro/ff.png" onclick="ffState()"></img>
+        <!--play-->
+        <h1 id="pr">0</h1>
+        <!--pause-->
+        <h1 id="pa">0</h1>
+        <!--stop-->
+        <h1 id="st">0</h1>
+        <!--fast forward-->
+        <h1 id="f">0</h1>
+        <!--fast reverse-->
+        <h1 id="r">0</h1>
+        <style>
+            #ff {
+                text-align: center;
+            }
+            #fr {
+                text-align: center;
+            }
+            #pr {
+                color: white;
+            }
+            #pa {
+                color: white;
+            }
+            #st {
+                color: white;
+            }
+            #f {
+                color: white;
+            }
+            #r {
+                color: white;
+            }
+            #titlee {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+        <script>
+          function playState() {
+          document.getElementById('pr').innerHTML
+          = '1'
+          document.getElementById('pa').innerHTML
+          = '0'
+          document.getElementById('r').innerHTML
+          = '0'
+          document.getElementById('f').innerHTML
+          = '0'
+          }
+          function pauseState() {
+          document.getElementById('pa').innerHTML
+          = '1'
+          document.getElementById('pr').innerHTML
+          = '0'
+          }
+          function stopState() {
+          document.getElementById('st').innerHTML
+          = '1'
+          document.getElementById('pr').innerHTML
+          = '0'
+          }
+          function ffState() {
+          document.getElementById('pr').innerHTML
+          = '0'
+          document.getElementById('f').innerHTML
+          = '1'
+          }
+          function frState() {
+          document.getElementById('pr').innerHTML
+          = '0'
+          document.getElementById('r').innerHTML
+          = '1'
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+How to check your username in files:
+
+1. Open Files (explorer.exe)
+2. On the left side of Files, right click
+the "Downloads" button.
+3. In the properties window, go to where it 
+says "Location"
+4. Next to "Location", it will say your
+username (Example: C:\Users\YOUR USERNAME\Downloads)
+5. Next to where it says "Users\" is your username.
+
+Enter that username into the textbox on the setup
+screen behind this message.
+
+If you are still confused, 

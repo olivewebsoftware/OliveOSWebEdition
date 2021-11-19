@@ -1,0 +1,5 @@
+Your system appears to be
+fine. System Repair will 
+continue anyway to refresh
+regsitry files. Press F1
+at anytime to cancel.
