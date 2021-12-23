@@ -30,6 +30,8 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,12 +79,38 @@ Partial Class Form1
         'Timer2
         '
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Black
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Typewriter", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(26, 96)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(586, 92)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Olive OS Web Edition Failed To Boot" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The path that the script startup was assig" & _
+            "ned to" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is inaccessible, incorrect, or protected." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(452, 26)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(51, 17)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Label4"
+        Me.Label4.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1924, 966)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)
@@ -103,5 +131,7 @@ Partial Class Form1
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ProgressBar2 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 
 End Class

@@ -53,6 +53,11 @@ Partial Class Form17
         Me.settingsbutton = New System.Windows.Forms.Button()
         Me.settingslabel = New System.Windows.Forms.Label()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.b5 = New System.Windows.Forms.Button()
         Me.p5 = New System.Windows.Forms.Label()
         Me.b4 = New System.Windows.Forms.Button()
@@ -79,12 +84,11 @@ Partial Class Form17
         Me.AboutTaskToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -403,6 +407,7 @@ Partial Class Form17
         '
         'TabPage2
         '
+        Me.TabPage2.Controls.Add(Me.Panel2)
         Me.TabPage2.Controls.Add(Me.Button7)
         Me.TabPage2.Controls.Add(Me.Label8)
         Me.TabPage2.Controls.Add(Me.b5)
@@ -433,6 +438,51 @@ Partial Class Form17
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Processes"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Button8)
+        Me.Panel2.Controls.Add(Me.Label10)
+        Me.Panel2.Location = New System.Drawing.Point(36, 264)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(246, 41)
+        Me.Panel2.TabIndex = 25
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(160, 8)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 23)
+        Me.Button8.TabIndex = 26
+        Me.Button8.Text = "End"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(5, 11)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(119, 17)
+        Me.Label10.TabIndex = 25
+        Me.Label10.Text = "System Navigator"
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(164, 235)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 24
+        Me.Button7.Text = "End"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(40, 238)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(114, 17)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "Olive OS Update"
         '
         'b5
         '
@@ -656,24 +706,6 @@ Partial Class Form17
         Me.Label7.Text = "Label7"
         Me.Label7.Visible = False
         '
-        'Button7
-        '
-        Me.Button7.Location = New System.Drawing.Point(164, 235)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 23)
-        Me.Button7.TabIndex = 24
-        Me.Button7.Text = "End"
-        Me.Button7.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(40, 238)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(114, 17)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Olive OS Update"
-        '
         'Form17
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -694,6 +726,8 @@ Partial Class Form17
         Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -757,4 +791,7 @@ Partial Class Form17
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Panel2 As System.Windows.Forms.Panel
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

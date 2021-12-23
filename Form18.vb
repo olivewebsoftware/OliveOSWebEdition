@@ -9,7 +9,7 @@ Public Class Form18
     Dim l As Integer = 0
     Private lk As String
     Dim mouse_move As System.Drawing.Point
-
+    Dim sh As Integer = Form8.Label17.Text
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
 
     End Sub
@@ -55,6 +55,7 @@ Public Class Form18
         Dim cursor As Icon
         cursor = (My.Resources.defc2)
         Me.Cursor = New Cursor(cursor.Handle)
+        getAppName()
         Dim setup = My.Computer.Registry.GetValue(
        "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Username", Nothing)
         Dim admin = My.Computer.Registry.GetValue(
@@ -80,6 +81,43 @@ Public Class Form18
         Label35.Text = "Link-local IPv6 Address: " & Dns.GetHostEntry(Dns.GetHostName).AddressList(0).ToString()
         GetIPAddress()
         Label36.Text = "Status: " & Form8.Label5.Text
+    End Sub
+    Private Sub getAppName()
+        Dim web1 = My.Computer.Registry.GetValue(
+   "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "AppName1", Nothing)
+        Dim web2 = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "AppName2", Nothing)
+        Dim web3 = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "AppName3", Nothing)
+        Dim web4 = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "AppName4", Nothing)
+        Dim web5 = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition\WebApps", "AppName5", Nothing)
+        If web1 = "" Then
+            'nothing
+        Else
+            app1.Text = web1
+        End If
+        If web2 = "" Then
+            'nothing
+        Else
+            app2.Text = web2
+        End If
+        If web3 = "" Then
+            'nothing
+        Else
+            app3.Text = web3
+        End If
+        If web4 = "" Then
+            'nothing
+        Else
+            app4.Text = web4
+        End If
+        If web5 = "" Then
+            'nothing
+        Else
+            app5.Text = web5
+        End If
     End Sub
     Private Sub GetIPAddress()
         Dim strHostName As String
@@ -267,7 +305,7 @@ Public Class Form18
             Process.Start("Z:\")
         Catch ex As Exception
             Form4.Show()
-            Form4.Label1.Text = "No network drive was found."
+            Form4.Label1.Text = "No network drive mapped."
         End Try
     End Sub
 
@@ -375,9 +413,52 @@ Public Class Form18
                 Label46.Text = "You are up to date."
             Else
                 Label46.Text = "Updates need to be installed."
+                Try
+                    ListBox1.Items.Add("Download started...")
+                    Dim wc As New System.Net.WebClient
+                    wc.DownloadFile("https://www.dropbox.com/s/99uixe84khj2qnx/UpdatePackage.exe?dl=1", "C:\Program Files\Olive OS Web Edition\Updates.exe")
+                    ListBox1.Items.Add("Sucessfully able to download files from server.")
+                    ListBox1.Items.Add("Restart to finish installing updates.")
+                    Form8.Label18.Text = "1"
+                    Label46.Text = "Restart pending."
+                    notifU()
+                Catch ex As Exception
+                    Form4.Show()
+                    Form4.Label1.Text = "Woops."
+                End Try
             End If
         Else
             l += 1
+        End If
+    End Sub
+    Private Sub notifU()
+        If sh = 0 Then
+            Form8.n1.Show()
+            Form8.Label6.Text = "Software Update"
+            Form8.Label7.Text = My.Resources.restart
+            My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+            Exit Sub
+        End If
+        If sh = 1 Then
+            Form8.n2.Show()
+            Form8.Label9.Text = "Software Update"
+            Form8.Label8.Text = My.Resources.restart
+            My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+            Exit Sub
+        End If
+        If sh = 2 Then
+            Form8.n3.Show()
+            Form8.Label12.Text = "Software Update"
+            Form8.Label11.Text = My.Resources.restart
+            My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+            Exit Sub
+        End If
+        If sh = 3 Then
+            Form8.n4.Show()
+            Form8.Label14.Text = "Software Update"
+            Form8.Label13.Text = My.Resources.restart
+            My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.Background)
+            Exit Sub
         End If
     End Sub
 
@@ -395,7 +476,13 @@ Public Class Form18
     End Sub
 
     Private Sub CheckBox5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox5.CheckedChanged
-
+        If CheckBox2.Checked = True Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+       "Edit4", "1")
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+      "Edit4", "")
+        End If
     End Sub
 
     Private Sub LinkLabel12_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel12.LinkClicked
@@ -450,5 +537,57 @@ Public Class Form18
 
     Private Sub LinkLabel15_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel15.LinkClicked
         Form40.Show()
+    End Sub
+
+    Private Sub Button20_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button20.Click
+        Form46.Show()
+        Me.Close()
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+    "Refresh", "1")
+        Form8.Close()
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked = True Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+       "Edit1", "1")
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+      "Edit1", "")
+        End If
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox3.CheckedChanged
+        If CheckBox3.Checked = True Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+       "Edit2", "1")
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+      "Edit2", "")
+        End If
+    End Sub
+
+    Private Sub CheckBox4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox4.CheckedChanged
+        If CheckBox4.Checked = True Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+       "Edit3", "1")
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+      "Edit3", "")
+        End If
+    End Sub
+
+    Private Sub CheckBox6_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CheckBox6.CheckedChanged
+        If CheckBox6.Checked = True Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+       "Edit5", "1")
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
+      "Edit5", "")
+        End If
+    End Sub
+
+    Private Sub LinkLabel16_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel16.LinkClicked
+        Form10.Show()
     End Sub
 End Class

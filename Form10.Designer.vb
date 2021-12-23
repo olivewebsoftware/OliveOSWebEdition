@@ -31,14 +31,12 @@ Partial Class Form10
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -64,10 +62,15 @@ Partial Class Form10
         Me.b1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.sug1 = New System.Windows.Forms.Label()
+        Me.sug2 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -112,7 +115,7 @@ Partial Class Form10
         'Button3
         '
         Me.Button3.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.calculator
-        Me.Button3.Location = New System.Drawing.Point(886, 218)
+        Me.Button3.Location = New System.Drawing.Point(870, 218)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(76, 60)
         Me.Button3.TabIndex = 3
@@ -122,7 +125,7 @@ Partial Class Form10
         'Button4
         '
         Me.Button4.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.notepad
-        Me.Button4.Location = New System.Drawing.Point(1077, 218)
+        Me.Button4.Location = New System.Drawing.Point(1059, 218)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(76, 60)
         Me.Button4.TabIndex = 4
@@ -138,16 +141,6 @@ Partial Class Form10
         Me.Button5.TabIndex = 5
         Me.Button5.Text = " "
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.player
-        Me.Button6.Location = New System.Drawing.Point(490, 457)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(76, 60)
-        Me.Button6.TabIndex = 6
-        Me.Button6.Text = " "
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
@@ -183,7 +176,7 @@ Partial Class Form10
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(482, 11)
+        Me.Label3.Location = New System.Drawing.Point(465, 11)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 17)
         Me.Label3.TabIndex = 10
@@ -193,7 +186,7 @@ Partial Class Form10
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(668, 11)
+        Me.Label4.Location = New System.Drawing.Point(649, 11)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 17)
         Me.Label4.TabIndex = 11
@@ -209,16 +202,6 @@ Partial Class Form10
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Photo Viewer"
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(20, 13)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(88, 17)
-        Me.Label6.TabIndex = 13
-        Me.Label6.Text = "Video Player"
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -233,7 +216,7 @@ Partial Class Form10
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(424, 13)
+        Me.Label8.Location = New System.Drawing.Point(412, 13)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(59, 17)
         Me.Label8.TabIndex = 16
@@ -242,7 +225,7 @@ Partial Class Form10
         'Button8
         '
         Me.Button8.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.setting
-        Me.Button8.Location = New System.Drawing.Point(886, 457)
+        Me.Button8.Location = New System.Drawing.Point(870, 457)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(76, 60)
         Me.Button8.TabIndex = 15
@@ -253,7 +236,7 @@ Partial Class Form10
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(610, 13)
+        Me.Label9.Location = New System.Drawing.Point(596, 13)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(79, 17)
         Me.Label9.TabIndex = 18
@@ -262,7 +245,7 @@ Partial Class Form10
         'Button9
         '
         Me.Button9.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.mountian
-        Me.Button9.Location = New System.Drawing.Point(1080, 457)
+        Me.Button9.Location = New System.Drawing.Point(1059, 457)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(76, 60)
         Me.Button9.TabIndex = 17
@@ -283,7 +266,7 @@ Partial Class Form10
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(1242, 536)
+        Me.Label10.Location = New System.Drawing.Point(779, 13)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(73, 17)
         Me.Label10.TabIndex = 21
@@ -303,7 +286,7 @@ Partial Class Form10
         '
         Me.l5.AutoSize = True
         Me.l5.ForeColor = System.Drawing.Color.White
-        Me.l5.Location = New System.Drawing.Point(483, 948)
+        Me.l5.Location = New System.Drawing.Point(498, 918)
         Me.l5.Name = "l5"
         Me.l5.Size = New System.Drawing.Size(57, 17)
         Me.l5.TabIndex = 31
@@ -314,7 +297,7 @@ Partial Class Form10
         '
         Me.b5.ContextMenuStrip = Me.ContextMenuStrip6
         Me.b5.Image = CType(resources.GetObject("b5.Image"), System.Drawing.Image)
-        Me.b5.Location = New System.Drawing.Point(486, 868)
+        Me.b5.Location = New System.Drawing.Point(490, 842)
         Me.b5.Name = "b5"
         Me.b5.Size = New System.Drawing.Size(76, 60)
         Me.b5.TabIndex = 30
@@ -336,7 +319,7 @@ Partial Class Form10
         '
         Me.l4.AutoSize = True
         Me.l4.ForeColor = System.Drawing.Color.White
-        Me.l4.Location = New System.Drawing.Point(884, 10)
+        Me.l4.Location = New System.Drawing.Point(896, 15)
         Me.l4.Name = "l4"
         Me.l4.Size = New System.Drawing.Size(57, 17)
         Me.l4.TabIndex = 29
@@ -347,7 +330,7 @@ Partial Class Form10
         '
         Me.b4.ContextMenuStrip = Me.ContextMenuStrip5
         Me.b4.Image = CType(resources.GetObject("b4.Image"), System.Drawing.Image)
-        Me.b4.Location = New System.Drawing.Point(1245, 697)
+        Me.b4.Location = New System.Drawing.Point(1249, 697)
         Me.b4.Name = "b4"
         Me.b4.Size = New System.Drawing.Size(76, 60)
         Me.b4.TabIndex = 28
@@ -364,7 +347,7 @@ Partial Class Form10
         '
         Me.l3.AutoSize = True
         Me.l3.ForeColor = System.Drawing.Color.White
-        Me.l3.Location = New System.Drawing.Point(720, 10)
+        Me.l3.Location = New System.Drawing.Point(714, 15)
         Me.l3.Name = "l3"
         Me.l3.Size = New System.Drawing.Size(57, 17)
         Me.l3.TabIndex = 27
@@ -375,7 +358,7 @@ Partial Class Form10
         '
         Me.b3.ContextMenuStrip = Me.ContextMenuStrip4
         Me.b3.Image = CType(resources.GetObject("b3.Image"), System.Drawing.Image)
-        Me.b3.Location = New System.Drawing.Point(1081, 697)
+        Me.b3.Location = New System.Drawing.Point(1060, 697)
         Me.b3.Name = "b3"
         Me.b3.Size = New System.Drawing.Size(76, 60)
         Me.b3.TabIndex = 26
@@ -392,7 +375,7 @@ Partial Class Form10
         '
         Me.l2.AutoSize = True
         Me.l2.ForeColor = System.Drawing.Color.White
-        Me.l2.Location = New System.Drawing.Point(525, 10)
+        Me.l2.Location = New System.Drawing.Point(510, 15)
         Me.l2.Name = "l2"
         Me.l2.Size = New System.Drawing.Size(57, 17)
         Me.l2.TabIndex = 25
@@ -403,7 +386,7 @@ Partial Class Form10
         '
         Me.l1.AutoSize = True
         Me.l1.ForeColor = System.Drawing.Color.White
-        Me.l1.Location = New System.Drawing.Point(315, 10)
+        Me.l1.Location = New System.Drawing.Point(335, 15)
         Me.l1.Name = "l1"
         Me.l1.Size = New System.Drawing.Size(57, 17)
         Me.l1.TabIndex = 24
@@ -414,7 +397,7 @@ Partial Class Form10
         '
         Me.b2.ContextMenuStrip = Me.ContextMenuStrip3
         Me.b2.Image = CType(resources.GetObject("b2.Image"), System.Drawing.Image)
-        Me.b2.Location = New System.Drawing.Point(886, 697)
+        Me.b2.Location = New System.Drawing.Point(861, 697)
         Me.b2.Name = "b2"
         Me.b2.Size = New System.Drawing.Size(76, 60)
         Me.b2.TabIndex = 23
@@ -431,7 +414,7 @@ Partial Class Form10
         '
         Me.b1.ContextMenuStrip = Me.ContextMenuStrip2
         Me.b1.Image = CType(resources.GetObject("b1.Image"), System.Drawing.Image)
-        Me.b1.Location = New System.Drawing.Point(671, 697)
+        Me.b1.Location = New System.Drawing.Point(680, 697)
         Me.b1.Name = "b1"
         Me.b1.Size = New System.Drawing.Size(76, 60)
         Me.b1.TabIndex = 22
@@ -453,19 +436,30 @@ Partial Class Form10
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label7)
+        Me.Panel2.Controls.Add(Me.Label12)
         Me.Panel2.Controls.Add(Me.Label8)
         Me.Panel2.Controls.Add(Me.Label9)
+        Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Location = New System.Drawing.Point(463, 523)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(750, 44)
+        Me.Panel2.Size = New System.Drawing.Size(933, 44)
         Me.Panel2.TabIndex = 33
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(10, 13)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(124, 17)
+        Me.Label12.TabIndex = 41
+        Me.Label12.Text = "OliveWeb Security"
         '
         'Panel3
         '
+        Me.Panel3.Controls.Add(Me.Label6)
         Me.Panel3.Controls.Add(Me.l3)
-        Me.Panel3.Controls.Add(Me.Label12)
         Me.Panel3.Controls.Add(Me.l4)
         Me.Panel3.Controls.Add(Me.l1)
         Me.Panel3.Controls.Add(Me.l2)
@@ -474,15 +468,15 @@ Partial Class Form10
         Me.Panel3.Size = New System.Drawing.Size(1095, 46)
         Me.Panel3.TabIndex = 34
         '
-        'Label12
+        'Label6
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(102, 10)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(124, 17)
-        Me.Label12.TabIndex = 41
-        Me.Label12.Text = "OliveWeb Security"
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(149, 15)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(37, 17)
+        Me.Label6.TabIndex = 32
+        Me.Label6.Text = "Help"
         '
         'Label11
         '
@@ -497,12 +491,59 @@ Partial Class Form10
         'Button12
         '
         Me.Button12.Image = Global.Olive_OS_Web_Edition.My.Resources.Resources.securityapp__1_
-        Me.Button12.Location = New System.Drawing.Point(490, 697)
+        Me.Button12.Location = New System.Drawing.Point(490, 457)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(76, 60)
         Me.Button12.TabIndex = 40
         Me.Button12.Text = " "
         Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.ForeColor = System.Drawing.Color.White
+        Me.Button6.Location = New System.Drawing.Point(490, 697)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(76, 60)
+        Me.Button6.TabIndex = 41
+        Me.Button6.Text = "?"
+        Me.Button6.UseVisualStyleBackColor = False
+        '
+        'sug1
+        '
+        Me.sug1.AutoSize = True
+        Me.sug1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sug1.ForeColor = System.Drawing.Color.White
+        Me.sug1.Location = New System.Drawing.Point(470, 944)
+        Me.sug1.Name = "sug1"
+        Me.sug1.Size = New System.Drawing.Size(374, 36)
+        Me.sug1.TabIndex = 42
+        Me.sug1.Text = "Having issues with Olive OS?"
+        '
+        'sug2
+        '
+        Me.sug2.AutoSize = True
+        Me.sug2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sug2.LinkColor = System.Drawing.Color.White
+        Me.sug2.Location = New System.Drawing.Point(1056, 944)
+        Me.sug2.Name = "sug2"
+        Me.sug2.Size = New System.Drawing.Size(149, 31)
+        Me.sug2.TabIndex = 43
+        Me.sug2.TabStop = True
+        Me.sug2.Text = "Let's fix that."
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
+        Me.LinkLabel1.Location = New System.Drawing.Point(471, 1011)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(202, 27)
+        Me.LinkLabel1.TabIndex = 44
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Turn Off Suggestions"
         '
         'Form10
         '
@@ -510,9 +551,12 @@ Partial Class Form10
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1924, 1102)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.sug2)
+        Me.Controls.Add(Me.sug1)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.l5)
+        Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
@@ -527,7 +571,6 @@ Partial Class Form10
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -557,14 +600,12 @@ Partial Class Form10
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Button8 As System.Windows.Forms.Button
@@ -595,4 +636,9 @@ Partial Class Form10
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents sug1 As System.Windows.Forms.Label
+    Friend WithEvents sug2 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
 End Class

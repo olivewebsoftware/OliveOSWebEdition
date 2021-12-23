@@ -23,12 +23,12 @@ Partial Class Form22
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
@@ -43,6 +43,16 @@ Partial Class Form22
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(264, 52)
         Me.Panel1.TabIndex = 1
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(212, 11)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(16, 17)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "0"
+        Me.Label4.Visible = False
         '
         'Label1
         '
@@ -81,7 +91,7 @@ Partial Class Form22
         Me.Panel3.Controls.Add(Me.Label3)
         Me.Panel3.Location = New System.Drawing.Point(3, 114)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(264, 52)
+        Me.Panel3.Size = New System.Drawing.Size(264, 58)
         Me.Panel3.TabIndex = 3
         '
         'Label3
@@ -89,33 +99,24 @@ Partial Class Form22
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei Light", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(78, 9)
+        Me.Label3.Location = New System.Drawing.Point(72, 10)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(121, 36)
+        Me.Label3.Size = New System.Drawing.Size(118, 36)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Uninstall"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(212, 11)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(16, 17)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "0"
-        Me.Label4.Visible = False
+        Me.Label3.Text = "Remove"
         '
         'Form22
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(268, 173)
+        Me.ClientSize = New System.Drawing.Size(268, 180)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form22"
+        Me.Opacity = 0.78R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "rclick"
         Me.TopMost = True

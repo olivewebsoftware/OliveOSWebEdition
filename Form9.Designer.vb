@@ -260,7 +260,7 @@ Partial Class Form9
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form9"
-        Me.Opacity = 0.82R
+        Me.Opacity = 0.85R
         Me.Text = "Control"
         Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized

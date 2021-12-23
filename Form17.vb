@@ -302,4 +302,17 @@ Public Class Form17
         Label8.Hide()
         Button7.Hide()
     End Sub
+
+    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
+        notif()
+        Form8.Panel1.Hide()
+        Form8.Panel5.Hide()
+        Button8.Hide()
+        Label10.Hide()
+        Form8.p1.Hide()
+        Form8.p2.Hide()
+        Form8.p3.Hide()
+        Form8.p4.Hide()
+        Form8.p5.Hide()
+    End Sub
 End Class

@@ -133,4 +133,38 @@
     Private Sub Label3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label3.MouseLeave
         Panel3.BackColor = Color.White
     End Sub
+
+    Private Sub Panel4_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel4.MouseClick
+        Form47.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Panel4_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel4.MouseHover
+        Panel4.BackColor = Color.LightGray
+        Label4.BackColor = Color.LightGray
+    End Sub
+
+    Private Sub Panel4_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel4.MouseLeave
+        Panel4.BackColor = Color.White
+        Label4.BackColor = Color.White
+    End Sub
+
+    Private Sub Panel4_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel4.Paint
+
+    End Sub
+
+    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+        Form47.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Label4_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label4.MouseHover
+        Label4.BackColor = Color.LightGray
+        Panel4.BackColor = Color.LightGray
+    End Sub
+
+    Private Sub Label4_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label4.MouseLeave
+        Label4.BackColor = Color.White
+        Panel4.BackColor = Color.White
+    End Sub
 End Class

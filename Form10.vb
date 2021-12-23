@@ -41,6 +41,8 @@ Public Class Form10
         cursor = (My.Resources.defc2)
         Me.Cursor = New Cursor(cursor.Handle)
         apploader()
+        loadSug()
+        suggest()
         Dim ui = My.Computer.Registry.GetValue(
       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ui", Nothing)
         If ui = "light" Then
@@ -53,7 +55,6 @@ Public Class Form10
             Label3.ForeColor = Color.Black
             Label4.ForeColor = Color.Black
             Label5.ForeColor = Color.Black
-            Label6.ForeColor = Color.Black
             Label7.ForeColor = Color.Black
             Label8.ForeColor = Color.Black
             Label9.ForeColor = Color.Black
@@ -64,6 +65,50 @@ Public Class Form10
             l3.ForeColor = Color.Black
             l4.ForeColor = Color.Black
             l5.ForeColor = Color.Black
+        End If
+    End Sub
+    Private Sub suggest()
+        Dim rn As New Random
+        Dim u As Integer = rn.Next(0, 10)
+        If u = 1 Then
+            sug1.Text = "Having issues with Olive OS?"
+            sug2.Text = "Let's fix that."
+        End If
+        If u = 2 Then
+            sug1.Text = "Want to check your security?"
+            sug2.Text = "Run a security checkup."
+        End If
+        If u = 3 Then
+            sug1.Text = "Enjoying Olive OS?"
+            sug2.Text = "Submit Feedback"
+        End If
+        If u = 4 Then
+            sug1.Text = "Check out our YouTube channel."
+            sug2.Text = "Check it out."
+        End If
+        If u = 5 Then
+            sug1.Text = "Have the latest updates?"
+            sug2.Text = "Check for updates."
+        End If
+        If u = 6 Then
+            sug1.Text = "Do you want to change your theme?"
+            sug2.Text = "Open personalization settings."
+        End If
+        If u = 7 Then
+            sug1.Text = "Want to get some work done?"
+            sug2.Text = "Open the browser."
+        End If
+        If u = 8 Then
+            sug1.Text = "Explore the latest apps!"
+            sug2.Text = "Open Webapp installer."
+        End If
+        If u = 9 Then
+            sug1.Text = "Check out our software!"
+            sug2.Text = "Open OliveWeb Website"
+        End If
+        If u = 10 Then
+            sug1.Text = "Want to scan your computer?"
+            sug2.Text = "Check for viruses."
         End If
     End Sub
     Private Sub apploader()
@@ -311,8 +356,86 @@ Public Class Form10
         Me.Close()
     End Sub
 
-    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Form4.Show()
         Form4.Label1.Text = "Feature not set (0xa)"
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Dim t = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Suggest", Nothing)
+        If t = "1" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "Suggest", "0")
+            loadSug()
+            Exit Sub
+        Else
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "Suggest", "1")
+            loadSug()
+            Exit Sub
+        End If
+        loadSug()
+    End Sub
+    Private Sub loadSug()
+        Dim t = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Suggest", Nothing)
+        If t = "0" Then
+            sug1.Hide()
+            sug2.Hide()
+            LinkLabel1.Text = "Turn On Suggestions"
+        End If
+    End Sub
+
+    Private Sub sug2_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles sug2.LinkClicked
+        If sug2.Text = "Let's fix that." Then
+            Form45.Show()
+        End If
+        If sug2.Text = "Run a security checkup." Then
+            Form33.Show()
+            Form33.TabControl1.SelectTab(2)
+            Me.Close()
+        End If
+        If sug2.Text = "Submit Feedback." Then
+            Form18.Show()
+            Me.Close()
+            Form18.TabControl1.SelectTab(3)
+        End If
+        If sug2.Text = "Check it out." Then
+            Form18.Show()
+            Me.Close()
+            Form18.TabControl1.SelectTab(3)
+        End If
+        If sug2.Text = "Check for updates." Then
+            Form18.Show()
+            Me.Close()
+            Form18.TabControl1.SelectTab(3)
+        End If
+        If sug2.Text = "Open personalization settings." Then
+            Form18.Show()
+            Form18.TabControl1.SelectTab(4)
+        End If
+        If sug2.Text = "Open the browser." Then
+            Form16.Show()
+            Me.Close()
+        End If
+        If sug2.Text = "Open Webapp installer." Then
+            Form21.Show()
+            Me.Close()
+        End If
+        If sug2.Text = "Open OliveWeb Website" Then
+            Form16.Show()
+            Form16.webbr.Navigate("https://olivewebsoftware.github.io/oliveweb")
+            Me.Close()
+        End If
+        If sug2.Text = "Check for viruses." Then
+            Form33.Show()
+            Form33.TabControl1.SelectTab(1)
+        End If
+    End Sub
+
+    Private Sub Button6_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
+        Form45.Show()
+        Me.Close()
     End Sub
 End Class

@@ -1,5 +1,5 @@
 ﻿Public Class Form22
-
+    Dim open As String = ""
     Private Sub Form22_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim mp As Point = MousePosition
         Me.Location = mp
@@ -17,6 +17,21 @@
     End Sub
 
     Private Sub Panel1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseClick
+        If Label4.Text = "s1" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s2" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s3" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s4" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s5" Then
+            ProcessLink()
+        End If
         If Label4.Text = "1" Then
             Form23.Show()
             Form23.label.Text = "1"
@@ -57,6 +72,11 @@
 
     End Sub
 
+    Private Sub Panel2_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel2.MouseClick
+        Form18.Show()
+        Form18.TabControl1.SelectTab(5)
+    End Sub
+
     Private Sub Panel2_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Panel2.MouseHover
         Panel2.BackColor = Color.LightGray
         Label2.BackColor = Color.LightGray
@@ -91,6 +111,21 @@
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+        If Label4.Text = "s1" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s2" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s3" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s4" Then
+            ProcessLink()
+        End If
+        If Label4.Text = "s5" Then
+            ProcessLink()
+        End If
         If Label4.Text = "1" Then
             Form23.Show()
             Form23.label.Text = "1"
@@ -116,6 +151,80 @@
             Form4.Label1.Text = "No app!"
         End If
     End Sub
+    Private Sub ProcessLink()
+        If Label4.Text = "s1" Then
+            Dim l1 = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutLink1", Nothing)
+            open = l1
+            Secured_OpenApp()
+        End If
+        If Label4.Text = "s2" Then
+            Dim l2 = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutLink2", Nothing)
+            open = l2
+            Secured_OpenApp()
+        End If
+        If Label4.Text = "s3" Then
+            Dim l3 = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutLink3", Nothing)
+            open = l3
+            Secured_OpenApp()
+        End If
+        If Label4.Text = "s4" Then
+            Dim l4 = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutLink4", Nothing)
+            open = l4
+            Secured_OpenApp()
+        End If
+        If Label4.Text = "s5" Then
+            Dim l5 = My.Computer.Registry.GetValue(
+       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutLink5", Nothing)
+            open = l5
+            Secured_OpenApp()
+        End If
+    End Sub
+    Private Sub Secured_OpenApp()
+        If open = "web" Then
+            Form16.Show()
+            Me.Close()
+        End If
+        If open = "file" Then
+            Form26.Show()
+            Me.Close()
+        End If
+        If open = "calc" Then
+            Form5.Show()
+            Me.Close()
+        End If
+        If open = "textedit" Then
+            Form3.Show()
+            Me.Close()
+        End If
+        If open = "photo" Then
+            Form11.Show()
+            Me.Close()
+        End If
+        If open = "security" Then
+            Form33.Show()
+            Me.Close()
+        End If
+        If open = "music" Then
+            Form14.Show()
+            Me.Close()
+        End If
+        If open = "settings" Then
+            Form18.Show()
+            Me.Close()
+        End If
+        If open = "webapp" Then
+            Form21.Show()
+            Me.Close()
+        End If
+        If open = "help" Then
+            Form45.Show()
+            Me.Close()
+        End If
+    End Sub
 
     Private Sub Label1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label1.MouseEnter
        
@@ -132,7 +241,8 @@
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-        
+        Form18.Show()
+        Form18.TabControl1.SelectTab(5)
     End Sub
 
     Private Sub Label2_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Label2.MouseEnter

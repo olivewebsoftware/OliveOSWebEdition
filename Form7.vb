@@ -1,6 +1,7 @@
 ﻿Public Class Form7
     Dim n As Integer = 0
     Dim m As Integer = 0
+    Dim d As String = 0
     Private Sub Form7_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
         
     End Sub
@@ -9,6 +10,7 @@
         Dim cursor As Icon
         cursor = (My.Resources.defc2)
         Me.Cursor = New Cursor(cursor.Handle)
+        Timer2.Start()
         Dim pack = My.Computer.Registry.GetValue(
       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PackEnabled", Nothing)
         Panel1.BackColor = Color.FromArgb(190, 0, 0, 0)
@@ -18,8 +20,7 @@
             Try
                 Me.BackgroundImage = Image.FromFile(setup)
             Catch ex As Exception
-                Form4.Show()
-                Form4.Label1.Text = "We can't load your wallpaper."
+                Me.BackColor = Color.Black
             End Try
         End If
         If setup = "def" Then
@@ -39,7 +40,7 @@
         End If
         Dim ur = My.Computer.Registry.GetValue(
      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Username", Nothing)
-        Label5.Text = ur
+        user.Text = ur
         Dim pic = My.Computer.Registry.GetValue(
       "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "PFP", Nothing)
         If pic = "1" Then
@@ -53,12 +54,51 @@
             pb.Image = My.Resources.use2
         End If
     End Sub
+    Private Sub comDate()
+        d = DateTime.Now.ToString("MM")
+        If d = "01" Then
+            d = "January"
+        End If
+        If d = "02" Then
+            d = "Febuary"
+        End If
+        If d = "03" Then
+            d = "March"
+        End If
+        If d = "04" Then
+            d = "April"
+        End If
+        If d = "05" Then
+            d = "May"
+        End If
+        If d = "06" Then
+            d = "June"
+        End If
+        If d = "07" Then
+            d = "July"
+        End If
+        If d = "08" Then
+            d = "August"
+        End If
+        If d = "09" Then
+            d = "September"
+        End If
+        If d = "10" Then
+            d = "October"
+        End If
+        If d = "11" Then
+            d = "November"
+        End If
+        If d = "12" Then
+            d = "December"
+        End If
+    End Sub
 
     Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs)
 
     End Sub
 
-    Private Sub TextBox1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TextBox1.KeyDown
+    Private Sub TextBox1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles tb.KeyDown
         Dim pwd = My.Computer.Registry.GetValue(
        "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "Password", Nothing)
         If e.KeyCode = Keys.Enter Then
@@ -67,9 +107,9 @@
                 Form4.Label1.Text = "Olive OS is disabled."
                 Exit Sub
             End If
-            If TextBox1.Text = pwd Then
-                Me.Close()
+            If tb.Text = pwd Then
                 Form8.Show()
+                Me.Close()
             Else
                 If n = 3 Then
                     Form4.Show()
@@ -85,11 +125,11 @@
         End If
     End Sub
 
-    Private Sub TextBox1_SizeChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox1.SizeChanged
+    Private Sub TextBox1_SizeChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles tb.SizeChanged
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tb.TextChanged
 
     End Sub
 
@@ -107,22 +147,28 @@
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "On", "")
         End
         End
         End
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-        Panel1.Hide()
-        Me.Hide()
-        Me.Show()
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+       "On", "")
+        Process.Start("C:\Program Files\Olive OS Web Edition\Olive OS Web Edition.exe")
+        End
+        End
+        End
+        Exit Sub
     End Sub
 
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         Panel1.Show()
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles forgot.LinkClicked
         Dim ui = My.Computer.Registry.GetValue(
      "HKEY_CURRENT_USER\Software\Olive OS Web Edition\Login", "SetupState", Nothing)
         If ui = "" Then
@@ -143,5 +189,20 @@
 
     Private Sub Panel1_Paint_1(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
 
+    End Sub
+
+    Private Sub Timer2_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer2.Tick
+        comDate()
+        time.Text = DateTime.Now.ToString("hh:mm tt")
+        dateok.Text = Format(Now, "dddd") & ", " & d & " " & DateTime.Now.ToString("dd") & ", " & DateTime.Now.ToString("yyyy")
+    End Sub
+
+    Private Sub Form7_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseClick
+        pb.Show()
+        user.Show()
+        forgot.Show()
+        tb.Show()
+        time.Hide()
+        dateok.Hide()
     End Sub
 End Class

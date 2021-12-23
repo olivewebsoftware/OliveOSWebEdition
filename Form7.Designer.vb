@@ -24,9 +24,9 @@ Partial Class Form7
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.tb = New System.Windows.Forms.TextBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.user = New System.Windows.Forms.Label()
         Me.pb = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -35,7 +35,7 @@ Partial Class Form7
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.forgot = New System.Windows.Forms.LinkLabel()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,6 +44,9 @@ Partial Class Form7
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.time = New System.Windows.Forms.Label()
+        Me.dateok = New System.Windows.Forms.Label()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,30 +63,32 @@ Partial Class Form7
         Me.ProgressBar1.TabIndex = 15
         Me.ProgressBar1.Visible = False
         '
-        'TextBox1
+        'tb
         '
-        Me.TextBox1.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.TextBox1.Location = New System.Drawing.Point(869, 523)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(207, 22)
-        Me.TextBox1.TabIndex = 13
+        Me.tb.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.tb.Location = New System.Drawing.Point(869, 523)
+        Me.tb.Name = "tb"
+        Me.tb.Size = New System.Drawing.Size(207, 22)
+        Me.tb.TabIndex = 13
+        Me.tb.Visible = False
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'Label5
+        'user
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(975, 412)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(139, 42)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "SYSTEM"
+        Me.user.AutoSize = True
+        Me.user.BackColor = System.Drawing.Color.Transparent
+        Me.user.Font = New System.Drawing.Font("Microsoft JhengHei UI Light", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.user.ForeColor = System.Drawing.Color.White
+        Me.user.Location = New System.Drawing.Point(975, 412)
+        Me.user.Name = "user"
+        Me.user.Size = New System.Drawing.Size(139, 42)
+        Me.user.TabIndex = 12
+        Me.user.Text = "SYSTEM"
+        Me.user.Visible = False
         '
         'pb
         '
@@ -92,6 +97,7 @@ Partial Class Form7
         Me.pb.Size = New System.Drawing.Size(100, 92)
         Me.pb.TabIndex = 11
         Me.pb.TabStop = False
+        Me.pb.Visible = False
         '
         'Timer1
         '
@@ -166,22 +172,23 @@ Partial Class Form7
         Me.PictureBox1.TabIndex = 17
         Me.PictureBox1.TabStop = False
         '
-        'LinkLabel1
+        'forgot
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Location = New System.Drawing.Point(866, 558)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(153, 17)
-        Me.LinkLabel1.TabIndex = 18
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Forgot your password?"
+        Me.forgot.AutoSize = True
+        Me.forgot.BackColor = System.Drawing.Color.Transparent
+        Me.forgot.Location = New System.Drawing.Point(866, 558)
+        Me.forgot.Name = "forgot"
+        Me.forgot.Size = New System.Drawing.Size(153, 17)
+        Me.forgot.TabIndex = 18
+        Me.forgot.TabStop = True
+        Me.forgot.Text = "Forgot your password?"
+        Me.forgot.Visible = False
         '
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
         Me.LinkLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel2.Location = New System.Drawing.Point(302, 558)
+        Me.LinkLabel2.Location = New System.Drawing.Point(53, 438)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(153, 17)
         Me.LinkLabel2.TabIndex = 22
@@ -192,7 +199,7 @@ Partial Class Form7
         'TextBox2
         '
         Me.TextBox2.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.TextBox2.Location = New System.Drawing.Point(305, 523)
+        Me.TextBox2.Location = New System.Drawing.Point(56, 403)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(207, 22)
         Me.TextBox2.TabIndex = 21
@@ -213,7 +220,7 @@ Partial Class Form7
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(305, 412)
+        Me.PictureBox2.Location = New System.Drawing.Point(56, 292)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(100, 92)
         Me.PictureBox2.TabIndex = 19
@@ -224,7 +231,7 @@ Partial Class Form7
         '
         Me.LinkLabel3.AutoSize = True
         Me.LinkLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel3.Location = New System.Drawing.Point(1453, 558)
+        Me.LinkLabel3.Location = New System.Drawing.Point(67, 261)
         Me.LinkLabel3.Name = "LinkLabel3"
         Me.LinkLabel3.Size = New System.Drawing.Size(153, 17)
         Me.LinkLabel3.TabIndex = 26
@@ -235,7 +242,7 @@ Partial Class Form7
         'TextBox3
         '
         Me.TextBox3.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.TextBox3.Location = New System.Drawing.Point(1456, 523)
+        Me.TextBox3.Location = New System.Drawing.Point(70, 226)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(207, 22)
         Me.TextBox3.TabIndex = 25
@@ -256,18 +263,47 @@ Partial Class Form7
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(1456, 412)
+        Me.PictureBox3.Location = New System.Drawing.Point(70, 115)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(100, 92)
         Me.PictureBox3.TabIndex = 23
         Me.PictureBox3.TabStop = False
         Me.PictureBox3.Visible = False
         '
+        'time
+        '
+        Me.time.AutoSize = True
+        Me.time.BackColor = System.Drawing.Color.Transparent
+        Me.time.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.time.ForeColor = System.Drawing.Color.White
+        Me.time.Location = New System.Drawing.Point(30, 790)
+        Me.time.Name = "time"
+        Me.time.Size = New System.Drawing.Size(588, 156)
+        Me.time.TabIndex = 27
+        Me.time.Text = "00:00 AM"
+        '
+        'dateok
+        '
+        Me.dateok.AutoSize = True
+        Me.dateok.BackColor = System.Drawing.Color.Transparent
+        Me.dateok.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateok.ForeColor = System.Drawing.Color.White
+        Me.dateok.Location = New System.Drawing.Point(46, 955)
+        Me.dateok.Name = "dateok"
+        Me.dateok.Size = New System.Drawing.Size(544, 57)
+        Me.dateok.TabIndex = 28
+        Me.dateok.Text = "Monday, Janurary 1st, 2021"
+        '
+        'Timer2
+        '
+        '
         'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1942, 1102)
+        Me.Controls.Add(Me.dateok)
+        Me.Controls.Add(Me.time)
         Me.Controls.Add(Me.LinkLabel3)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label7)
@@ -276,17 +312,17 @@ Partial Class Form7
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.forgot)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.tb)
+        Me.Controls.Add(Me.user)
         Me.Controls.Add(Me.pb)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form7"
-        Me.Text = "login"
+        Me.Text = "9-"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
@@ -298,9 +334,9 @@ Partial Class Form7
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents user As System.Windows.Forms.Label
     Friend WithEvents pb As System.Windows.Forms.PictureBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents tb As System.Windows.Forms.TextBox
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
@@ -308,7 +344,7 @@ Partial Class Form7
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents forgot As System.Windows.Forms.LinkLabel
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
@@ -319,4 +355,7 @@ Partial Class Form7
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents time As System.Windows.Forms.Label
+    Friend WithEvents dateok As System.Windows.Forms.Label
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
 End Class

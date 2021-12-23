@@ -80,6 +80,7 @@ Partial Class Form15
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form15"
+        Me.Opacity = 0.78R
         Me.Text = "cmenu"
         Me.TopMost = True
         Me.Panel1.ResumeLayout(False)

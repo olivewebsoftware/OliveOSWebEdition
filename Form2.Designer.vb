@@ -31,6 +31,9 @@ Partial Class Form2
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -38,7 +41,7 @@ Partial Class Form2
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(0, 0)
+        Me.Label6.Location = New System.Drawing.Point(12, 25)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 23)
         Me.Label6.TabIndex = 15
@@ -114,16 +117,51 @@ Partial Class Form2
         '
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(64, 504)
+        Me.LinkLabel1.Location = New System.Drawing.Point(62, 509)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(108, 25)
         Me.LinkLabel1.TabIndex = 17
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Shut Down"
         '
+        'LinkLabel2
+        '
+        Me.LinkLabel2.AutoSize = True
+        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel2.Location = New System.Drawing.Point(176, 509)
+        Me.LinkLabel2.Name = "LinkLabel2"
+        Me.LinkLabel2.Size = New System.Drawing.Size(169, 25)
+        Me.LinkLabel2.TabIndex = 18
+        Me.LinkLabel2.TabStop = True
+        Me.LinkLabel2.Text = "Enroll This Device"
+        '
+        'LinkLabel3
+        '
+        Me.LinkLabel3.AutoSize = True
+        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel3.Location = New System.Drawing.Point(351, 509)
+        Me.LinkLabel3.Name = "LinkLabel3"
+        Me.LinkLabel3.Size = New System.Drawing.Size(126, 25)
+        Me.LinkLabel3.TabIndex = 19
+        Me.LinkLabel3.TabStop = True
+        Me.LinkLabel3.Text = "Set Up Kiosk"
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 16
+        Me.ListBox1.Location = New System.Drawing.Point(1166, 142)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(152, 132)
+        Me.ListBox1.TabIndex = 20
+        Me.ListBox1.Visible = False
+        '
         'Form2
         '
         Me.ClientSize = New System.Drawing.Size(1577, 553)
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.LinkLabel3)
+        Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox6)
@@ -166,4 +204,7 @@ Partial Class Form2
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
+    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
 End Class

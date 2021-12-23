@@ -10,6 +10,8 @@ Public Class Form9
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+        "On", "")
         End
         End
         End
@@ -18,6 +20,17 @@ Public Class Form9
     End Sub
 
     Private Sub Form9_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Dim uq = My.Computer.Registry.GetValue(
+      "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "UpdateQueued", Nothing)
+        If uq = "1" Then
+            Button5.Text = "[!] Restart"
+            Button5.ForeColor = Color.Orange
+            Form8.Label18.Text = "1"
+        End If
+        If Form8.Label18.Text = "1" Then
+            Button5.Text = "[!] Restart"
+            Button5.ForeColor = Color.Orange
+        End If
         Dim cursor As Icon
         cursor = (My.Resources.defc2)
         Me.Cursor = New Cursor(cursor.Handle)
@@ -32,7 +45,7 @@ Public Class Form9
         If pic = "1" Then
             pb.Image = My.Resources.use2
         End If
-       
+
         If pic = "3" Then
             pb.Image = My.Resources.use3
         End If
@@ -136,16 +149,33 @@ Public Class Form9
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
+        If Form8.Label18.Text = "1" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+        "On", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+           "UpdateComplete", "0")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+           "UpdateQueued", "0")
+            Me.Close()
+            Form8.Close()
+            Process.Start("C:\Program Files\Olive OS Web Edition\Updates.exe")
+            End
+            End
+            End
+        End If
         If Form8.Label16.Text = "1" Then
             Me.Close()
             Form8.Close()
             Form7.Close()
             Form39.Show()
         Else
-            Me.Close()
-            Form8.Close()
-            Form7.Close()
-            Form7.Show()
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+        "On", "")
+            Process.Start("C:\Program Files\Olive OS Web Edition\Olive OS Web Edition.exe")
+            End
+            End
+            End
+            Exit Sub
         End If
     End Sub
 End Class
