@@ -1,0 +1,76 @@
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Olive OS Web Edition.exe.manifest
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Olive OS Web Edition.application
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Olive OS Web Edition.exe
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Olive OS Web Edition.pdb
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Olive OS Web Edition.xml
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\Interop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\bin\Release\AxInterop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Interop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\AxInterop.WMPLib.dll
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.vbproj.ResolveComReference.cache
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form1.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form10.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form11.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form12.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form13.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form14.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form15.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form16.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form17.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form18.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form19.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form2.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form20.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form21.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form22.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form23.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form24.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form3.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form4.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form5.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form6.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form7.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form8.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form9.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Resources.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.vbproj.GenerateResource.Cache
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.exe.manifest
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.application
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.exe
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.xml
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.pdb
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form25.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form26.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form27.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form28.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form29.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form30.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form31.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form32.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form33.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form34.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form35.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form36.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form37.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form38.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form39.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form40.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form41.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form42.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form43.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive OS Web Edition.TrustInfo.xml
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form44.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form45.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form46.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form47.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form48.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form49.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form50.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form51.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form52.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form53.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form54.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form55.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form56.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form57.resources
+C:\Users\pizza\OneDrive\Documents\Olive OS Web Edition\Olive OS Web Edition\obj\x86\Release\Olive_OS_Web_Edition.Form58.resources

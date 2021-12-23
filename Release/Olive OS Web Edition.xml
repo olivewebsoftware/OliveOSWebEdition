@@ -1,0 +1,745 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OliveOSWebEdition
+</name>
+</assembly>
+<members>
+<member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources._protected">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.aboutos">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;About Olive OS Web Edition&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 id="abt"&gt;Olive OS Web Edition&lt;/h1&gt;
+        &lt;p id="desc"&gt;Olive OS Web Edition, the open source version &lt;br&gt;
+        of Olive OS. Check out the GitHub resp. by clicking &lt;br&gt;
+    the link in settings. &lt;br&gt;
+&lt;br&gt;
+Version: 1.4 &lt;br&gt;
+(C) oliveweb software&lt;br&gt;
+&lt;/p&gt;
+    &lt;style&gt;
+        #abt {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #desc {
+          [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.addtab">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.allow">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.apps">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.appstore">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.back">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.batt">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.battcritical">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.battlow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.beep">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.bootscreenmod">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.build">
+	<summary>
+  Looks up a localized string similar to OS Build Information:
+Version 1.0
+Build: web1.0
+Date: 10/20/2021.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.bypassadmin">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.calc">
+	<summary>
+  Looks up a localized string similar to 
+&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;Calculator&lt;/title&gt;
+      &lt;script&gt;
+         //Displays the numbers (calculator display)
+         function dis(val)
+         {
+             document.getElementById("result").value+=val
+         }
+         //Lets javascript do the math and return the result
+         function solve()
+         {
+             var x = document.getElementById("result").value
+             var y = eval(x)
+             document.getElementById("result").value = y
+         }
+         //Cle [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.calculator">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.checkmarker">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.checkup">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.cliff">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.crash">
+	<summary>
+  Looks up a localized string similar to The notification service has 
+crashed. Please restart Olive OS
+to see notifications..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.credits">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Olive OS Credits&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Olive OS Web Edition Credits:&lt;/h1&gt;
+        &lt;p&gt;Programming: &lt;br&gt;
+        VB.NET &amp; HTML: Max Schindler&lt;/p&gt;
+        &lt;p&gt;Graphic Design: &lt;br&gt;
+        Browser logo, files logo, and video player logo: Garrison Roberts [https://www.youtube.com/channel/UCLHV_KVMCmXtHkUYAWhM9gA] &lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.dang">
+	<summary>
+  Looks up a localized string similar to Security questions were not 
+set up. .
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.def">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.defc">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.defc2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.donot">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.donoton">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.entersetup">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.err">
+	<summary>
+  Looks up a localized string similar to You have failed 3
+password attemps. Olive 
+OS will now be disabled for
+5 minutes..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.error_snd">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.exitrecov">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.exitrecov2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.filee">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.filerr">
+	<summary>
+  Looks up a localized string similar to The directory username is
+inaccessible. Aborted.
+Error Code:
+DIR_USER_INACCESSIBLE.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.forward">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.gameon">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.gobackscrn">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.hand">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.hnd">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ico">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ico1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ico2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ico3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.ico4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.installfirst">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.installother">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.italic">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.landing">
+	<summary>
+  Looks up a localized string similar to &lt;title&gt;Landing Page&lt;/title&gt;
+&lt;p&gt;a&lt;/p&gt;.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.los">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.menuweb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.mountian">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.music">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Music Player&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;p id="titlee"&gt;Music Player&lt;/p&gt;
+        &lt;img id="play" src="https://olivewebsoftware.github.io/idkbro/play.png" onclick="playState()"&gt;&lt;/img&gt;
+        &lt;img id="pause" src="https://olivewebsoftware.github.io/idkbro/pause.png" onclick="pauseState()"&gt;&lt;/img&gt;
+        &lt;img id="stop" src="https://olivewebsoftware.github.io/idkbro/stop.png" onclick="stopState()"&gt;&lt;/img&gt;
+        &lt;br&gt;
+        &lt;br&gt;
+        &lt;im [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.music1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.neterror">
+	<summary>
+  Looks up a localized string similar to An internet connection
+was not detected. Some
+apps and features may not
+work properly..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.noapp">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;No App Inserted Error&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color: gray;"&gt;
+        &lt;p id="brand"&gt;OliveWeb WEBAPP PLAYER 1.0&lt;/p&gt;
+        &lt;h1 id="titles"&gt;An error occurred.&lt;/h1&gt;
+        &lt;p id="desc"&gt;No webapp has been selected. The system &lt;br&gt;
+        cannot continue.&lt;/p&gt;
+        &lt;style&gt;
+            #desc {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: large;
+                color: white;
+         [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.noserv">
+	<summary>
+  Looks up a localized string similar to The BatteryIQ service
+has been stopped....
+please restart Olive OS
+to restart this service..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.not_protected">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.notepad">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.notif">
+	<summary>
+  Looks up a localized string similar to You will have to set up
+file manager later..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.oemmode">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.oliveOSbootFail">
+	<summary>
+  Looks up a localized string similar to Olive OS is acting slow:
+
+If this happens, you may need to refresh the copy.
+Go to: 
+Settings\About and Update\Refresh This Copy
+
+If it is still being slow, your PC may be on the lower end
+of hardware, or you need to run System Repair:
+
+Settings\About and Update\System Recovery\Advanced Options\Run System Repair
+
+Wait a few minutes. When it is done, check if it is acting slow again.
+If it is still acting slow, your PC may be on the lower end.
+
+If you still have questions, contact OliveWeb at k [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.oof">
+	<summary>
+  Looks up a localized string similar to This app cannot start because
+malware is present in this app..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.photo">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Olive OS Web Image Viewer&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color: black;"&gt;
+        &lt;div class="layout"&gt;
+            &lt;p id="pathname"&gt;---&lt;/p&gt;
+            &lt;img id="refresh" onclick="doAssign()" width="43" height="43" src="https://olivewebsoftware.github.io/idkbro/r.png"&gt;&lt;/img&gt;
+            &lt;img id="domail" onclick="" src="https://olivewebsoftware.github.io/idkbro/e.png"&gt;&lt;/img&gt;
+            &lt;img id="orgin" src="https://olivewebsoftware.git [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.player">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.powerdown">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.poweroption">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.protect">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;
+            Security Error
+        &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color: red;"&gt;
+        &lt;h1 id="oliveweb"&gt;OliveWeb&lt;/h1&gt;
+        &lt;h1 id="maintitle"&gt;We redirected you away from this webpage &lt;br&gt;
+        because of a security error.&lt;/h1&gt;
+        &lt;p id="desc"&gt;This webpage contains dangerous content that could &lt;br&gt;
+        harm your computer. We have redirected you away from &lt;br&gt;
+    this page to protect your computer.&lt;/p&gt;
+    &lt;/bo [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.refresh">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.remtab">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.resetfactory">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.restart">
+	<summary>
+  Looks up a localized string similar to Please restart Olive OS to 
+finish installing critical
+updates..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.rockwater">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.runasAdmin">
+	<summary>
+  Looks up a localized string similar to If this happens, follow these steps:
+
+1) Shut Down Olive OS
+2) Go to the shortcut where Olive OS is. 
+3) Right-click it
+4) Mouse over "More"
+5) Click "Run as Administrator"
+6) When the prompt appears, click "Yes".
+
+Olive OS should download and install updates
+normally..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.runsystemrepair">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.scan">
+	<summary>
+  Looks up a localized string similar to Malware was found. Choose
+the correct action in the
+"Scan" tab..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.scanforthreat">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.screensaver">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.scripterr">
+	<summary>
+  Looks up a localized string similar to We can't run these scripts. Try
+changing the permission settings
+for this app. .
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.scripterrors">
+	<summary>
+  Looks up a localized string similar to If you are getting that message, try un-installing the
+webapp you last installed. Doing this might get rid of
+the error. If it is still there, keep uninstalling and
+reinstalling the apps until you find the culprit.
+
+If it is still happening, you need to go into the registry
+and delete these keys:
+HKEY CURRENT USER\SOFTWARE\Olive OS Web Edition\WebApps
+Edit1
+Edit2
+Edit3
+Edit4
+Edit5
+and
+site1
+site2
+site3
+site4
+site5
+
+That should get rid of all the issues that have been caused by the
+scrip [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.securityapp">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.securityapp__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.serv">
+	<summary>
+  Looks up a localized string similar to &lt;h1 id="titles"&gt;Chose a video service:&lt;/h1&gt;
+&lt;a id="netflix" href="https:\\www.netflix.com\"&gt;Netflix&lt;/a&gt;
+&lt;a id="hulu" href="https:\\www.hulu.com\"&gt;Hulu&lt;/a&gt;
+&lt;a id="disney" href="https:\\www.disneyplus.com"&gt;Disney+&lt;/a&gt;
+&lt;style&gt;
+    #titles {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #netflix {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #hulu {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    #disney {
+        font-family: Arial, Helvetica, sans-seri [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.service">
+	<summary>
+  Looks up a localized string similar to A crucial system service has
+been stopped. Please restart 
+your computer..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.setting">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.settings">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.settings1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.silence">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.sug">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Web Suggest&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1 id="ispan"&gt;Shortcuts&lt;/h1&gt;
+        &lt;div class="images"&gt;
+            &lt;img onclick="bing()" src="https://olivewebsoftware.github.io/idkbro/bing.png"&gt;
+            &lt;img onclick="facebook()" src="https://olivewebsoftware.github.io/idkbro/facebook.png"&gt;
+            &lt;img onclick="oliveweb()" src="https://olivewebsoftware.github.io/idkbro/oliveweb.png"&gt;
+            &lt;img onclick="amazon()" src="https://o [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.sysrep">
+	<summary>
+  Looks up a localized string similar to Your system appears to be
+fine. System Repair will 
+continue anyway to refresh
+regsitry files. Press F1
+at anytime to cancel..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.textedit">
+	<summary>
+  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Online Code Editor&lt;/title&gt;
+        &lt;link rel="shortcut icon" type="image/jpg" href="tabimg.png"/&gt;
+    &lt;/head&gt;
+&lt;body style="background-color: black;"&gt;
+    &lt;p id="up2"&gt;Olive OS Text Editor&lt;/p&gt;
+    &lt;button id="a" onclick="save()"&gt;Save...&lt;/button&gt;
+    &lt;br&gt;
+    &lt;br&gt;
+    &lt;textarea id="main-edit" rows = "1000"&gt;&lt;/textarea&gt;
+    &lt;p id="sr"&gt;0&lt;/p&gt;
+    &lt;style&gt;
+        #main-edit {
+            font-family: 'Courier New', monospace;
+            width: 100%;
+ [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.tips">
+	<summary>
+  Looks up a localized string similar to How to check your username in files:
+
+1. Open Files (explorer.exe)
+2. On the left side of Files, right click
+the "Downloads" button.
+3. In the properties window, go to where it 
+says "Location"
+4. Next to "Location", it will say your
+username (Example: C:\Users\YOUR USERNAME\Downloads)
+5. Next to where it says "Users\" is your username.
+
+Enter that username into the textbox on the setup
+screen behind this message.
+
+If you are still confused, .
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.uhh">
+	<summary>
+  Looks up a localized string similar to No shortcuts can be added
+at this time. The maximum
+limit has been reached..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.updateFail">
+	<summary>
+  Looks up a localized string similar to If updates are not downloading, try this:
+
+1) Run Olive OS as an administrator
+
+If that doesn't work, try this:
+
+Go to Program Files\Olive OS Web Edition
+
+Look for "Updates.exe'
+
+If it is there, run it and click "Yes" at the 
+prompt. If it is not, try running Olive OS as
+an administrator.
+
+If none of these steps are working, Olive OS may be
+
+A) Corrupted
+B) Infected with Malware
+C) Having a user error
+
+If Olive OS is still not doing updates after being run
+as an administrator, try re-in [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.usb_disconnect">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.usb_insert">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.usb_remove">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.use1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.use2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.use3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.vbbox">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.vbexpressisdumb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.vol_adj">
+	<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.wa">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.wallpaper">
+	<summary>
+  Looks up a localized string similar to &lt;!--(C) 2021 OliveWeb--&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Wallpaper Chooser&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="background-color: lightblue;"&gt;
+        &lt;h1 id="main"&gt;Choose A Wallpaper&lt;/h1&gt;
+      &lt;img src="https://olivewebsoftware.github.io/idkbro/5.png" onclick="setFive()"&gt;
+        &lt;img src="https://olivewebsoftware.github.io/idkbro/3.png" onclick="setOne()"&gt;
+        &lt;img src="https://olivewebsoftware.github.io/idkbro/2.png" onclick="setTwo()"&gt;
+         &lt;br&gt;
+        &lt;img src="ht [rest of string was truncated]";.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.warning">
+	<summary>
+  Looks up a localized string similar to This operation has been disabled
+by your Administrator..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.web">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.webappNoShow">
+	<summary>
+  Looks up a localized string similar to If that happens, do this:
+
+1) Right click the desktop
+2) Click "New Shortcut"
+3) Click the underlined "Fix Now" at the bottom of the window.
+4) Olive OS will fix it..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.webb">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.webdefault">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.why">
+	<summary>
+  Looks up a localized string similar to Update download failed. 
+Please start Olive OS as 
+an administrator..
+</summary>
+</member><member name="P:Olive_OS_Web_Edition.My.Resources.Resources.wifiico">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Olive_OS_Web_Edition.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
