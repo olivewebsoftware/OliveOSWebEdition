@@ -63,40 +63,57 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property _1() As System.Drawing.Bitmap
+        Friend ReadOnly Property _protected() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("_1", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("_protected", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        '''&lt;html&gt;
+        '''    &lt;head&gt;
+        '''        &lt;title&gt;About Olive OS Web Edition&lt;/title&gt;
+        '''    &lt;/head&gt;
+        '''    &lt;body&gt;
+        '''        &lt;h1 id=&quot;abt&quot;&gt;Olive OS Web Edition&lt;/h1&gt;
+        '''        &lt;p id=&quot;desc&quot;&gt;Olive OS Web Edition, the open source version &lt;br&gt;
+        '''        of Olive OS. Check out the GitHub resp. by clicking &lt;br&gt;
+        '''    the link in settings. &lt;br&gt;
+        '''&lt;br&gt;
+        '''Version: 1.4 &lt;br&gt;
+        '''(C) oliveweb software&lt;br&gt;
+        '''&lt;/p&gt;
+        '''    &lt;style&gt;
+        '''        #abt {
+        '''            font-family: Arial, Helvetica, sans-serif;
+        '''        }
+        '''        #desc {
+        '''          [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property aboutos() As String
+            Get
+                Return ResourceManager.GetString("aboutos", resourceCulture)
             End Get
         End Property
         
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property _2() As System.Drawing.Bitmap
+        Friend ReadOnly Property addtab() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("_2", resourceCulture)
+                Dim obj As Object = ResourceManager.GetObject("addtab", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         '''</summary>
-        Friend ReadOnly Property _3() As System.Drawing.Bitmap
+        Friend ReadOnly Property allow() As System.IO.UnmanagedMemoryStream
             Get
-                Dim obj As Object = ResourceManager.GetObject("_3", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property _4() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("_4", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Return ResourceManager.GetStream("allow", resourceCulture)
             End Get
         End Property
         
@@ -106,6 +123,97 @@ Namespace My.Resources
         Friend ReadOnly Property apps() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("apps", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property appstore() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("appstore", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property back() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("back", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property batt() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("batt", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property battcritical() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("battcritical", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property battlow() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("battlow", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property beep() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("beep", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bootscreenmod() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bootscreenmod", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to OS Build Information:
+        '''Version 1.0
+        '''Build: web1.0
+        '''Date: 10/20/2021.
+        '''</summary>
+        Friend ReadOnly Property build() As String
+            Get
+                Return ResourceManager.GetString("build", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bypassadmin() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bypassadmin", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -149,10 +257,72 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property checkmarker() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("checkmarker", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property checkup() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("checkup", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property cliff() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("cliff", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to The notification service has 
+        '''crashed. Please restart Olive OS
+        '''to see notifications..
+        '''</summary>
+        Friend ReadOnly Property crash() As String
+            Get
+                Return ResourceManager.GetString("crash", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        '''&lt;html&gt;
+        '''    &lt;head&gt;
+        '''        &lt;title&gt;Olive OS Credits&lt;/title&gt;
+        '''    &lt;/head&gt;
+        '''    &lt;body&gt;
+        '''        &lt;h1&gt;Olive OS Web Edition Credits:&lt;/h1&gt;
+        '''        &lt;p&gt;Programming: &lt;br&gt;
+        '''        VB.NET &amp; HTML: Max Schindler&lt;/p&gt;
+        '''        &lt;p&gt;Graphic Design: &lt;br&gt;
+        '''        Browser logo, files logo, and video player logo: Garrison Roberts [https://www.youtube.com/channel/UCLHV_KVMCmXtHkUYAWhM9gA] &lt;/p&gt;
+        '''    &lt;/body&gt;
+        '''&lt;/html&gt;.
+        '''</summary>
+        Friend ReadOnly Property credits() As String
+            Get
+                Return ResourceManager.GetString("credits", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Security questions were not 
+        '''set up. .
+        '''</summary>
+        Friend ReadOnly Property dang() As String
+            Get
+                Return ResourceManager.GetString("dang", resourceCulture)
             End Get
         End Property
         
@@ -162,6 +332,56 @@ Namespace My.Resources
         Friend ReadOnly Property def() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("def", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Byte[].
+        '''</summary>
+        Friend ReadOnly Property defc() As Byte()
+            Get
+                Dim obj As Object = ResourceManager.GetObject("defc", resourceCulture)
+                Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property defc2() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("defc2", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property donot() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("donot", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property donoton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("donoton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property entersetup() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("entersetup", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -184,6 +404,208 @@ Namespace My.Resources
         Friend ReadOnly Property error_snd() As System.IO.UnmanagedMemoryStream
             Get
                 Return ResourceManager.GetStream("error_snd", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property exitrecov() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("exitrecov", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property exitrecov2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("exitrecov2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property filee() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("filee", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to The directory username is
+        '''inaccessible. Aborted.
+        '''Error Code:
+        '''DIR_USER_INACCESSIBLE.
+        '''</summary>
+        Friend ReadOnly Property filerr() As String
+            Get
+                Return ResourceManager.GetString("filerr", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property forward() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("forward", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property gameon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gameon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property gobackscrn() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("gobackscrn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property hand() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hand", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property hnd() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hnd", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ico() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ico", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ico1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ico1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ico2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ico2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ico3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ico3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ico4() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ico4", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property installfirst() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("installfirst", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property installother() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("installother", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        '''</summary>
+        Friend ReadOnly Property italic() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("italic", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;title&gt;Landing Page&lt;/title&gt;
+        '''&lt;p&gt;a&lt;/p&gt;.
+        '''</summary>
+        Friend ReadOnly Property landing() As String
+            Get
+                Return ResourceManager.GetString("landing", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property los() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("los", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property menuweb() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("menuweb", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
         
@@ -241,12 +663,111 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        '''&lt;html&gt;
+        '''    &lt;head&gt;
+        '''        &lt;title&gt;No App Inserted Error&lt;/title&gt;
+        '''    &lt;/head&gt;
+        '''    &lt;body style=&quot;background-color: gray;&quot;&gt;
+        '''        &lt;p id=&quot;brand&quot;&gt;OliveWeb WEBAPP PLAYER 1.0&lt;/p&gt;
+        '''        &lt;h1 id=&quot;titles&quot;&gt;An error occurred.&lt;/h1&gt;
+        '''        &lt;p id=&quot;desc&quot;&gt;No webapp has been selected. The system &lt;br&gt;
+        '''        cannot continue.&lt;/p&gt;
+        '''        &lt;style&gt;
+        '''            #desc {
+        '''                font-family: Arial, Helvetica, sans-serif;
+        '''                font-size: large;
+        '''                color: white;
+        '''         [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property noapp() As String
+            Get
+                Return ResourceManager.GetString("noapp", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to The BatteryIQ service
+        '''has been stopped....
+        '''please restart Olive OS
+        '''to restart this service..
+        '''</summary>
+        Friend ReadOnly Property noserv() As String
+            Get
+                Return ResourceManager.GetString("noserv", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property not_protected() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("not_protected", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property notepad() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("notepad", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to You will have to set up
+        '''file manager later..
+        '''</summary>
+        Friend ReadOnly Property notif() As String
+            Get
+                Return ResourceManager.GetString("notif", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property oemmode() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("oemmode", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Olive OS is acting slow:
+        '''
+        '''If this happens, you may need to refresh the copy.
+        '''Go to: 
+        '''Settings\About and Update\Refresh This Copy
+        '''
+        '''If it is still being slow, your PC may be on the lower end
+        '''of hardware, or you need to run System Repair:
+        '''
+        '''Settings\About and Update\System Recovery\Advanced Options\Run System Repair
+        '''
+        '''Wait a few minutes. When it is done, check if it is acting slow again.
+        '''If it is still acting slow, your PC may be on the lower end.
+        '''
+        '''If you still have questions, contact OliveWeb at k [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property oliveOSbootFail() As String
+            Get
+                Return ResourceManager.GetString("oliveOSbootFail", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to This app cannot start because
+        '''malware is present in this app..
+        '''</summary>
+        Friend ReadOnly Property oof() As String
+            Get
+                Return ResourceManager.GetString("oof", resourceCulture)
             End Get
         End Property
         
@@ -272,10 +793,332 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property player() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("player", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property powerdown() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("powerdown", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property poweroption() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("poweroption", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        '''&lt;html&gt;
+        '''    &lt;head&gt;
+        '''        &lt;title&gt;
+        '''            Security Error
+        '''        &lt;/title&gt;
+        '''    &lt;/head&gt;
+        '''    &lt;body style=&quot;background-color: red;&quot;&gt;
+        '''        &lt;h1 id=&quot;oliveweb&quot;&gt;OliveWeb&lt;/h1&gt;
+        '''        &lt;h1 id=&quot;maintitle&quot;&gt;We redirected you away from this webpage &lt;br&gt;
+        '''        because of a security error.&lt;/h1&gt;
+        '''        &lt;p id=&quot;desc&quot;&gt;This webpage contains dangerous content that could &lt;br&gt;
+        '''        harm your computer. We have redirected you away from &lt;br&gt;
+        '''    this page to protect your computer.&lt;/p&gt;
+        '''    &lt;/bo [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property protect() As String
+            Get
+                Return ResourceManager.GetString("protect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property refresh() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("refresh", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property remtab() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("remtab", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property resetfactory() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("resetfactory", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Please restart Olive OS to 
+        '''finish installing critical
+        '''updates..
+        '''</summary>
+        Friend ReadOnly Property restart() As String
+            Get
+                Return ResourceManager.GetString("restart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property rockwater() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("rockwater", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to If this happens, follow these steps:
+        '''
+        '''1) Shut Down Olive OS
+        '''2) Go to the shortcut where Olive OS is. 
+        '''3) Right-click it
+        '''4) Mouse over &quot;More&quot;
+        '''5) Click &quot;Run as Administrator&quot;
+        '''6) When the prompt appears, click &quot;Yes&quot;.
+        '''
+        '''Olive OS should download and install updates
+        '''normally..
+        '''</summary>
+        Friend ReadOnly Property runasAdmin() As String
+            Get
+                Return ResourceManager.GetString("runasAdmin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property runsystemrepair() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("runsystemrepair", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Malware was found. Choose
+        '''the correct action in the
+        '''&quot;Scan&quot; tab..
+        '''</summary>
+        Friend ReadOnly Property scan() As String
+            Get
+                Return ResourceManager.GetString("scan", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property scanforthreat() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("scanforthreat", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property screensaver() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("screensaver", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to We can&apos;t run these scripts. Try
+        '''changing the permission settings
+        '''for this app. .
+        '''</summary>
+        Friend ReadOnly Property scripterr() As String
+            Get
+                Return ResourceManager.GetString("scripterr", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to If you are getting that message, try un-installing the
+        '''webapp you last installed. Doing this might get rid of
+        '''the error. If it is still there, keep uninstalling and
+        '''reinstalling the apps until you find the culprit.
+        '''
+        '''If it is still happening, you need to go into the registry
+        '''and delete these keys:
+        '''HKEY CURRENT USER\SOFTWARE\Olive OS Web Edition\WebApps
+        '''Edit1
+        '''Edit2
+        '''Edit3
+        '''Edit4
+        '''Edit5
+        '''and
+        '''site1
+        '''site2
+        '''site3
+        '''site4
+        '''site5
+        '''
+        '''That should get rid of all the issues that have been caused by the
+        '''scrip [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property scripterrors() As String
+            Get
+                Return ResourceManager.GetString("scripterrors", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property securityapp() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("securityapp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property securityapp__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("securityapp (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;h1 id=&quot;titles&quot;&gt;Chose a video service:&lt;/h1&gt;
+        '''&lt;a id=&quot;netflix&quot; href=&quot;https:\\www.netflix.com\&quot;&gt;Netflix&lt;/a&gt;
+        '''&lt;a id=&quot;hulu&quot; href=&quot;https:\\www.hulu.com\&quot;&gt;Hulu&lt;/a&gt;
+        '''&lt;a id=&quot;disney&quot; href=&quot;https:\\www.disneyplus.com&quot;&gt;Disney+&lt;/a&gt;
+        '''&lt;style&gt;
+        '''    #titles {
+        '''        font-family: Arial, Helvetica, sans-serif;
+        '''    }
+        '''    #netflix {
+        '''        font-family: Arial, Helvetica, sans-serif;
+        '''    }
+        '''    #hulu {
+        '''        font-family:Arial, Helvetica, sans-serif;
+        '''    }
+        '''    #disney {
+        '''        font-family: Arial, Helvetica, sans-seri [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property serv() As String
+            Get
+                Return ResourceManager.GetString("serv", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to A crucial system service has
+        '''been stopped. Please restart 
+        '''your computer..
+        '''</summary>
+        Friend ReadOnly Property service() As String
+            Get
+                Return ResourceManager.GetString("service", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property setting() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("setting", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property settings() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("settings", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property settings1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("settings1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property silence() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("silence", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        '''&lt;html&gt;
+        '''    &lt;head&gt;
+        '''        &lt;title&gt;Web Suggest&lt;/title&gt;
+        '''    &lt;/head&gt;
+        '''    &lt;body&gt;
+        '''        &lt;h1 id=&quot;ispan&quot;&gt;Shortcuts&lt;/h1&gt;
+        '''        &lt;div class=&quot;images&quot;&gt;
+        '''            &lt;img onclick=&quot;bing()&quot; src=&quot;https://olivewebsoftware.github.io/idkbro/bing.png&quot;&gt;
+        '''            &lt;img onclick=&quot;facebook()&quot; src=&quot;https://olivewebsoftware.github.io/idkbro/facebook.png&quot;&gt;
+        '''            &lt;img onclick=&quot;oliveweb()&quot; src=&quot;https://olivewebsoftware.github.io/idkbro/oliveweb.png&quot;&gt;
+        '''            &lt;img onclick=&quot;amazon()&quot; src=&quot;https://o [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property sug() As String
+            Get
+                Return ResourceManager.GetString("sug", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Your system appears to be
+        '''fine. System Repair will 
+        '''continue anyway to refresh
+        '''regsitry files. Press F1
+        '''at anytime to cancel..
+        '''</summary>
+        Friend ReadOnly Property sysrep() As String
+            Get
+                Return ResourceManager.GetString("sysrep", resourceCulture)
             End Get
         End Property
         
@@ -305,6 +1148,137 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to How to check your username in files:
+        '''
+        '''1. Open Files (explorer.exe)
+        '''2. On the left side of Files, right click
+        '''the &quot;Downloads&quot; button.
+        '''3. In the properties window, go to where it 
+        '''says &quot;Location&quot;
+        '''4. Next to &quot;Location&quot;, it will say your
+        '''username (Example: C:\Users\YOUR USERNAME\Downloads)
+        '''5. Next to where it says &quot;Users\&quot; is your username.
+        '''
+        '''Enter that username into the textbox on the setup
+        '''screen behind this message.
+        '''
+        '''If you are still confused, .
+        '''</summary>
+        Friend ReadOnly Property tips() As String
+            Get
+                Return ResourceManager.GetString("tips", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to No shortcuts can be added
+        '''at this time. The maximum
+        '''limit has been reached..
+        '''</summary>
+        Friend ReadOnly Property uhh() As String
+            Get
+                Return ResourceManager.GetString("uhh", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to If updates are not downloading, try this:
+        '''
+        '''1) Run Olive OS as an administrator
+        '''
+        '''If that doesn&apos;t work, try this:
+        '''
+        '''Go to Program Files\Olive OS Web Edition
+        '''
+        '''Look for &quot;Updates.exe&apos;
+        '''
+        '''If it is there, run it and click &quot;Yes&quot; at the 
+        '''prompt. If it is not, try running Olive OS as
+        '''an administrator.
+        '''
+        '''If none of these steps are working, Olive OS may be
+        '''
+        '''A) Corrupted
+        '''B) Infected with Malware
+        '''C) Having a user error
+        '''
+        '''If Olive OS is still not doing updates after being run
+        '''as an administrator, try re-in [rest of string was truncated]&quot;;.
+        '''</summary>
+        Friend ReadOnly Property updateFail() As String
+            Get
+                Return ResourceManager.GetString("updateFail", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property usb_disconnect() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("usb_disconnect", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property usb_insert() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("usb_insert", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property usb_remove() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("usb_remove", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property use1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("use1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property use2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("use2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property use3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("use3", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property vbbox() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("vbbox", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property vbexpressisdumb() As System.Drawing.Bitmap
@@ -324,6 +1298,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property wa() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("wa", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to &lt;!--(C) 2021 OliveWeb--&gt;
         '''&lt;!DOCTYPE html&gt;
         '''&lt;html&gt;
@@ -332,15 +1316,25 @@ Namespace My.Resources
         '''    &lt;/head&gt;
         '''    &lt;body style=&quot;background-color: lightblue;&quot;&gt;
         '''        &lt;h1 id=&quot;main&quot;&gt;Choose A Wallpaper&lt;/h1&gt;
+        '''      &lt;img src=&quot;https://olivewebsoftware.github.io/idkbro/5.png&quot; onclick=&quot;setFive()&quot;&gt;
         '''        &lt;img src=&quot;https://olivewebsoftware.github.io/idkbro/3.png&quot; onclick=&quot;setOne()&quot;&gt;
         '''        &lt;img src=&quot;https://olivewebsoftware.github.io/idkbro/2.png&quot; onclick=&quot;setTwo()&quot;&gt;
-        '''        &lt;img src=&quot;https://olivewebsoftware.github.io/idkbro/1.png&quot; onclick=&quot;setThree()&quot;&gt;
-        '''        &lt;p id=&quot;a&quot;&gt;0&lt;/p&gt;
-        '''        [rest of string was truncated]&quot;;.
+        '''         &lt;br&gt;
+        '''        &lt;img src=&quot;ht [rest of string was truncated]&quot;;.
         '''</summary>
         Friend ReadOnly Property wallpaper() As String
             Get
                 Return ResourceManager.GetString("wallpaper", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to This operation has been disabled
+        '''by your Administrator..
+        '''</summary>
+        Friend ReadOnly Property warning() As String
+            Get
+                Return ResourceManager.GetString("warning", resourceCulture)
             End Get
         End Property
         
@@ -351,6 +1345,61 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("web", resourceCulture)
                 Return CType(obj,Byte())
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to If that happens, do this:
+        '''
+        '''1) Right click the desktop
+        '''2) Click &quot;New Shortcut&quot;
+        '''3) Click the underlined &quot;Fix Now&quot; at the bottom of the window.
+        '''4) Olive OS will fix it..
+        '''</summary>
+        Friend ReadOnly Property webappNoShow() As String
+            Get
+                Return ResourceManager.GetString("webappNoShow", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property webb() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("webb", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property webdefault() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("webdefault", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Update download failed. 
+        '''Please start Olive OS as 
+        '''an administrator..
+        '''</summary>
+        Friend ReadOnly Property why() As String
+            Get
+                Return ResourceManager.GetString("why", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property wifiico() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("wifiico", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
     End Module

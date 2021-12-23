@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Olive OS Web Edition")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("HP Inc.")> 
+<Assembly: AssemblyDescription("OliveWeb installer")> 
+<Assembly: AssemblyCompany("OliveWeb Software")> 
 <Assembly: AssemblyProduct("Olive OS Web Edition")> 
-<Assembly: AssemblyCopyright("Copyright © HP Inc. 2021")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyCopyright("(C) 2021 OliveWeb")> 
+<Assembly: AssemblyTrademark("TM OLIVEWEB")> 
 
 <Assembly: ComVisible(False)>
 
