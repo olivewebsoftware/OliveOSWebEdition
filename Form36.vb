@@ -111,10 +111,11 @@ Public Class Form36
 
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
-       "Username", "Audit")
+       "Username", "PreInstall")
         Me.Close()
         Form8.Show()
         Form1.Timer2.Stop()
+        'form53
     End Sub
 
     Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click

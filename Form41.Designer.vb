@@ -79,7 +79,7 @@ Partial Class Form41
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(157, 44)
         Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Switch User"
+        Me.Button1.Text = "Log Off"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1

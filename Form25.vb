@@ -3,6 +3,67 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Form22.Show()
         Form22.Label4.Text = Form10.Label11.Text
+        Dim u As Integer = 0
+        Dim add As Integer = 0
+        Dim added = My.Computer.Registry.GetValue(
+        "HKEY_CURRENT_USER\Software\Olive OS Web Edition", "ShortcutsAdded", Nothing)
+        add = added
+        If Form22.Label4.Text = "s1" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+    "Shortcut1", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+     "ShortcutLink1", "")
+            u = add
+            add -= 1
+            u = add
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+      "ShortcutsAdded", u)
+        End If
+        If Form22.Label4.Text = "s2" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+   "Shortcut2", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+     "ShortcutLink2", "")
+            u = add
+            add -= 1
+            u = add
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+      "ShortcutsAdded", u)
+        End If
+        If Form22.Label4.Text = "s3" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+   "Shortcut3", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+     "ShortcutLink3", "")
+            u = add
+            add -= 1
+            u = add
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+      "ShortcutsAdded", u)
+
+        End If
+        If Form22.Label4.Text = "s4" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+   "Shortcut4", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+     "ShortcutLink4", "")
+            u = add
+            add -= 1
+            u = add
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+      "ShortcutsAdded", u)
+        End If
+        If Form22.Label4.Text = "s5" Then
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+   "Shortcut5", "")
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+     "ShortcutLink5", "")
+            u = add
+            add -= 6
+            u = add
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition",
+      "ShortcutsAdded", u)
+        End If
         If Form22.Label4.Text = "1" Then
             My.Computer.Registry.SetValue("HKEY_CURRENT_USER\SOFTWARE\Olive OS Web Edition\WebApps",
             "AppName1", "")
@@ -64,7 +125,7 @@
           "Edit5", "")
         End If
         Form4.Show()
-        Form4.Label1.Text = "Uninstall complete."
+        Form4.Label1.Text = "Item removal complete."
         Form22.Close()
         Me.Close()
     End Sub
@@ -79,5 +140,20 @@
         Dim cursor As Icon
         cursor = (My.Resources.defc2)
         Me.Cursor = New Cursor(cursor.Handle)
+        If Form10.Label11.Text = "s1" Then
+            Label1.Text = "Remove shortcut?"
+        End If
+        If Form10.Label11.Text = "s2" Then
+            Label1.Text = "Remove shortcut?"
+        End If
+        If Form10.Label11.Text = "s3" Then
+            Label1.Text = "Remove shortcut?"
+        End If
+        If Form10.Label11.Text = "s4" Then
+            Label1.Text = "Remove shortcut?"
+        End If
+        If Form10.Label11.Text = "s5" Then
+            Label1.Text = "Remove shortcut?"
+        End If
     End Sub
 End Class

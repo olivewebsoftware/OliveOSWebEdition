@@ -117,10 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="ContextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>202, 17</value>
-  </metadata>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>An unauthorized software modification has been detected.
+Please format the directory that Olive OS is installed to.
+Once that is done, please re-install Olive OS Web Edition.
+After re-installing Olive OS Web Edition, go to settings
+and perform an Olive OS factory reset.
+
+This may have been caused by softmodding, malware, or
+corrupted system files.</value>
+  </data>
 </root>

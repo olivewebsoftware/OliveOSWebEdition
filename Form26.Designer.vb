@@ -22,25 +22,14 @@ Partial Class Form26
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button9 = New System.Windows.Forms.Button()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Button8 = New System.Windows.Forms.Button()
@@ -54,9 +43,10 @@ Partial Class Form26
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Button9 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
@@ -92,7 +82,6 @@ Partial Class Form26
         '
         'TabControl1
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Location = New System.Drawing.Point(208, 48)
@@ -100,142 +89,6 @@ Partial Class Form26
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(1175, 534)
         Me.TabControl1.TabIndex = 18
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.Label10)
-        Me.TabPage1.Controls.Add(Me.Button14)
-        Me.TabPage1.Controls.Add(Me.Label9)
-        Me.TabPage1.Controls.Add(Me.Button13)
-        Me.TabPage1.Controls.Add(Me.Label8)
-        Me.TabPage1.Controls.Add(Me.Button12)
-        Me.TabPage1.Controls.Add(Me.Label7)
-        Me.TabPage1.Controls.Add(Me.Button11)
-        Me.TabPage1.Controls.Add(Me.Label6)
-        Me.TabPage1.Controls.Add(Me.Button10)
-        Me.TabPage1.Controls.Add(Me.Label5)
-        Me.TabPage1.Controls.Add(Me.Button9)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1167, 505)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Libaries"
-        Me.TabPage1.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(708, 202)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(177, 29)
-        Me.Label10.TabIndex = 11
-        Me.Label10.Text = "Open Last Path"
-        '
-        'Button14
-        '
-        Me.Button14.Location = New System.Drawing.Point(627, 186)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(75, 69)
-        Me.Button14.TabIndex = 10
-        Me.Button14.Text = " "
-        Me.Button14.UseVisualStyleBackColor = True
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(708, 86)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(88, 29)
-        Me.Label9.TabIndex = 9
-        Me.Label9.Text = "Videos"
-        '
-        'Button13
-        '
-        Me.Button13.Location = New System.Drawing.Point(627, 70)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(75, 69)
-        Me.Button13.TabIndex = 8
-        Me.Button13.Text = " "
-        Me.Button13.UseVisualStyleBackColor = True
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(412, 202)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(100, 29)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Pictures"
-        '
-        'Button12
-        '
-        Me.Button12.Location = New System.Drawing.Point(331, 186)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 69)
-        Me.Button12.TabIndex = 6
-        Me.Button12.Text = " "
-        Me.Button12.UseVisualStyleBackColor = True
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(412, 86)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(76, 29)
-        Me.Label7.TabIndex = 5
-        Me.Label7.Text = "Music"
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(331, 70)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 69)
-        Me.Button11.TabIndex = 4
-        Me.Button11.Text = " "
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(128, 202)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(134, 29)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Documents"
-        '
-        'Button10
-        '
-        Me.Button10.Location = New System.Drawing.Point(47, 186)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 69)
-        Me.Button10.TabIndex = 2
-        Me.Button10.Text = " "
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(128, 86)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(134, 29)
-        Me.Label5.TabIndex = 1
-        Me.Label5.Text = "Downloads"
-        '
-        'Button9
-        '
-        Me.Button9.Location = New System.Drawing.Point(47, 70)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 69)
-        Me.Button9.TabIndex = 0
-        Me.Button9.Text = " "
-        Me.Button9.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
@@ -250,12 +103,18 @@ Partial Class Form26
         '
         'ListBox1
         '
+        Me.ListBox1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 16
         Me.ListBox1.Location = New System.Drawing.Point(6, 9)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(1155, 484)
         Me.ListBox1.TabIndex = 0
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'TabPage3
         '
@@ -323,7 +182,7 @@ Partial Class Form26
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(17, 118)
+        Me.Button1.Location = New System.Drawing.Point(17, 82)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(167, 48)
         Me.Button1.TabIndex = 19
@@ -333,7 +192,7 @@ Partial Class Form26
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(17, 172)
+        Me.Button2.Location = New System.Drawing.Point(17, 136)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(167, 48)
         Me.Button2.TabIndex = 20
@@ -343,7 +202,7 @@ Partial Class Form26
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(17, 226)
+        Me.Button3.Location = New System.Drawing.Point(17, 190)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(167, 48)
         Me.Button3.TabIndex = 21
@@ -353,7 +212,7 @@ Partial Class Form26
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(17, 280)
+        Me.Button4.Location = New System.Drawing.Point(17, 244)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(167, 48)
         Me.Button4.TabIndex = 22
@@ -363,7 +222,7 @@ Partial Class Form26
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(17, 334)
+        Me.Button5.Location = New System.Drawing.Point(17, 298)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(167, 48)
         Me.Button5.TabIndex = 23
@@ -387,13 +246,29 @@ Partial Class Form26
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(90, 34)
         Me.Label2.TabIndex = 25
-        Me.Label2.Text = "File Manager" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "v1.0"
+        Me.Label2.Text = "File Manager" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "v1.1"
+        '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(61, 4)
+        '
+        'Button9
+        '
+        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button9.Location = New System.Drawing.Point(17, 390)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(167, 48)
+        Me.Button9.TabIndex = 27
+        Me.Button9.Text = "System"
+        Me.Button9.UseVisualStyleBackColor = True
         '
         'Form26
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1395, 594)
+        Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
@@ -403,6 +278,7 @@ Partial Class Form26
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form26"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -411,8 +287,6 @@ Partial Class Form26
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
-        Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
@@ -424,7 +298,6 @@ Partial Class Form26
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button7 As System.Windows.Forms.Button
     Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
-    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
@@ -439,17 +312,8 @@ Partial Class Form26
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Button14 As System.Windows.Forms.Button
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Button13 As System.Windows.Forms.Button
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Button12 As System.Windows.Forms.Button
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Button11 As System.Windows.Forms.Button
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Button10 As System.Windows.Forms.Button
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents ContextMenuStrip2 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents Button9 As System.Windows.Forms.Button
 End Class

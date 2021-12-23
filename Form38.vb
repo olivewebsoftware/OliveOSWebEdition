@@ -14,6 +14,9 @@
             If TextBox1.Text = pwd Then
                 Form37.Close()
                 Me.Close()
+                End
+                End
+                End
             Else
                 Form4.Show()
                 Form4.Label1.Text = "Incorrect password."

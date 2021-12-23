@@ -35,9 +35,9 @@ Partial Class Form28
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(42, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(575, 78)
+        Me.Label1.Size = New System.Drawing.Size(493, 78)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Olive OS is having issues with the current" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "signed in user account."
+        Me.Label1.Text = "The current signed in user account " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "is not working."
         '
         'Label2
         '

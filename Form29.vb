@@ -18,6 +18,12 @@
                 Catch ex As Exception
                     'No security questions were present.
                 End Try
+                Try
+                    My.Computer.Registry.CurrentUser.DeleteSubKey(
+  "SOFTWARE\Olive OS Web Edition\System")
+                Catch ex As Exception
+                    'No OEM screen was set
+                End Try
                 My.Computer.Registry.CurrentUser.DeleteSubKey(
 "SOFTWARE\Olive OS Web Edition\WebApps")
                 My.Computer.Registry.CurrentUser.DeleteSubKey(

@@ -53,13 +53,13 @@ Partial Class Form33
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Panel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -322,11 +322,11 @@ Partial Class Form33
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(700, 65)
+        Me.Label11.Location = New System.Drawing.Point(698, 68)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(318, 25)
+        Me.Label11.Size = New System.Drawing.Size(319, 25)
         Me.Label11.TabIndex = 8
-        Me.Label11.Text = "Security Sugesstions Appear Here:"
+        Me.Label11.Text = "Security Suggestions Appear Here:"
         '
         'ListBox2
         '
@@ -392,32 +392,24 @@ Partial Class Form33
         Me.TabPage4.Text = "Settings"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
-        'Timer1
+        'LinkLabel1
         '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(52, 365)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(45, 17)
+        Me.LinkLabel1.TabIndex = 5
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "About"
         '
-        'Timer2
+        'Label13
         '
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(48, 46)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(124, 39)
-        Me.Label12.TabIndex = 1
-        Me.Label12.Text = "Settings"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(55, 155)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(48, 21)
-        Me.RadioButton1.TabIndex = 2
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "On"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(52, 119)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(136, 17)
+        Me.Label13.TabIndex = 4
+        Me.Label13.Text = "Real-time Protection"
         '
         'RadioButton2
         '
@@ -430,24 +422,32 @@ Partial Class Form33
         Me.RadioButton2.Text = "Off"
         Me.RadioButton2.UseVisualStyleBackColor = True
         '
-        'Label13
+        'RadioButton1
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(52, 119)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(136, 17)
-        Me.Label13.TabIndex = 4
-        Me.Label13.Text = "Real-time Protection"
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(55, 155)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(48, 21)
+        Me.RadioButton1.TabIndex = 2
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "On"
+        Me.RadioButton1.UseVisualStyleBackColor = True
         '
-        'LinkLabel1
+        'Label12
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(52, 365)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(45, 17)
-        Me.LinkLabel1.TabIndex = 5
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "About"
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(48, 46)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(124, 39)
+        Me.Label12.TabIndex = 1
+        Me.Label12.Text = "Settings"
+        '
+        'Timer1
+        '
+        '
+        'Timer2
+        '
         '
         'Form33
         '

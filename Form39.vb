@@ -43,7 +43,8 @@
                 Form4.Label1.Text = My.Resources.sysrep
             End If
         Catch ex As Exception
-
+            Form43.Show()
+            Form43.Label2.Text = ex.Message
         End Try
     End Sub
 
