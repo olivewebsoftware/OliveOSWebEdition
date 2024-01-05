@@ -1,0 +1,4 @@
+An internet connection
+was not detected. Some
+apps and features may not
+work properly.

@@ -1,0 +1,4 @@
+The directory username is
+inaccessible. Aborted.
+Error Code:
+DIR_USER_INACCESSIBLE

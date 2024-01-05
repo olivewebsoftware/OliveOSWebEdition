@@ -1,3 +1,0 @@
-Malware was found. Choose
-the correct action in the
-"Scan" tab.

@@ -1,3 +1,0 @@
-We can't run these scripts. Try
-changing the permission settings
-for this app. 

@@ -1,0 +1,24 @@
+If you are getting that message, try un-installing the
+webapp you last installed. Doing this might get rid of
+the error. If it is still there, keep uninstalling and
+reinstalling the apps until you find the culprit.
+
+If it is still happening, you need to go into the registry
+and delete these keys:
+HKEY CURRENT USER\SOFTWARE\Olive OS Web Edition\WebApps
+Edit1
+Edit2
+Edit3
+Edit4
+Edit5
+and
+site1
+site2
+site3
+site4
+site5
+
+That should get rid of all the issues that have been caused by the
+script error.
+
+If the problem still persists, please contact OliveWeb at kk.online@mail.com

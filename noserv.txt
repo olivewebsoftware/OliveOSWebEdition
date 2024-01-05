@@ -1,4 +1,0 @@
-The BatteryIQ service
-has been stopped....
-please restart Olive OS
-to restart this service.

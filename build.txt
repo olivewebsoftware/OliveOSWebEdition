@@ -1,4 +1,0 @@
-OS Build Information:
-Version 1.0
-Build: web1.0
-Date: 10/20/2021

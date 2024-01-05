@@ -1,0 +1,30 @@
+Olive OS is acting slow:
+
+If this happens, you may need to refresh the copy.
+Go to: 
+Settings\About and Update\Refresh This Copy
+
+If it is still being slow, your PC may be on the lower end
+of hardware, or you need to run System Repair:
+
+Settings\About and Update\System Recovery\Advanced Options\Run System Repair
+
+Wait a few minutes. When it is done, check if it is acting slow again.
+If it is still acting slow, your PC may be on the lower end.
+
+If you still have questions, contact OliveWeb at kk.online@mail.com
+
+Olive OS is not starting, bootlooping, or going to random screens:
+
+If this happens, the copy is corrupted and needs to be re-installed.
+1) Go to olivewebsoftware.github.io/oliveweb/index11.html
+2) Download the file
+3) Run the file and click "Yes" at the prompt
+4) Let it install
+
+If Olive OS starts, you are complete!
+If Olive OS goes to a system repair window, let it run.
+If Olive OS goes to a "update failure" window, choose one of the options.
+If Olive OS still doesn't start, contact OliveWeb at kk.online@mail.com
+
+If Olive OS is acting funny, run system repair and that should fix it.

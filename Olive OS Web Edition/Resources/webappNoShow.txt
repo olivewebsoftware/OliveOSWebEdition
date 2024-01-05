@@ -1,0 +1,6 @@
+If that happens, do this:
+
+1) Right click the desktop
+2) Click "New Shortcut"
+3) Click the underlined "Fix Now" at the bottom of the window.
+4) Olive OS will fix it.

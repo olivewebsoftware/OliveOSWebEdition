@@ -1,2 +1,0 @@
-This app cannot start because
-malware is present in this app.

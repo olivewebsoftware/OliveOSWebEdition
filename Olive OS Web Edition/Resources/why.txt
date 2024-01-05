@@ -1,0 +1,3 @@
+Update download failed. 
+Please start Olive OS as 
+an administrator.

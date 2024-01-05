@@ -1,0 +1,3 @@
+Please restart Olive OS to 
+finish installing critical
+updates.

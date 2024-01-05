@@ -1,0 +1,11 @@
+If this happens, follow these steps:
+
+1) Shut Down Olive OS
+2) Go to the shortcut where Olive OS is. 
+3) Right-click it
+4) Mouse over "More"
+5) Click "Run as Administrator"
+6) When the prompt appears, click "Yes".
+
+Olive OS should download and install updates
+normally.

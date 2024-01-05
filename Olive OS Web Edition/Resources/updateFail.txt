@@ -1,0 +1,42 @@
+If updates are not downloading, try this:
+
+1) Run Olive OS as an administrator
+
+If that doesn't work, try this:
+
+Go to Program Files\Olive OS Web Edition
+
+Look for "Updates.exe'
+
+If it is there, run it and click "Yes" at the 
+prompt. If it is not, try running Olive OS as
+an administrator.
+
+If none of these steps are working, Olive OS may be
+
+A) Corrupted
+B) Infected with Malware
+C) Having a user error
+
+If Olive OS is still not doing updates after being run
+as an administrator, try re-installing it.
+
+Go to OliveWeb's website and download Olive OS Web Edition.
+
+(olivewebsoftware.github.io/oliveweb/index11.html)
+
+Run the installer, click "Yes", and then wait for it to install.
+
+After re-installation, try updating again. (Run it as administrator).
+
+If it still fails, Olive OS could be infected with malware.
+
+How to get rid of malware:
+
+1) Run a scan on OliveWeb Security
+2) Check for running tasks in Task Manager that look strange.
+3) Remove all webapps.
+4) Last resort: Factory reset. Settings>About and Update>Factory Reset
+
+If the above still did not fix the issue, please contact OliveWeb at
+kk.online@mail.com

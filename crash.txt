@@ -1,3 +1,0 @@
-The notification service has 
-crashed. Please restart Olive OS
-to see notifications.
